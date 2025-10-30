@@ -2,9 +2,11 @@
   --green: #6B9941;
   --green-light: #8BB561;
   --green-dark: #2A4E35;
+  --green-deep: #1E3526;
   --orange: #EA6E26;
   --orange-light: #F58A4C;
   --orange-dark: #D45A1A;
+  --orange-base: #EA6E26;
   --white: #FFFFFF;
   --off-white: #F9FAFB;
   --gray-light: #F3F4F6;
@@ -1427,6 +1429,138 @@ a {
   color: var(--green-dark);
 }
 
+.about-hero {
+  background: linear-gradient(140deg, rgba(107, 153, 65, 0.18), rgba(234, 110, 38, 0.12)), #f7faf3;
+}
+
+.about-hero::after {
+  display: none;
+}
+
+.about-hero .page-hero-title {
+  color: var(--green-deep);
+  text-shadow: none;
+}
+
+.about-hero .page-hero-subtext {
+  color: var(--gray-dark);
+}
+
+.about-hero .page-hero-eyebrow {
+  background: rgba(107, 153, 65, 0.15);
+  color: var(--green-deep);
+}
+
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.hero-metric {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(107, 153, 65, 0.18);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(6px);
+}
+
+.hero-metric span.material-symbols-outlined {
+  font-size: 1.6rem;
+  color: var(--green-dark);
+}
+
+.hero-metric strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+  color: var(--green-dark);
+}
+
+.hero-metric p {
+  color: var(--gray-dark);
+  font-size: 0.95rem;
+}
+
+.about-hero-visual::before,
+.about-hero-visual::after {
+  display: none;
+}
+
+.hero-showcase {
+  display: grid;
+  gap: 24px;
+}
+
+.image-placeholder.tall {
+  aspect-ratio: 3 / 4;
+}
+
+.hero-inset-card {
+  position: relative;
+  padding: 32px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.8));
+  border: 1px solid rgba(107, 153, 65, 0.18);
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  gap: 16px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(234, 110, 38, 0.12);
+  color: var(--orange-dark);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.4px;
+}
+
+.hero-inset-card h4 {
+  color: var(--green-deep);
+  font-size: 1.4rem;
+}
+
+.hero-inset-card p {
+  color: var(--gray-dark);
+}
+
+.hero-list {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-list li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--green-deep);
+  font-weight: 500;
+}
+
+.hero-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--orange-base);
+  box-shadow: 0 0 0 4px rgba(234, 110, 38, 0.12);
+}
+
 .image-placeholder {
   position: relative;
   width: 100%;
@@ -1498,6 +1632,37 @@ a {
   color: var(--green-dark);
 }
 
+.mission-vision {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.statement-card {
+  padding: 26px 28px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(107, 153, 65, 0.18);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 10px;
+}
+
+.statement-card h3 {
+  color: var(--green-deep);
+}
+
+.statement-card p {
+  color: var(--gray-dark);
+}
+
+.statement-divider {
+  width: 1px;
+  background: linear-gradient(180deg, rgba(107, 153, 65, 0), rgba(107, 153, 65, 0.35), rgba(107, 153, 65, 0));
+  border-radius: 999px;
+}
+
 .value-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1547,21 +1712,47 @@ a {
 
 .steps-grid {
   display: grid;
-  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .step-card {
+  position: relative;
   display: grid;
-  gap: 6px;
-  padding: 20px 24px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.9);
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  padding: 24px 26px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(107, 153, 65, 0.2);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow);
+  align-items: start;
 }
 
-.step-card strong {
-  color: var(--green-dark);
+.step-number {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--orange-dark);
+  background: rgba(234, 110, 38, 0.12);
+  border-radius: 12px;
+  padding: 8px 14px;
+  line-height: 1;
+  align-self: start;
+}
+
+.step-content {
+  display: grid;
+  gap: 8px;
+}
+
+.step-content h3 {
+  font-size: 1.1rem;
+  color: var(--green-deep);
+}
+
+.step-content p {
+  color: var(--gray-dark);
+  font-size: 0.97rem;
 }
 
 .highlight-banner {
@@ -2025,6 +2216,14 @@ a {
     font-size: 2.8rem;
   }
 
+  .hero-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .value-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2047,7 +2246,30 @@ a {
   .section {
     padding: 80px 0;
   }
-  
+
+  .page-hero .container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-showcase {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .mission-vision {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .statement-divider {
+    display: none;
+  }
+
   .nav-container {
     padding: 0 25px;
   }
@@ -2257,6 +2479,32 @@ a {
     gap: 50px;
     text-align: center;
   }
+
+  .hero-metrics {
+    gap: 14px;
+  }
+
+  .hero-metric {
+    grid-template-columns: auto 1fr;
+    padding: 16px 18px;
+  }
+
+  .hero-inset-card {
+    padding: 26px;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-card {
+    grid-template-columns: auto 1fr;
+  }
+
+  .step-number {
+    font-size: 1.3rem;
+    padding: 6px 12px;
+  }
   
   .hero-actions {
     flex-direction: column;
@@ -2394,6 +2642,41 @@ a {
   .page-hero-actions {
     width: 100%;
     flex-direction: column;
+  }
+
+  .hero-metrics {
+    gap: 12px;
+  }
+
+  .hero-metric {
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding: 14px 16px;
+  }
+
+  .hero-metric span.material-symbols-outlined {
+    font-size: 1.4rem;
+  }
+
+  .hero-inset-card {
+    padding: 22px;
+  }
+
+  .hero-list li {
+    padding-left: 18px;
+  }
+
+  .steps-grid {
+    gap: 16px;
+  }
+
+  .step-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .step-number {
+    justify-self: flex-start;
   }
 
   .page-hero-actions .btn-primary,
