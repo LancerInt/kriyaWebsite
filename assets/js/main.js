@@ -523,10 +523,68 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 4000);
   }
 
+  // ===== CONTACT FORM MAILTO =====
+  function initContactForm() {
+    const form = document.getElementById('kriyaContactForm');
+
+    if (!form) return;
+
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const name = (formData.get('name') || '').trim();
+      const company = (formData.get('company') || '').trim();
+      const country = (formData.get('country') || '').trim();
+      const email = (formData.get('email') || '').trim();
+      const whatsapp = (formData.get('whatsapp') || '').trim();
+      const interest = (formData.get('interest') || '').trim();
+      const message = (formData.get('message') || '').trim();
+
+      const subjectLabel = interest || 'General Inquiry';
+      const identifier = company || name || 'Prospect';
+      const subject = encodeURIComponent(`Kriya Inquiry - ${subjectLabel} (${identifier})`);
+
+      const bodyLines = [
+        `Name: ${name || '-'}`,
+        `Company: ${company || '-'}`,
+        `Country: ${country || '-'}`,
+        `Email: ${email || '-'}`,
+        `WhatsApp: ${whatsapp || 'N/A'}`,
+        `Product Interest: ${interest || '-'}`,
+        '',
+        'Message:',
+        message || '-',
+        '',
+        '---',
+        'Submitted via kriya.ltd contact form'
+      ];
+
+      const mailtoLink = `mailto:info@kriya.ltd?subject=${subject}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.classList.add('disabled');
+      }
+
+      window.location.href = mailtoLink;
+
+      setTimeout(() => {
+        form.reset();
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.classList.remove('disabled');
+        }
+      }, 1200);
+    });
+  }
+
   // ===== BACK TO TOP BUTTON =====
   function initBackToTop() {
     const backToTopButton = document.getElementById('backToTop');
-    
+
     if (!backToTopButton) return;
     
     // Show/hide back to top button based on scroll position
@@ -639,8 +697,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initAnimations();
     initDownloadButton();
     initBackToTop();
+    initContactForm();
     initManualTooltips();
-    
+
     console.log('Kriya Website - All functionality initialized');
   }
 
