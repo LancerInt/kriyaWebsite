@@ -1498,7 +1498,7 @@ a {
 }
 
 .image-placeholder.tall {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
 }
 
 .hero-inset-card {
