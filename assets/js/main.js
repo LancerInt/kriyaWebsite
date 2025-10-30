@@ -276,8 +276,21 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth > 991.98) {
           clearTimeout(closeTimeout);
           clearTimeout(submenuTimeout);
+
+          dropdowns.forEach(otherDropdown => {
+            if (otherDropdown !== dropdown) {
+              otherDropdown.classList.remove('active');
+            }
+          });
+
+          categoryItems.forEach(item => {
+            if (!dropdown.contains(item)) {
+              item.classList.remove('submenu-active');
+            }
+          });
+
           this.classList.add('active');
-          
+
           // Reset scroll position of submenu grids when opening
           const submenuGrids = this.querySelectorAll('.submenu-grid');
           submenuGrids.forEach(grid => {
@@ -308,6 +321,19 @@ document.addEventListener('DOMContentLoaded', function() {
       // Keep dropdown open when hovering over content
       dropdownContent.addEventListener('mouseenter', function() {
         clearTimeout(closeTimeout);
+        if (window.innerWidth > 991.98) {
+          dropdowns.forEach(otherDropdown => {
+            if (otherDropdown !== dropdown) {
+              otherDropdown.classList.remove('active');
+            }
+          });
+
+          categoryItems.forEach(item => {
+            if (!dropdown.contains(item)) {
+              item.classList.remove('submenu-active');
+            }
+          });
+        }
       });
       
       dropdownContent.addEventListener('mouseleave', function(e) {
