@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecoza | Azadirachtin Biocontrol Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body class="product-page">
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="logo-loader">
+        <img src="../../assets/img/logo.png" alt="Kriya Ltd" />
+      </div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../../index.html" class="nav-logo">
+        <img src="../../assets/img/logo.png" alt="Kriya Ltd" />
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="../../about.html" class="nav-link">About</a></li>
+
+          <!-- Products Dropdown -->
+          <li class="nav-item dropdown dropdown-products">
+            <a href="../biocontrol.html" class="nav-link dropbtn">
+              <span>Products</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content products-dropdown">
+              <div class="categories-menu">
+                <div class="category-item">
+                  <a href="../biocontrol.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">pest_control</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Biocontrol</h4>
+                      <p>Natural pest management range</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biocontrol Products</h5>
+                      <p>Botanical and microbial actives</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="ecoza.html" data-tooltip="Azadirachtin">Ecoza</a>
+                      <a href="margoshine.html" data-tooltip="Neem Oil">Margoshine</a>
+                      <a href="k-guard.html" data-tooltip="Karanjin">K-Guard</a>
+                      <a href="weedx.html" data-tooltip="MCT Weed Killer">WeedX</a>
+                      <a href="spindura.html" data-tooltip="Spinosad">Spindura</a>
+                      <a href="margospin.html" data-tooltip="Neem Oil + Spinosad">MargoSpin</a>
+                      <a href="admira.html" data-tooltip="Essential Oil Formulation">Admira</a>
+                      <a href="mycova.html" data-tooltip="Beauveria bassiana">Mycova</a>
+                      <a href="rexora.html" data-tooltip="Metarhizium anisopliae">Rexora</a>
+                      <a href="biota.html" data-tooltip="Trichoderma viride / harzianum">Biota (V/H)</a>
+                      <a href="seira.html" data-tooltip="Verticillium lecanii">Seira</a>
+                      <a href="encilo.html" data-tooltip="Paecilomyces fumosoroseus">EnCilo</a>
+                      <a href="neuvita.html" data-tooltip="Ampelomyces quisqualis">Neuvita</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="../biostimulants.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">psychiatry</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Biostimulants</h4>
+                      <p>Plant resilience &amp; nutrition</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biostimulant Products</h5>
+                      <p>Microbial &amp; botanical enhancers</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="../biostimulants/igreen.html" data-tooltip="Microbial consortium">IGreen</a>
+                      <a href="../biostimulants/zenita.html" data-tooltip="Peptide formulation">Zenita</a>
+                      <a href="../biostimulants/cropsia.html" data-tooltip="Plant extracts formultion">Cropsia</a>
+                      <a href="../biostimulants/enrhize.html" data-tooltip="Arbuscular Mycorrhizal">Enrhize</a>
+                      <a href="../biostimulants/orgocare.html" data-tooltip="Plant based Antitranspirants">Orgocare</a>
+                      <a href="../biostimulants/blooma.html" data-tooltip="Seaweed formulation">Blooma</a>
+                      <a href="../biostimulants/envicta.html" data-tooltip="Humic &amp; fulvic formulation">Envicta</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="../substrates.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">grass</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Substrates</h4>
+                      <p>Soil amendment solutions</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Substrate Products</h5>
+                      <p>Soil health &amp; seed treatments</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="../substrates/maxineem.html" data-tooltip="Neem cake">Maxineem</a>
+                      <a href="../substrates/kmix.html" data-tooltip="Karanja cake">K-Mix</a>
+                      <a href="../substrates/mystica.html" data-tooltip="Wetting &amp; spreading agents">Mystica</a>
+                      <a href="../substrates/engrow.html" data-tooltip="Seed coating">Engrow</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="../home-garden.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">yard</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Home &amp; Garden</h4>
+                      <p>Consumer-ready packs</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Technology Dropdown -->
+          <li class="nav-item dropdown dropdown-tech">
+            <a href="../../technology/karyo.html" class="nav-link dropbtn">
+              <span>Technology</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content tech-dropdown">
+              <div class="tech-menu-compact">
+                <a href="../../technology/karyo.html" class="tech-item-compact" data-tooltip="Delivery Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">biotech</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Karyo Technology</h5>
+                    <p>Formulation technology</p>
+                  </div>
+                </a>
+
+                <a href="../../technology/wynn.html" class="tech-item-compact" data-tooltip="Microbial Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">science</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Wynn Formulation</h5>
+                    <p>Microbial innovation</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="../../contract-manufacturing.html" class="nav-link">Manufacturing</a></li>
+          <li><a href="../../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero interior-hero product-hero">
+    <div class="container">
+      <div class="product-hero-layout">
+        <div class="page-hero-content product-hero-copy">
+          <span class="page-hero-eyebrow">Biocontrol Portfolio</span>
+          <h1 class="page-hero-title">Ecoza&reg; Azadirachtin Programs for Residue-Conscious Insect Control</h1>
+          <p class="page-hero-subtext">The Ecoza range combines cold-processed neem actives with purpose-built carriers so distributors can deliver predictable performance across premium export crops, protected cultivation, and intensive open-field programs.</p>
+          <div class="hero-metrics">
+            <div class="hero-metric">
+              <span class="material-symbols-outlined">science</span>
+              <div class="hero-metric-text">
+                <strong>Cold-Processed Neem</strong>
+                <span class="hero-metric-detail">Maintains the full limonoid profile for consistent potency and stability.</span>
+              </div>
+            </div>
+            <div class="hero-metric">
+              <span class="material-symbols-outlined">diversity_3</span>
+              <div class="hero-metric-text">
+                <strong>Portfolio Flexibility</strong>
+                <span class="hero-metric-detail">Four strengths cover greenhouse, plantation, and high-frequency spray programs.</span>
+              </div>
+            </div>
+            <div class="hero-metric">
+              <span class="material-symbols-outlined">fact_check</span>
+              <div class="hero-metric-text">
+                <strong>Regulatory Support</strong>
+                <span class="hero-metric-detail">Delivered with dossiers, MRL data, and SDS packs for rapid onboarding.</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-hero-actions">
+            <a href="../../contact.html" class="btn-primary">
+              <span>Request Pricing</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+            <a href="../../contract-manufacturing.html" class="btn-outline">
+              <span>Scale With Kriya</span>
+              <span class="material-symbols-outlined">factory</span>
+            </a>
+          </div>
+        </div>
+        <div class="product-hero-visual">
+          <figure class="page-hero-image image-placeholder tall">
+            <span>Ecoza product imagery placeholder</span>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT OVERVIEW ===== -->
+  <section class="section product-overview">
+    <div class="container">
+      <div class="product-overview-grid">
+        <div class="overview-copy">
+          <div class="section-header align-left">
+            <span class="section-subtitle">Product Overview</span>
+            <h2 class="section-title">Engineered azadirachtin solutions for premium horticulture</h2>
+          </div>
+          <p>Ecoza is Kriya’s flagship azadirachtin platform, developed for distributors who require consistent, residue-conscious control of sucking and chewing pests. Each concentration is produced through cold extraction and micro-emulsification to preserve the full limonoid spectrum. Carrier systems are optimized for rapid dilution, tank stability, and even canopy coverage. Formulations remain flowable in warm and cool climates, safeguarding spray quality in diverse geographies. Ecoza integrates seamlessly with microbial and soft-chemistry partners to anchor sustainable IPM programs. Export-ready dossiers and traceability documentation accompany every batch.</p>
+        </div>
+        <div class="overview-insights">
+          <div class="insight-card">
+            <span class="material-symbols-outlined">bug_report</span>
+            <div>
+              <h3>Broad Pest Spectrum</h3>
+              <p>Targets whiteflies, aphids, thrips, leafminers, and mites with multi-stage disruption.</p>
+            </div>
+          </div>
+          <div class="insight-card">
+            <span class="material-symbols-outlined">sync_saved_locally</span>
+            <div>
+              <h3>Program Versatility</h3>
+              <p>Suitable for field, greenhouse, and protected crops with 5–14 day spray intervals.</p>
+            </div>
+          </div>
+          <div class="insight-card">
+            <span class="material-symbols-outlined">health_and_safety</span>
+            <div>
+              <h3>Worker Friendly</h3>
+              <p>Low re-entry restrictions and favorable PPE requirements boost operational agility.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VARIANTS ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Ecoza Line-Up</span>
+        <h2 class="section-title">Formulations tailored to crop pressure</h2>
+        <p class="section-description">Four azadirachtin strengths deliver flexible rotation options and documentation support for global registrations.</p>
+      </div>
+      <div class="variant-grid">
+        <article class="variant-card">
+          <div class="variant-packshot">
+            <div class="image-placeholder tall">
+              <span>Ecoza Max packshot</span>
+            </div>
+          </div>
+          <div class="variant-body">
+            <h3>Ecoza Max</h3>
+            <p class="variant-formula">Azadirachtin (3%) EC</p>
+            <p class="variant-detail">High-strength concentrate for severe pest pressure and export-driven programs.</p>
+            <div class="variant-meta">
+              <span class="variant-badge">Emulsifiable Concentrate</span>
+              <span class="variant-badge">Organic compliant</span>
+            </div>
+            <a class="variant-link" href="../../docs/ecoza-max-tds.pdf" target="_blank" rel="noopener">
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Technical Sheet</span>
+            </a>
+          </div>
+        </article>
+        <article class="variant-card">
+          <div class="variant-packshot">
+            <div class="image-placeholder tall">
+              <span>Ecoza Ace packshot</span>
+            </div>
+          </div>
+          <div class="variant-body">
+            <h3>Ecoza Ace</h3>
+            <p class="variant-formula">Azadirachtin (1.2%) EC</p>
+            <p class="variant-detail">Balanced formulation for rotational programs and moderate pest pressure.</p>
+            <div class="variant-meta">
+              <span class="variant-badge">Emulsifiable Concentrate</span>
+              <span class="variant-badge">Export ready</span>
+            </div>
+            <a class="variant-link" href="../../docs/ecoza-ace-tds.pdf" target="_blank" rel="noopener">
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Technical Sheet</span>
+            </a>
+          </div>
+        </article>
+        <article class="variant-card">
+          <div class="variant-packshot">
+            <div class="image-placeholder tall">
+              <span>Ecoza Rix packshot</span>
+            </div>
+          </div>
+          <div class="variant-body">
+            <h3>Ecoza Rix</h3>
+            <p class="variant-formula">Azadirachtin (1.2%) WP</p>
+            <p class="variant-detail">Fine wettable powder engineered for greenhouse and protected cropping programs.</p>
+            <div class="variant-meta">
+              <span class="variant-badge">Wettable Powder</span>
+              <span class="variant-badge">Distributor private label</span>
+            </div>
+            <a class="variant-link" href="../../docs/ecoza-rix-tds.pdf" target="_blank" rel="noopener">
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Technical Sheet</span>
+            </a>
+          </div>
+        </article>
+        <article class="variant-card">
+          <div class="variant-packshot">
+            <div class="image-placeholder tall">
+              <span>Ecoza Pro packshot</span>
+            </div>
+          </div>
+          <div class="variant-body">
+            <h3>Ecoza Pro</h3>
+            <p class="variant-formula">Azadirachtin (0.3%) EC</p>
+            <p class="variant-detail">Ready-to-dilute formulation for frequent applications and low PHI programs.</p>
+            <div class="variant-meta">
+              <span class="variant-badge">Emulsifiable Concentrate</span>
+              <span class="variant-badge">High-rotation IPM</span>
+            </div>
+            <a class="variant-link" href="../../docs/ecoza-pro-tds.pdf" target="_blank" rel="noopener">
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Technical Sheet</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KEY FEATURES ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Why Distributors Choose Ecoza</span>
+        <h2 class="section-title">Key Features</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-heading">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">water_drop</span>
+            </div>
+            <h3>Advanced Emulsifiers</h3>
+          </div>
+          <p>Ensures rapid dilution in hard or soft water and keeps azadirachtin evenly suspended.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-heading">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">rebase_edit</span>
+            </div>
+            <h3>Multiple Strengths</h3>
+          </div>
+          <p>Four concentrations simplify crop-specific programs without reformulation delays.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-heading">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">shield_person</span>
+            </div>
+            <h3>Residue-Friendly</h3>
+          </div>
+          <p>Supports low pre-harvest intervals and export compliance in residue-sensitive markets.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-heading">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">handshake</span>
+            </div>
+            <h3>Distributor Ready</h3>
+          </div>
+          <p>Delivered with dossiers, SDS, and marketing assets tailored for rapid onboarding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MODE OF ACTION ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Mode of Action</span>
+        <h2 class="section-title">Multi-stage disruption of insect development</h2>
+      </div>
+      <div class="image-placeholder wide">
+        <span>Mode of action visual placeholder</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PEST & CROP COVERAGE ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="coverage-grid">
+        <div class="coverage-card">
+          <div class="section-header align-left">
+            <span class="section-subtitle">Pests Controlled</span>
+            <h2 class="section-title">Target Spectrum</h2>
+          </div>
+          <ul class="coverage-list">
+            <li>Whiteflies (Bemisia spp., Trialeurodes spp.)</li>
+            <li>Aphids (Myzus, Aphis, Rhopalosiphum spp.)</li>
+            <li>Thrips (Frankliniella spp., Thrips tabaci)</li>
+            <li>Leafminers (Liriomyza spp.)</li>
+            <li>Mealybugs and soft scales</li>
+            <li>Mites (suppression of Tetranychus spp.)</li>
+          </ul>
+        </div>
+        <div class="coverage-card">
+          <div class="section-header align-left">
+            <span class="section-subtitle">Diseases &amp; Secondary Effects</span>
+            <h2 class="section-title">Indirect Benefits</h2>
+          </div>
+          <ul class="coverage-list">
+            <li>Reduces honeydew deposition and sooty mold buildup</li>
+            <li>Limits vector pressure for viral diseases</li>
+            <li>Supports resistance management with non-synthetic mode of action</li>
+            <li>Enhances outcomes when paired with microbial biocontrols</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-header align-left crops-header">
+        <span class="section-subtitle">Crops Covered</span>
+        <h2 class="section-title">Validated performance across global portfolios</h2>
+      </div>
+      <div class="crop-grid">
+        <span>Vegetables: tomato, pepper, cucurbits, cole crops</span>
+        <span>Fruit &amp; nut orchards: citrus, pome, stone fruits, almonds</span>
+        <span>Plantations: tea, coffee, cocoa, rubber</span>
+        <span>Protected cultivation: greenhouse ornamentals and berries</span>
+        <span>Field crops: cotton, soybean, pulses</span>
+        <span>Herbs &amp; spices: basil, coriander, chili, turmeric</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOSAGE & DILUTION ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Dosage &amp; Dilution</span>
+        <h2 class="section-title">Program-ready dosage plans</h2>
+      </div>
+
+      <div class="dosage-table-wrapper">
+        <h3 class="dosage-heading">Ecoza Max &ndash; Azadirachtin 3% EC</h3>
+        <div class="dosage-table-scroll">
+          <table class="dosage-table">
+            <thead>
+              <tr>
+                <th>Application Focus</th>
+                <th>Dosage per Acre</th>
+                <th>Product per Liter of Water*</th>
+                <th>Application Interval</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Vegetables &amp; field crops</td>
+                <td>8&ndash;12 fl oz (237&ndash;355 mL)</td>
+                <td>2.4&ndash;3.6 mL / L</td>
+                <td>Every 7&ndash;10 days</td>
+              </tr>
+              <tr>
+                <td>Fruit, nut &amp; plantation crops</td>
+                <td>12&ndash;16 fl oz (355&ndash;473 mL)</td>
+                <td>3.6&ndash;4.7 mL / L</td>
+                <td>Every 10&ndash;14 days</td>
+              </tr>
+              <tr>
+                <td>Protected cultivation / greenhouse</td>
+                <td>8&ndash;10 fl oz (237&ndash;296 mL)</td>
+                <td>2.4&ndash;3.0 mL / L</td>
+                <td>Every 5&ndash;7 days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dosage-table-wrapper">
+        <h3 class="dosage-heading">Ecoza Ace &ndash; Azadirachtin 1.2% EC</h3>
+        <div class="dosage-table-scroll">
+          <table class="dosage-table">
+            <thead>
+              <tr>
+                <th>Application Focus</th>
+                <th>Dosage per Acre</th>
+                <th>Product per Liter of Water*</th>
+                <th>Application Interval</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Vegetables &amp; field crops</td>
+                <td>20&ndash;30 fl oz (591&ndash;887 mL)</td>
+                <td>5.9&ndash;8.9 mL / L</td>
+                <td>Every 7&ndash;10 days</td>
+              </tr>
+              <tr>
+                <td>Fruit, nut &amp; plantation crops</td>
+                <td>30&ndash;40 fl oz (887&ndash;1,183 mL)</td>
+                <td>8.9&ndash;11.8 mL / L</td>
+                <td>Every 10&ndash;14 days</td>
+              </tr>
+              <tr>
+                <td>Protected cultivation / greenhouse</td>
+                <td>20&ndash;25 fl oz (591&ndash;739 mL)</td>
+                <td>5.9&ndash;7.4 mL / L</td>
+                <td>Every 5&ndash;7 days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dosage-table-wrapper">
+        <h3 class="dosage-heading">Ecoza Rix &ndash; Azadirachtin 1.2% WP</h3>
+        <div class="dosage-table-scroll">
+          <table class="dosage-table">
+            <thead>
+              <tr>
+                <th>Application Focus</th>
+                <th>Dosage per Acre</th>
+                <th>Product per Liter of Water*</th>
+                <th>Application Interval</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Vegetables &amp; field crops</td>
+                <td>0.6&ndash;0.9 kg (600&ndash;900 g)</td>
+                <td>6.0&ndash;9.0 g / L</td>
+                <td>Every 7&ndash;10 days</td>
+              </tr>
+              <tr>
+                <td>Fruit, nut &amp; plantation crops</td>
+                <td>0.9&ndash;1.2 kg (900&ndash;1,200 g)</td>
+                <td>9.0&ndash;12.0 g / L</td>
+                <td>Every 10&ndash;14 days</td>
+              </tr>
+              <tr>
+                <td>Protected cultivation / greenhouse</td>
+                <td>0.6&ndash;0.75 kg (600&ndash;750 g)</td>
+                <td>6.0&ndash;7.5 g / L</td>
+                <td>Every 5&ndash;7 days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dosage-table-wrapper">
+        <h3 class="dosage-heading">Ecoza Pro &ndash; Azadirachtin 0.3% EC</h3>
+        <div class="dosage-table-scroll">
+          <table class="dosage-table">
+            <thead>
+              <tr>
+                <th>Application Focus</th>
+                <th>Dosage per Acre</th>
+                <th>Product per Liter of Water*</th>
+                <th>Application Interval</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Vegetables &amp; field crops</td>
+                <td>80&ndash;120 fl oz (2.37&ndash;3.55 L)</td>
+                <td>23.7&ndash;35.5 mL / L</td>
+                <td>Every 5&ndash;7 days</td>
+              </tr>
+              <tr>
+                <td>Fruit, nut &amp; plantation crops</td>
+                <td>120&ndash;160 fl oz (3.55&ndash;4.73 L)</td>
+                <td>35.5&ndash;47.3 mL / L</td>
+                <td>Every 7&ndash;10 days</td>
+              </tr>
+              <tr>
+                <td>Protected cultivation / greenhouse</td>
+                <td>80&ndash;100 fl oz (2.37&ndash;2.96 L)</td>
+                <td>23.7&ndash;29.6 mL / L</td>
+                <td>Every 5 days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="dosage-footnote">*Per-liter guidance assumes a 100 L spray volume per acre. Adjust carrier volume to match local sprayer calibration.</p>
+    </div>
+  </section>
+
+  <!-- ===== USE SITES & COMPATIBILITY ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Program Fit</span>
+        <h2 class="section-title">Use sites, tank mix flexibility, and storage guidance</h2>
+      </div>
+      <div class="use-grid">
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">map</span> Use Sites</h3>
+          <ul>
+            <li>Open-field vegetables, pulses, cereals, and cotton</li>
+            <li>Fruit, nut, and beverage crop plantations</li>
+            <li>Greenhouse, shade-net, and hydroponic systems</li>
+            <li>Nursery and ornamental production</li>
+            <li>Seed treatment and transplant dips (dilute baths)</li>
+          </ul>
+        </div>
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">science</span> Compatibility</h3>
+          <ul>
+            <li>Compatible with most biologicals, wetting agents, and low-pH fertilizers</li>
+            <li>Conduct jar test before mixing with copper or sulfur materials</li>
+            <li>Maintain spray solution between pH 5.5&ndash;7.0 for best stability</li>
+            <li>Add last in the tank after emulsifiable oils and dispersible granules</li>
+          </ul>
+        </div>
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">inventory</span> Shelf Life &amp; Storage</h3>
+          <ul>
+            <li>Unopened shelf life: 24 months from manufacturing</li>
+            <li>Store between 5&ndash;30&deg;C away from direct sunlight</li>
+            <li>Keep containers tightly sealed to prevent solvent evaporation</li>
+            <li>Agitate drums before decanting for uniform active distribution</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Build your azadirachtin program with Kriya</h2>
+        <p>Our technical and regulatory teams provide localized support, documentation, and manufacturing scale to accelerate your market entry.</p>
+        <div class="cta-actions">
+          <a href="../../contact.html" class="btn-primary">
+            <span>Contact Sales</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+          <a href="../../contract-manufacturing.html" class="btn-outline">
+            <span>Contract Manufacturing</span>
+            <span class="material-symbols-outlined">factory</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-strip">
+        <div class="footer-brand">
+          <a href="../../index.html" class="footer-logo">
+            <img src="../../assets/img/logo-white.png" alt="Kriya Ltd" />
+          </a>
+          <p class="footer-brandline">Leading provider of certified organic crop care solutions for sustainable agriculture worldwide.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="../../about.html">About</a>
+          <a href="../biocontrol.html">Products</a>
+          <a href="../../technology/karyo.html">Technology</a>
+          <a href="../../contact.html">Contact</a>
+        </nav>
+
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/108402158/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://www.youtube.com/@kriyabiosys" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">
+            <i class="bx bxl-youtube"></i>
+          </a>
+          <a href="https://x.com/kriyabiosys" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/kriyabiosys/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="mailto:info@kriya.ltd" class="social-icon" aria-label="Email">
+            <i class="bx bx-envelope"></i>
+          </a>
+          <a href="https://wa.me/916385848466" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <p class="footer-disclaimer">For usage/dosage information, refer to the product documentation supplied with each formulation.</p>
+        <div class="footer-legal">
+          <span>© Kriya Ltd 2025</span>
+          <a href="../../trademark.html">Trademark</a>
+          <a href="../../privacy-policy.html">Privacy</a>
+          <a href="../../responsible-use.html">Responsible Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop">
+    <span class="material-symbols-outlined">arrow_upward</span>
+    <span class="back-to-top-text">Back to top</span>
+  </button>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
+
