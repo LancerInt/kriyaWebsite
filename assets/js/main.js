@@ -604,7 +604,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // ===== PDF DOWNLOAD FUNCTIONALITY =====
   function initDownloadButton() {
     const downloadBtn = document.getElementById('download-catalog');
-    
+
     if (downloadBtn) {
       downloadBtn.addEventListener('click', function(e) {
         // Allow default download behavior but add loading state
@@ -627,6 +627,30 @@ document.addEventListener('DOMContentLoaded', function() {
         // The download attribute will handle the actual download
       });
     }
+  }
+
+  function initVariantDownloadButtons() {
+    const variantButtons = document.querySelectorAll('.variant-link[data-file]');
+
+    if (!variantButtons.length) {
+      return;
+    }
+
+    variantButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const file = this.getAttribute('data-file');
+
+        if (!file) {
+          return;
+        }
+
+        const newWindow = window.open(file, '_blank', 'noopener');
+
+        if (newWindow) {
+          newWindow.opener = null;
+        }
+      });
+    });
   }
 
   function showDownloadSuccess() {
@@ -834,6 +858,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     initAnimations();
     initDownloadButton();
+    initVariantDownloadButtons();
     initBackToTop();
     initContactForm();
     initManualTooltips();
