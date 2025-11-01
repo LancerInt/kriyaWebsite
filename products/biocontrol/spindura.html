@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spindura | Spinosad Biocontrol Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body class="product-page">
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="logo-loader">
+        <img src="../../assets/img/logo.png" alt="Kriya Ltd" />
+      </div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../../index.html" class="nav-logo">
+        <img src="../../assets/img/logo.png" alt="Kriya Ltd" />
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="../../about.html" class="nav-link">About</a></li>
+
+          <!-- Products Dropdown -->
+          <li class="nav-item dropdown dropdown-products">
+            <a href="../biocontrol.html" class="nav-link dropbtn active">
+              <span>Products</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content products-dropdown">
+              <div class="categories-menu">
+                <div class="category-item">
+                  <a href="../biocontrol.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">pest_control</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Biocontrol</h4>
+                      <p>Natural pest management range</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biocontrol Products</h5>
+                      <p>Botanical and microbial actives</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="ecoza.html" data-tooltip="Azadirachtin">Ecoza</a>
+                      <a href="margoshine.html" data-tooltip="Neem Oil">Margoshine</a>
+                      <a href="k-guard.html" data-tooltip="Karanjin">K-Guard</a>
+                      <a href="weedx.html" data-tooltip="MCT Weed Killer">WeedX</a>
+                      <a href="spindura.html" data-tooltip="Spinosad" aria-current="page">Spindura</a>
+                      <a href="margospin.html" data-tooltip="Neem Oil + Spinosad">MargoSpin</a>
+                      <a href="admira.html" data-tooltip="Essential Oil Formulation">Admira</a>
+                      <a href="mycova.html" data-tooltip="Beauveria bassiana">Mycova</a>
+                      <a href="rexora.html" data-tooltip="Metarhizium anisopliae">Rexora</a>
+                      <a href="biota.html" data-tooltip="Trichoderma viride / harzianum">Biota (V/H)</a>
+                      <a href="seira.html" data-tooltip="Verticillium lecanii">Seira</a>
+                      <a href="encilo.html" data-tooltip="Paecilomyces fumosoroseus">EnCilo</a>
+                      <a href="neuvita.html" data-tooltip="Ampelomyces quisqualis">Neuvita</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="../biostimulants.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">psychiatry</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Biostimulants</h4>
+                      <p>Plant resilience &amp; nutrition</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biostimulant Products</h5>
+                      <p>Microbial &amp; botanical enhancers</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="../biostimulants/igreen.html" data-tooltip="Microbial consortium">IGreen</a>
+                      <a href="../biostimulants/zenita.html" data-tooltip="Peptide formulation">Zenita</a>
+                      <a href="../biostimulants/cropsia.html" data-tooltip="Plant extracts formultion">Cropsia</a>
+                      <a href="../biostimulants/enrhize.html" data-tooltip="Arbuscular Mycorrhizal">Enrhize</a>
+                      <a href="../biostimulants/orgocare.html" data-tooltip="Plant based Antitranspirants">Orgocare</a>
+                      <a href="../biostimulants/blooma.html" data-tooltip="Seaweed formulation">Blooma</a>
+                      <a href="../biostimulants/envicta.html" data-tooltip="Humic &amp; fulvic formulation">Envicta</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="../substrates.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">grass</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Substrates</h4>
+                      <p>Soil amendment solutions</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Substrate Products</h5>
+                      <p>Soil health &amp; seed treatments</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="../substrates/maxineem.html" data-tooltip="Neem cake">Maxineem</a>
+                      <a href="../substrates/kmix.html" data-tooltip="Karanja cake">K-Mix</a>
+                      <a href="../substrates/mystica.html" data-tooltip="Wetting &amp; spreading agents">Mystica</a>
+                      <a href="../substrates/engrow.html" data-tooltip="Seed coating">Engrow</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="../home-garden.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">yard</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Home &amp; Garden</h4>
+                      <p>Consumer-ready packs</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Technology Dropdown -->
+          <li class="nav-item dropdown dropdown-tech">
+            <a href="../../technology/karyo.html" class="nav-link dropbtn">
+              <span>Technology</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content tech-dropdown">
+              <div class="tech-menu-compact">
+                <a href="../../technology/karyo.html" class="tech-item-compact" data-tooltip="Delivery Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">biotech</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Karyo Technology</h5>
+                    <p>Formulation technology</p>
+                  </div>
+                </a>
+
+                <a href="../../technology/wynn.html" class="tech-item-compact" data-tooltip="Microbial Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">science</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Wynn Formulation</h5>
+                    <p>Microbial innovation</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="../../contract-manufacturing.html" class="nav-link">Manufacturing</a></li>
+          <li><a href="../../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero interior-hero product-hero">
+    <div class="container">
+      <div class="product-hero-layout">
+        <div class="page-hero-content product-hero-copy">
+          <span class="page-hero-eyebrow">Biocontrol Portfolio</span>
+          <h1 class="page-hero-title">Spindura&reg; Spinosad Programs for Fast Knockdown and Residue Stewardship</h1>
+          <div class="hero-metrics">
+            <div class="hero-metric hero-metric-compact">
+              <div class="hero-metric-text">
+                <strong>Spinosyn Strengths</strong>
+              </div>
+            </div>
+            <div class="hero-metric hero-metric-compact">
+              <div class="hero-metric-text">
+                <strong>Rotation Ready</strong>
+              </div>
+            </div>
+            <div class="hero-metric hero-metric-compact">
+              <div class="hero-metric-text">
+                <strong>Rapid Knockdown</strong>
+              </div>
+            </div>
+          </div>
+          <div class="page-hero-actions">
+            <a href="../../contact.html" class="btn-primary">
+              <span>Request Pricing</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+            <a href="../../contract-manufacturing.html" class="btn-outline">
+              <span>Scale With Kriya</span>
+              <span class="material-symbols-outlined">factory</span>
+            </a>
+          </div>
+        </div>
+        <div class="product-hero-visual">
+          <figure class="page-hero-image image-placeholder square">
+            <span>Spindura product imagery placeholder</span>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT OVERVIEW ===== -->
+  <section class="section product-overview">
+    <div class="container">
+      <div class="product-overview-grid">
+        <div class="overview-copy">
+          <div class="section-header">
+            <span class="section-subtitle">Product Overview</span>
+            <h2 class="section-title">High-performance spinosad for premium horticulture</h2>
+          </div>
+          <p>Spindura delivers rapid insect knockdown with a portfolio of spinosad formulations tailored for global distributors. Proprietary carriers protect the fragile spinosyn molecules, preserving efficacy under heat and UV stress. Each batch is benchmarked for suspension, particle size, and sprayability, ensuring consistent field performance. Our dossiers, toxicology summaries, and organic alignment accelerate regulatory acceptance in key markets. Spindura integrates seamlessly with biological fungicides and soft chemistries to anchor IPM rotations without sacrificing harvest flexibility.</p>
+        </div>
+        <div class="overview-insights">
+          <div class="insight-card">
+            <span class="material-symbols-outlined">bug_report</span>
+            <div>
+              <h3>Lepidoptera Knockdown</h3>
+              <p>Fast activity on caterpillars, thrips, and leafminers across open-field and protected crops.</p>
+            </div>
+          </div>
+          <div class="insight-card">
+            <span class="material-symbols-outlined">verified</span>
+            <div>
+              <h3>Residue-Compatible</h3>
+              <p>Short PHI, low MRL pressure, and organic program fit for export-oriented distributors.</p>
+            </div>
+          </div>
+          <div class="insight-card">
+            <span class="material-symbols-outlined">device_thermostat</span>
+            <div>
+              <h3>Climate Resilient</h3>
+              <p>Stability-tested concentrates deliver consistent spray quality in warm and humid regions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VARIANTS ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Spindura Line-Up</span>
+        <h2 class="section-title">Formulations calibrated for pest intensity</h2>
+        <p class="section-description">Three spinosad options support greenhouse, plantation, and specialty crop rotations with complete documentation.</p>
+      </div>
+      <div class="variant-grid">
+        <article class="variant-card">
+          <div class="variant-packshot">
+            <div class="image-placeholder wide">
+              <span>Spindura Plus packshot</span>
+            </div>
+          </div>
+          <div class="variant-body">
+            <h3>Spindura Plus</h3>
+            <p class="variant-formula">Spinosad (22.5%) SC</p>
+            <p class="variant-detail">High-strength suspension concentrate for severe caterpillar and thrips outbreaks.</p>
+            <div class="variant-meta">
+              <span class="variant-badge">Suspension Concentrate</span>
+              <span class="variant-badge">Export aligned</span>
+            </div>
+            <button class="variant-link" type="button" data-file="../../docs/spindura-plus-tds.pdf">Download technical sheet</button>
+          </div>
+        </article>
+        <article class="variant-card">
+          <div class="variant-packshot">
+            <div class="image-placeholder wide">
+              <span>Spindura Pro packshot</span>
+            </div>
+          </div>
+          <div class="variant-body">
+            <h3>Spindura Pro</h3>
+            <p class="variant-formula">Spinosad (2.5%) SC</p>
+            <p class="variant-detail">Versatile concentrate for frequent spray programs and resistance management.</p>
+            <div class="variant-meta">
+              <span class="variant-badge">Suspension Concentrate</span>
+              <span class="variant-badge">High rotation</span>
+            </div>
+            <button class="variant-link" type="button" data-file="../../docs/spindura-pro-tds.pdf">Download technical sheet</button>
+          </div>
+        </article>
+        <article class="variant-card">
+          <div class="variant-packshot">
+            <div class="image-placeholder wide">
+              <span>Spindura Rix packshot</span>
+            </div>
+          </div>
+          <div class="variant-body">
+            <h3>Spindura Rix</h3>
+            <p class="variant-formula">Spinosad WP</p>
+            <p class="variant-detail">Fine wettable powder optimized for greenhouse and micro-dose applications.</p>
+            <div class="variant-meta">
+              <span class="variant-badge">Wettable Powder</span>
+              <span class="variant-badge">Protected cropping</span>
+            </div>
+            <button class="variant-link" type="button" data-file="../../docs/spindura-rix-tds.pdf">Download technical sheet</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KEY FEATURES ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Why Distributors Choose Spindura</span>
+        <h2 class="section-title">Key Features</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-heading">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">flash_on</span>
+            </div>
+            <h3>Rapid Feeding Stop</h3>
+          </div>
+          <p>Spinosyns penetrate quickly, halting feeding and reducing crop damage within hours.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-heading">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">biotech</span>
+            </div>
+            <h3>Fermentation Expertise</h3>
+          </div>
+          <p>Produced in-house with controlled fermentation to maintain consistent spinosyn ratios.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-heading">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">handshake</span>
+            </div>
+            <h3>Distributor Toolkits</h3>
+          </div>
+          <p>Delivered with data packs, SDS, and launch collateral to accelerate market introduction.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-heading">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">sync_saved_locally</span>
+            </div>
+            <h3>Rotation Flexibility</h3>
+          </div>
+          <p>Multiple strengths and formats support resistance management across diverse crops.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MODE OF ACTION ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Mode of Action</span>
+        <h2 class="section-title">Neural excitation leading to insect mortality</h2>
+      </div>
+      <div class="image-placeholder wide">
+        <span>Mode of action visual placeholder</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PEST & CROP COVERAGE ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="coverage-grid">
+        <div class="coverage-card">
+          <div class="section-header">
+            <span class="section-subtitle">Pests Controlled</span>
+            <h2 class="section-title">Target Spectrum</h2>
+          </div>
+          <ul class="coverage-list">
+            <li>Lepidopteran larvae: armyworms, loopers, bollworms, fruit borers</li>
+            <li>Thrips species including Frankliniella occidentalis</li>
+            <li>Leafminers (Liriomyza spp.)</li>
+            <li>Coffee berry borer and pepper maggots</li>
+            <li>Suppresses dipteran larvae in greenhouse crops</li>
+            <li>Controls potato tuber moth and citrus leafminer</li>
+          </ul>
+        </div>
+        <div class="coverage-card">
+          <div class="section-header">
+            <span class="section-subtitle">Diseases &amp; Secondary Effects</span>
+            <h2 class="section-title">Indirect Benefits</h2>
+          </div>
+          <ul class="coverage-list">
+            <li>Reduces vector pressure for bacterial spot and viral complexes</li>
+            <li>Supports integrated residue-reduction initiatives</li>
+            <li>Low impact on beneficial insects when applied during off-peak hours</li>
+            <li>Improves quality grades by preventing cosmetic damage</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-header crops-header">
+        <span class="section-subtitle">Crops Covered</span>
+        <h2 class="section-title">Validated performance across specialty crops</h2>
+      </div>
+      <div class="crop-grid">
+        <span>Vegetables: tomato, pepper, eggplant, cucurbits, cole crops</span>
+        <span>Fruit &amp; nut: citrus, berries, grapes, apples, stone fruit</span>
+        <span>Plantations: coffee, tea, cocoa, oil palm</span>
+        <span>Protected cultivation: greenhouse ornamentals and leafy greens</span>
+        <span>Field crops: cotton, corn, soybeans, pulses</span>
+        <span>Herbs &amp; spices: basil, coriander, chili, mint</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOSAGE & DILUTION ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Dosage &amp; Dilution</span>
+        <h2 class="section-title">Program-ready dosage plans</h2>
+      </div>
+
+      <div class="dosage-table-wrapper">
+        <h3 class="dosage-heading">Spindura Plus &ndash; Spinosad 22.5% SC</h3>
+        <div class="dosage-table-scroll">
+          <table class="dosage-table">
+            <thead>
+              <tr>
+                <th>Application Focus</th>
+                <th>Dosage per Acre</th>
+                <th>Product per Liter of Water*</th>
+                <th>Application Interval</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Vegetables &amp; field crops</td>
+                <td>5&ndash;8 fl oz (148&ndash;237 mL)</td>
+                <td>1.5&ndash;2.4 mL / L</td>
+                <td>Every 5&ndash;7 days</td>
+              </tr>
+              <tr>
+                <td>Fruit, nut &amp; plantation crops</td>
+                <td>8&ndash;10 fl oz (237&ndash;296 mL)</td>
+                <td>2.4&ndash;3.0 mL / L</td>
+                <td>Every 7&ndash;10 days</td>
+              </tr>
+              <tr>
+                <td>Protected cultivation / greenhouse</td>
+                <td>4&ndash;6 fl oz (118&ndash;177 mL)</td>
+                <td>1.2&ndash;1.8 mL / L</td>
+                <td>Every 5 days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dosage-table-wrapper">
+        <h3 class="dosage-heading">Spindura Pro &ndash; Spinosad 2.5% SC</h3>
+        <div class="dosage-table-scroll">
+          <table class="dosage-table">
+            <thead>
+              <tr>
+                <th>Application Focus</th>
+                <th>Dosage per Acre</th>
+                <th>Product per Liter of Water*</th>
+                <th>Application Interval</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Vegetables &amp; field crops</td>
+                <td>45&ndash;60 fl oz (1.33&ndash;1.78 L)</td>
+                <td>13.3&ndash;17.8 mL / L</td>
+                <td>Every 5&ndash;7 days</td>
+              </tr>
+              <tr>
+                <td>Fruit, nut &amp; plantation crops</td>
+                <td>60&ndash;80 fl oz (1.78&ndash;2.37 L)</td>
+                <td>17.8&ndash;23.7 mL / L</td>
+                <td>Every 7&ndash;10 days</td>
+              </tr>
+              <tr>
+                <td>Protected cultivation / greenhouse</td>
+                <td>36&ndash;48 fl oz (1.06&ndash;1.42 L)</td>
+                <td>10.6&ndash;14.2 mL / L</td>
+                <td>Every 5 days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dosage-table-wrapper">
+        <h3 class="dosage-heading">Spindura Rix &ndash; Spinosad Wettable Powder</h3>
+        <div class="dosage-table-scroll">
+          <table class="dosage-table">
+            <thead>
+              <tr>
+                <th>Application Focus</th>
+                <th>Dosage per Acre</th>
+                <th>Product per Liter of Water*</th>
+                <th>Application Interval</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Vegetables &amp; field crops</td>
+                <td>0.7&ndash;1.1 kg (1.5&ndash;2.5 lb)</td>
+                <td>7&ndash;11 g / L</td>
+                <td>Every 5&ndash;7 days</td>
+              </tr>
+              <tr>
+                <td>Fruit, nut &amp; plantation crops</td>
+                <td>1.1&ndash;1.4 kg (2.5&ndash;3.0 lb)</td>
+                <td>11&ndash;14 g / L</td>
+                <td>Every 7&ndash;10 days</td>
+              </tr>
+              <tr>
+                <td>Protected cultivation / greenhouse</td>
+                <td>0.5&ndash;0.7 kg (1.1&ndash;1.5 lb)</td>
+                <td>5&ndash;7 g / L</td>
+                <td>Every 5 days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="dosage-footnote">*Per-liter guidance assumes a 100 L spray volume per acre. Adjust carrier volume to match local sprayer calibration.</p>
+    </div>
+  </section>
+
+  <!-- ===== USE SITES & COMPATIBILITY ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Program Fit</span>
+        <h2 class="section-title">Use sites, tank mix flexibility, and storage guidance</h2>
+      </div>
+      <div class="use-grid">
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">map</span> Use Sites</h3>
+          <ul>
+            <li>Open-field vegetables, pulses, cereals, and cotton</li>
+            <li>Fruit, nut, and beverage crop plantations</li>
+            <li>Greenhouse, shade-net, and hydroponic systems</li>
+            <li>Nursery ornamentals and floriculture</li>
+            <li>Post-harvest dip treatments for transplants (dilute baths)</li>
+          </ul>
+        </div>
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">science</span> Compatibility</h3>
+          <ul>
+            <li>Mixable with most biologicals, spreaders, and foliar feeds</li>
+            <li>Avoid tank mixes with strong alkaline materials; conduct jar test</li>
+            <li>Maintain spray solution between pH 5.0&ndash;7.0 for optimal stability</li>
+            <li>Introduce last in the tank after dispersible granules and wettable powders</li>
+          </ul>
+        </div>
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">inventory</span> Shelf Life &amp; Storage</h3>
+          <ul>
+            <li>Unopened shelf life: 24 months from manufacturing</li>
+            <li>Store between 5&ndash;30&deg;C away from direct sunlight</li>
+            <li>Keep containers sealed to prevent moisture ingress and caking</li>
+            <li>Agitate concentrates before decanting for uniform active distribution</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Build your spinosad program with Kriya</h2>
+        <p>Our technical and regulatory teams provide localized support, documentation, and manufacturing scale to accelerate your market entry.</p>
+        <div class="cta-actions">
+          <a href="../../contact.html" class="btn-primary">
+            <span>Contact Sales</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+          <a href="../../contract-manufacturing.html" class="btn-outline">
+            <span>Contract Manufacturing</span>
+            <span class="material-symbols-outlined">factory</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-strip">
+        <div class="footer-brand">
+          <a href="../../index.html" class="footer-logo">
+            <img src="../../assets/img/logo-white.png" alt="Kriya Ltd" />
+          </a>
+          <p class="footer-brandline">Leading provider of certified organic crop care solutions for sustainable agriculture worldwide.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="../../about.html">About</a>
+          <a href="../biocontrol.html">Products</a>
+          <a href="../../technology/karyo.html">Technology</a>
+          <a href="../../contact.html">Contact</a>
+        </nav>
+
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/108402158/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://www.youtube.com/@kriyabiosys" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">
+            <i class="bx bxl-youtube"></i>
+          </a>
+          <a href="https://x.com/kriyabiosys" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/kriyabiosys/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="mailto:info@kriya.ltd" class="social-icon" aria-label="Email">
+            <i class="bx bx-envelope"></i>
+          </a>
+          <a href="https://wa.me/916385848466" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <p class="footer-disclaimer">For usage/dosage information, refer to the product documentation supplied with each formulation.</p>
+        <div class="footer-legal">
+          <span>© Kriya Ltd 2025</span>
+          <a href="../../trademark.html">Trademark</a>
+          <a href="../../privacy-policy.html">Privacy</a>
+          <a href="../../responsible-use.html">Responsible Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop">
+    <span class="material-symbols-outlined">arrow_upward</span>
+    <span class="back-to-top-text">Back to top</span>
+  </button>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
