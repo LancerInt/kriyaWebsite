@@ -630,7 +630,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function initVariantDownloadButtons() {
-    const variantButtons = document.querySelectorAll('.variant-link[data-file]');
+    const variantButtons = document.querySelectorAll('.variant-link[data-file], .btn-download[data-file]');
 
     if (!variantButtons.length) {
       return;
@@ -803,51 +803,119 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // ===== ANIMATIONS =====
-  function initAnimations() {
-    // Grid item animations
-    const gridItems = document.querySelectorAll('.why-card, .category-card, .product-card, .cert-card');
-    
-    function animateGridItems() {
-      gridItems.forEach((item, index) => {
-        const itemTop = item.getBoundingClientRect().top;
-        const itemVisible = 150;
-        
-        if (itemTop < window.innerHeight - itemVisible) {
-          // Staggered animation
-          setTimeout(() => {
-            item.style.opacity = '1';
-            item.style.transform = 'translateY(0)';
-          }, index * 100);
+  // ===== SCROLL REVEAL ANIMATIONS =====
+  function initScrollReveal() {
+    const revealSelectors = [
+      '.page-hero',
+      '.page-hero .page-hero-content',
+      '.page-hero .page-hero-visual',
+      '.hero-metric',
+      '.hero-actions',
+      '.section',
+      '.section .section-header',
+      '.section .section-description',
+      '.product-overview-grid > *',
+      '.overview-copy',
+      '.overview-insights .insight-card',
+      '.variant-card',
+      '.feature-card',
+      '.mode-visual',
+      '.mode-grid > *',
+      '.coverage-card',
+      '.dosage-card',
+      '.use-card',
+      '.compatibility-card',
+      '.storage-card',
+      '.contact-card',
+      '.value-grid > *',
+      '.steps-grid > *',
+      '.mission-vision > *',
+      '.story-grid > *',
+      '.technology-grid > *',
+      '.manufacturing-grid > *',
+      '.cta',
+      '.cta .cta-content',
+      '.footer-strip',
+      '.footer-meta',
+      '.hero-showcase',
+      '.floating-card',
+      '.why-card',
+      '.category-card',
+      '.product-card',
+      '.cert-card'
+    ];
+
+    const revealElements = new Set();
+
+    document.querySelectorAll('[data-reveal]').forEach(element => {
+      revealElements.add(element);
+    });
+
+    revealSelectors.forEach(selector => {
+      document.querySelectorAll(selector).forEach(element => {
+        revealElements.add(element);
+      });
+    });
+
+    if (!revealElements.size) {
+      return;
+    }
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    revealElements.forEach(element => {
+      if (!element.classList.contains('reveal-exclude')) {
+        element.classList.add('reveal-ready');
+      }
+    });
+
+    if (prefersReducedMotion) {
+      revealElements.forEach(element => {
+        element.classList.add('reveal-visible');
+        element.classList.remove('reveal-ready');
+      });
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          requestAnimationFrame(() => {
+            entry.target.classList.add('reveal-visible');
+          });
+          obs.unobserve(entry.target);
         }
       });
-    }
-    
-    // Set initial state for grid items
-    gridItems.forEach(item => {
-      item.style.opacity = '0';
-      item.style.transform = 'translateY(30px)';
-      item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -10% 0px'
     });
-    
-    // Run on load and scroll with throttling
-    let animationTimeout;
-    function throttledAnimate() {
-      if (!animationTimeout) {
-        animationTimeout = setTimeout(function() {
-          animationTimeout = null;
-          animateGridItems();
-        }, 16);
-      }
-    }
-    
-    window.addEventListener('load', throttledAnimate);
-    window.addEventListener('scroll', throttledAnimate);
-    
-    // Hero floating cards animation
+
+    revealElements.forEach(element => {
+      observer.observe(element);
+    });
+
+    const activateVisible = () => {
+      revealElements.forEach(element => {
+        if (element.classList.contains('reveal-visible')) {
+          return;
+        }
+
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.92) {
+          element.classList.add('reveal-visible');
+          observer.unobserve(element);
+        }
+      });
+    };
+
+    window.addEventListener('load', activateVisible);
+    window.addEventListener('scroll', debounce(activateVisible, 80), { passive: true });
+    activateVisible();
+
     const floatingCards = document.querySelectorAll('.floating-card');
     floatingCards.forEach((card, index) => {
-      card.style.animationDelay = `${index * 0.5}s`;
+      card.style.animationDelay = `${index * 0.4}s`;
     });
   }
 
@@ -856,7 +924,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initPreloader();
     initFixedNavbar();
     initSmoothScrolling();
-    initAnimations();
+    initScrollReveal();
     initDownloadButton();
     initVariantDownloadButtons();
     initBackToTop();
