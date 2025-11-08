@@ -213,6 +213,32 @@ a {
 .btn-secondary:disabled,
 .btn-secondary.disabled,
 .btn-outline:disabled,
+.btn-outline.disabled,
+.btn-download:disabled,
+.btn-download.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.reveal-ready {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.55s cubic-bezier(0.33, 1, 0.68, 1), transform 0.55s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled,
+.btn-secondary:disabled,
+.btn-secondary.disabled,
+.btn-outline:disabled,
 .btn-outline.disabled {
   opacity: 0.6;
   cursor: not-allowed;
@@ -745,6 +771,11 @@ a {
   border-left-color: var(--green-dark);
 }
 
+.tooltip-arrow.left {
+  border-right-color: transparent;
+  border-left-color: var(--green-dark);
+}
+
 /* ===== PREMIUM NAVBAR DESIGN ===== */
 .navbar {
   position: fixed;
@@ -1082,6 +1113,13 @@ a {
   pointer-events: auto;
 }
 
+.dropdown.active .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
 /* Products Dropdown Structure */
 .categories-menu {
   display: flex;
@@ -1187,6 +1225,13 @@ a {
   transform: translateX(0);
   pointer-events: auto;
   transition-delay: 120ms;
+}
+
+.category-item.submenu-active .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  pointer-events: auto;
 }
 
 .category-item.submenu-active .submenu {
@@ -4115,9 +4160,16 @@ a {
 }
 
 @media (max-width: 767.98px) {
-  .product-hero-highlight {
-    text-align: left;
-    gap: 12px;
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
   }
   
   .hero-title {
