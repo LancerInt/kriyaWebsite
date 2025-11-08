@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orgocare | Stress Management Biostimulant</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body class="product-page">
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="logo-loader">
+        <img src="../../assets/img/logo.png" alt="Kriya Ltd" />
+      </div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../../index.html" class="nav-logo">
+        <img src="../../assets/img/logo.png" alt="Kriya Ltd" />
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="../../about.html" class="nav-link">About</a></li>
+
+          <!-- Products Dropdown -->
+          <li class="nav-item dropdown dropdown-products">
+            <a href="../biostimulants.html" class="nav-link dropbtn active">
+              <span>Products</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content products-dropdown">
+              <div class="categories-menu">
+                <div class="category-item">
+                  <a href="../biocontrol.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">pest_control</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Biocontrol</h4>
+                      <p>Natural pest management range</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biocontrol Products</h5>
+                      <p>Botanical and microbial actives</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="../biocontrol/ecoza.html" data-tooltip="Azadirachtin">Ecoza</a>
+                      <a href="../biocontrol/margoshine.html" data-tooltip="Neem Oil">Margoshine</a>
+                      <a href="../biocontrol/k-guard.html" data-tooltip="Karanjin">K-Guard</a>
+                      <a href="../biocontrol/weedx.html" data-tooltip="MCT Weed Killer">WeedX</a>
+                      <a href="../biocontrol/spindura.html" data-tooltip="Spinosad">Spindura</a>
+                      <a href="../biocontrol/margospin.html" data-tooltip="Neem Oil + Spinosad">MargoSpin</a>
+                      <a href="../biocontrol/admira.html" data-tooltip="Essential Oil Formulation">Admira</a>
+                      <a href="../biocontrol/mycova.html" data-tooltip="Beauveria bassiana">Mycova</a>
+                      <a href="../biocontrol/rexora.html" data-tooltip="Metarhizium anisopliae">Rexora</a>
+                      <a href="../biocontrol/biota.html" data-tooltip="Trichoderma viride / harzianum">Biota (V/H)</a>
+                      <a href="../biocontrol/seira.html" data-tooltip="Verticillium lecanii">Seira</a>
+                      <a href="../biocontrol/encilo.html" data-tooltip="Paecilomyces fumosoroseus">EnCilo</a>
+                      <a href="../biocontrol/neuvita.html" data-tooltip="Ampelomyces quisqualis">Neuvita</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="../biostimulants.html" class="category-link active">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">psychiatry</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Biostimulants</h4>
+                      <p>Plant resilience &amp; nutrition</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biostimulant Products</h5>
+                      <p>Microbial &amp; botanical enhancers</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="igreen.html" data-tooltip="Microbial consortium">IGreen</a>
+                      <a href="zenita.html" data-tooltip="Neem limonoids">Zenita</a>
+                      <a href="cropsia.html" data-tooltip="Botanical extracts">Cropsia</a>
+                      <a href="blooma.html" data-tooltip="Seaweed biostimulant">Blooma</a>
+                      <a href="enrhize.html" data-tooltip="Mycorrhizal inoculant">Enrhize</a>
+                      <a href="orgocare.html" data-tooltip="Stress management" aria-current="page">Orgocare</a>
+                      <a href="envicta.html" data-tooltip="Humic &amp; fulvic">Envicta</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="../substrates.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">grass</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Substrates</h4>
+                      <p>Soil amendment solutions</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Substrate Products</h5>
+                      <p>Soil health &amp; seed treatments</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="../substrates/maxineem.html" data-tooltip="Neem cake">Maxineem</a>
+                      <a href="../substrates/kmix.html" data-tooltip="Karanja cake">K-Mix</a>
+                      <a href="../substrates/mystica.html" data-tooltip="Wetting agent">Mystica</a>
+                      <a href="../substrates/engrow.html" data-tooltip="Seed coating">Engrow</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="../home-garden.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">yard</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Home &amp; Garden</h4>
+                      <p>Consumer-ready packs</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Technology Dropdown -->
+          <li class="nav-item dropdown dropdown-tech">
+            <a href="../../technology/karyo.html" class="nav-link dropbtn">
+              <span>Technology</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content tech-dropdown">
+              <div class="tech-menu-compact">
+                <a href="../../technology/karyo.html" class="tech-item-compact" data-tooltip="Delivery Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">biotech</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Karyo Technology</h5>
+                    <p>Formulation technology</p>
+                  </div>
+                </a>
+
+                <a href="../../technology/wynn.html" class="tech-item-compact" data-tooltip="Microbial Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">science</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Wynn Formulation</h5>
+                    <p>Microbial innovation</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="../../contract-manufacturing.html" class="nav-link">Manufacturing</a></li>
+          <li><a href="../../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero interior-hero product-hero">
+    <div class="container">
+      <div class="product-hero-layout">
+        <div class="page-hero-content product-hero-copy">
+          <span class="page-hero-eyebrow">Biostimulant Portfolio</span>
+          <h1 class="page-hero-title">Orgocare&reg; Plant Extract Blend for Stress Management</h1>
+          <div class="hero-metrics">
+            <div class="hero-metric hero-metric-compact">
+              <div class="hero-metric-text">
+                <strong>Adaptogenic Plant Extracts</strong>
+              </div>
+            </div>
+            <div class="hero-metric hero-metric-compact">
+              <div class="hero-metric-text">
+                <strong>Rapid Stress Response</strong>
+              </div>
+            </div>
+            <div class="hero-metric hero-metric-compact">
+              <div class="hero-metric-text">
+                <strong>Liquid SL Format</strong>
+              </div>
+            </div>
+          </div>
+          <div class="page-hero-actions">
+            <a href="../../contact.html" class="btn-primary">
+              <span>Contact Sales</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+            <a href="../../contract-manufacturing.html" class="btn-outline">
+              <span>Scale With Kriya</span>
+              <span class="material-symbols-outlined">factory</span>
+            </a>
+          </div>
+        </div>
+        <div class="product-hero-visual">
+          <figure class="page-hero-image image-placeholder square">
+            <span>Orgocare product imagery placeholder</span>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT OVERVIEW ===== -->
+  <section class="section product-overview">
+    <div class="container">
+      <div class="product-overview-grid">
+        <div class="overview-copy">
+          <div class="section-header align-left">
+            <span class="section-subtitle">Product Overview</span>
+            <h2 class="section-title">Plant adaptogens that keep crops productive</h2>
+          </div>
+          <p>Orgocare is a concentrated blend of plant extracts engineered to help crops withstand abiotic stress such as heat, drought, salinity, and chemical injury. The SL formulation combines polyphenols, amino acids, and natural osmoprotectants that stabilize plant cells and accelerate recovery. Orgocare is ideal for distributors seeking a premium stress mitigation product with organic-aligned inputs, backed by Kriya’s regulatory and marketing support. It integrates seamlessly with foliar nutrition and IPM programs to protect yield integrity.</p>
+        </div>
+        <div class="overview-insights">
+          <div class="insight-card">
+            <span class="material-symbols-outlined">routine</span>
+            <div>
+              <h3>Stress Buffer</h3>
+              <p>Improves osmotic balance and antioxidant capacity to protect crops during adverse weather.</p>
+            </div>
+          </div>
+          <div class="insight-card">
+            <span class="material-symbols-outlined">bloodtype</span>
+            <div>
+              <h3>Recovery Accelerator</h3>
+              <p>Amino acid and peptide complexes drive rapid tissue repair after stress events.</p>
+            </div>
+          </div>
+          <div class="insight-card">
+            <span class="material-symbols-outlined">workspace_premium</span>
+            <div>
+              <h3>Distributor Ready</h3>
+              <p>Comes with localized literature, labels, and compliance support for fast onboarding.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VARIANTS ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Orgocare Offering</span>
+        <h2 class="section-title">Single SL format for quick deployment</h2>
+        <p class="section-description">Designed for easy integration into foliar sprays, drip irrigation, or preventative stress management programs.</p>
+      </div>
+      <div class="variant-grid">
+        <article class="variant-card">
+          <div class="variant-packshot">
+            <div class="image-placeholder wide">
+              <span>Orgocare packshot</span>
+            </div>
+          </div>
+          <div class="variant-body">
+            <h3>Orgocare</h3>
+            <p class="variant-formula">Plant extract adaptogen blend &mdash; SL</p>
+            <p class="variant-detail">Supports crops through heat, drought, and chemical stress with natural protectants and recovery agents.</p>
+            <div class="variant-meta">
+              <span class="variant-badge">Stress shield</span>
+              <span class="variant-badge">Residue conscious</span>
+            </div>
+            <button class="variant-link btn-download" type="button" data-file="../../docs/orgocare-tds.pdf">
+              Download technical sheet
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY DISTRIBUTORS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Why Distributors Choose Orgocare</span>
+        <h2 class="section-title">Keep customers productive during weather extremes</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">sunny</span>
+          </div>
+          <div>
+            <h3>Heat &amp; Drought Guard</h3>
+            <p>Improves stomatal regulation and water-use efficiency during high temperature periods.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">thunderstorm</span>
+          </div>
+          <div>
+            <h3>Weather Resilience</h3>
+            <p>Helps crops rebound quickly after storms, hail, or chemical spray injury.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">handshake</span>
+          </div>
+          <div>
+            <h3>Commercial Support</h3>
+            <p>Provides agronomic training, stress diagnostic tools, and marketing collateral for dealers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MODE OF ACTION ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Mode of Action</span>
+        <h2 class="section-title">Adaptogenic compounds stabilize plant physiology</h2>
+      </div>
+      <div class="image-placeholder wide">
+        <span>Mode of action illustration placeholder</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COVERAGE ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="coverage-grid">
+        <div class="coverage-card">
+          <div class="section-header align-left">
+            <span class="section-subtitle">Primary Benefits</span>
+            <h2 class="section-title">Supports crops through stress and recovery</h2>
+          </div>
+          <ul class="coverage-list">
+            <li>Stabilizes cell membranes and reduces oxidative damage.</li>
+            <li>Maintains photosynthesis under high heat or water deficit.</li>
+            <li>Improves nutrient uptake during stress for consistent growth.</li>
+            <li>Supports uniform fruit filling and quality after stress events.</li>
+          </ul>
+        </div>
+        <div class="coverage-card">
+          <div class="section-header align-left">
+            <span class="section-subtitle">Target Use</span>
+            <h2 class="section-title">Ideal for climate-resilient programs</h2>
+          </div>
+          <ul class="coverage-list">
+            <li>Pre-emptive sprays ahead of forecasted stress events.</li>
+            <li>Rescue applications following heat, frost, or salinity shock.</li>
+            <li>Support during transplanting or pruning recovery.</li>
+            <li>Integration with foliar nutrition for high-value crops.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-header align-left crops-header">
+        <span class="section-subtitle">Crops &amp; Systems</span>
+        <h2 class="section-title">Versatile across horticulture and broadacre</h2>
+      </div>
+      <div class="crop-grid">
+        <span>Vegetables and leafy greens under protected or open-field systems</span>
+        <span>Fruit crops: grapes, citrus, berries, apples</span>
+        <span>Plantations: coffee, cocoa, tea, spices</span>
+        <span>Row crops experiencing heat or drought pressure</span>
+        <span>Floriculture and ornamentals requiring premium finish</span>
+        <span>Nurseries and transplant production</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOSAGE & DILUTION ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Dosage &amp; Dilution</span>
+        <h2 class="section-title">Orgocare stress management program</h2>
+      </div>
+
+      <div class="dosage-table-wrapper">
+        <div class="dosage-table-scroll">
+          <table class="dosage-table">
+            <thead>
+              <tr>
+                <th>Application Scenario</th>
+                <th>Dosage per Acre</th>
+                <th>Product per Liter of Water*</th>
+                <th>Application Interval</th>
+                <th>Guidance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Preventative (before stress)</td>
+                <td>300&ndash;400 mL</td>
+                <td>1.5&ndash;2.0 mL</td>
+                <td>7 days before anticipated stress</td>
+                <td>Spray in early morning or late afternoon.</td>
+              </tr>
+              <tr>
+                <td>Rescue (after stress)</td>
+                <td>400&ndash;500 mL</td>
+                <td>2.0&ndash;2.5 mL</td>
+                <td>Repeat after 7&ndash;10 days if symptoms persist</td>
+                <td>Combine with amino acid feeds for faster recovery.</td>
+              </tr>
+              <tr>
+                <td>Transplant support</td>
+                <td>300 mL</td>
+                <td>1.5 mL</td>
+                <td>At transplanting; repeat after 10 days</td>
+                <td>Apply as root drench around new transplants.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="dosage-footnote">*Dilution assumes 200 L spray volume per acre. Adjust to canopy size and sprayer calibration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAM FIT ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Program Fit</span>
+        <h2 class="section-title">Use sites, compatibility, and storage</h2>
+      </div>
+      <div class="use-grid">
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">map</span> Use Sites</h3>
+          <ul>
+            <li>Foliar sprays and drip irrigation for high-value crops.</li>
+            <li>Nurseries, transplant houses, and greenhouse systems.</li>
+            <li>Open-field horticulture and plantation crops.</li>
+          </ul>
+        </div>
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">science</span> Compatibility</h3>
+          <ul>
+            <li>Compatible with most foliar nutrients and biostimulants.</li>
+            <li>Avoid tank mixing with copper or sulfur without jar test.</li>
+            <li>Maintain spray solution pH between 5.5 and 7.0.</li>
+          </ul>
+        </div>
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">inventory</span> Shelf Life &amp; Storage</h3>
+          <ul>
+            <li>Unopened shelf life: 24 months.</li>
+            <li>Store between 10&ndash;30&deg;C away from direct sunlight.</li>
+            <li>Keep container sealed; do not freeze.</li>
+            <li>Shake before use for uniform dispersion.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Deliver climate-ready programs with Orgocare</h2>
+        <p>Partner with Kriya to supply a proven stress mitigation biostimulant supported by robust documentation and technical expertise.</p>
+        <div class="cta-actions">
+          <a href="../../contact.html" class="btn-primary">
+            <span>Contact Sales</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+          <a href="../../contract-manufacturing.html" class="btn-outline">
+            <span>Contract Manufacturing</span>
+            <span class="material-symbols-outlined">factory</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-strip">
+        <div class="footer-brand">
+          <a href="../../index.html" class="footer-logo">
+            <img src="../../assets/img/logo-white.png" alt="Kriya Ltd" />
+          </a>
+          <p class="footer-brandline">Leading provider of certified organic crop care solutions for sustainable agriculture worldwide.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="../../about.html">About</a>
+          <a href="../biostimulants.html">Products</a>
+          <a href="../../technology/karyo.html">Technology</a>
+          <a href="../../contact.html">Contact</a>
+        </nav>
+
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/108402158/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://www.youtube.com/@kriyabiosys" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">
+            <i class="bx bxl-youtube"></i>
+          </a>
+          <a href="https://x.com/kriyabiosys" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/kriyabiosys/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="mailto:info@kriya.ltd" class="social-icon" aria-label="Email">
+            <i class="bx bx-envelope"></i>
+          </a>
+          <a href="https://wa.me/916385848466" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <p class="footer-disclaimer">For usage/dosage information, refer to the product documentation supplied with each formulation.</p>
+        <div class="footer-legal">
+          <span>© Kriya Ltd 2025</span>
+          <a href="../../trademark.html">Trademark</a>
+          <a href="../../privacy-policy.html">Privacy</a>
+          <a href="../../responsible-use.html">Responsible Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop">
+    <span class="material-symbols-outlined">arrow_upward</span>
+    <span class="back-to-top-text">Back to top</span>
+  </button>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
