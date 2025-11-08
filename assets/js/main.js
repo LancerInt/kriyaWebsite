@@ -165,8 +165,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.getElementById('nav-menu');
     const dropdowns = document.querySelectorAll('.dropdown');
     const categoryItems = document.querySelectorAll('.category-item');
-    
+
     if (!navbar) return;
+
+    if (navToggle) {
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Toggle navigation');
+    }
+
+    if (navMenu) {
+      navMenu.setAttribute('aria-hidden', 'true');
+    }
 
     // Scroll effect with performance optimization
     let scrollTimeout;
@@ -489,7 +498,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const isOpening = !this.classList.contains('active');
         this.classList.toggle('active');
         navMenu.classList.toggle('active');
-        
+        this.setAttribute('aria-expanded', isOpening ? 'true' : 'false');
+        navMenu.setAttribute('aria-hidden', isOpening ? 'false' : 'true');
+
         // Enhanced body scroll lock
         if (isOpening) {
           document.body.style.overflow = 'hidden';
@@ -506,9 +517,11 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
           navToggle.classList.remove('active');
           navMenu.classList.remove('active');
+          navToggle.setAttribute('aria-expanded', 'false');
+          navMenu.setAttribute('aria-hidden', 'true');
           document.body.style.overflow = '';
           document.documentElement.style.overflow = '';
-          
+
           // Close all submenus on mobile
           categoryItems.forEach(category => {
             category.classList.remove('active');
@@ -534,6 +547,8 @@ document.addEventListener('DOMContentLoaded', function() {
           if (navMenu.classList.contains('active')) {
             navToggle.classList.remove('active');
             navMenu.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navMenu.setAttribute('aria-hidden', 'true');
             document.body.style.overflow = '';
             document.documentElement.style.overflow = '';
           }
@@ -546,6 +561,8 @@ document.addEventListener('DOMContentLoaded', function() {
           if (navMenu.classList.contains('active')) {
             navToggle.classList.remove('active');
             navMenu.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navMenu.setAttribute('aria-hidden', 'true');
             document.body.style.overflow = '';
             document.documentElement.style.overflow = '';
 
@@ -584,10 +601,12 @@ document.addEventListener('DOMContentLoaded', function() {
           if (navToggle && navMenu) {
             navToggle.classList.remove('active');
             navMenu.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navMenu.setAttribute('aria-hidden', 'true');
             document.body.style.overflow = '';
             document.documentElement.style.overflow = '';
           }
-          
+
           // Close all dropdowns and submenus on resize
           dropdowns.forEach(dropdown => {
             dropdown.classList.remove('active');
@@ -842,7 +861,9 @@ document.addEventListener('DOMContentLoaded', function() {
       '.why-card',
       '.category-card',
       '.product-card',
-      '.cert-card'
+      '.cert-card',
+      '.garden-intro-card',
+      '.home-card'
     ];
 
     const revealElements = new Set();
@@ -887,8 +908,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     }, {
-      threshold: 0.12,
-      rootMargin: '0px 0px -10% 0px'
+      threshold: 0.08,
+      rootMargin: '0px 0px -5% 0px'
     });
 
     revealElements.forEach(element => {
@@ -910,7 +931,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     window.addEventListener('load', activateVisible);
-    window.addEventListener('scroll', debounce(activateVisible, 80), { passive: true });
+    window.addEventListener('scroll', debounce(activateVisible, 40), { passive: true });
     activateVisible();
 
     const floatingCards = document.querySelectorAll('.floating-card');
