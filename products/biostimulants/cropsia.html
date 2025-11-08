@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cropsia | Botanical Biostimulant Program</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body class="product-page">
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="logo-loader">
+        <img src="../../assets/img/logo.png" alt="Kriya Ltd" />
+      </div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../../index.html" class="nav-logo">
+        <img src="../../assets/img/logo.png" alt="Kriya Ltd" />
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="../../about.html" class="nav-link">About</a></li>
+
+          <!-- Products Dropdown -->
+          <li class="nav-item dropdown dropdown-products">
+            <a href="../biostimulants.html" class="nav-link dropbtn active">
+              <span>Products</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content products-dropdown">
+              <div class="categories-menu">
+                <div class="category-item">
+                  <a href="../biocontrol.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">pest_control</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Biocontrol</h4>
+                      <p>Natural pest management range</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biocontrol Products</h5>
+                      <p>Botanical and microbial actives</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="../biocontrol/ecoza.html" data-tooltip="Azadirachtin">Ecoza</a>
+                      <a href="../biocontrol/margoshine.html" data-tooltip="Neem Oil">Margoshine</a>
+                      <a href="../biocontrol/k-guard.html" data-tooltip="Karanjin">K-Guard</a>
+                      <a href="../biocontrol/weedx.html" data-tooltip="MCT Weed Killer">WeedX</a>
+                      <a href="../biocontrol/spindura.html" data-tooltip="Spinosad">Spindura</a>
+                      <a href="../biocontrol/margospin.html" data-tooltip="Neem Oil + Spinosad">MargoSpin</a>
+                      <a href="../biocontrol/admira.html" data-tooltip="Essential Oil Formulation">Admira</a>
+                      <a href="../biocontrol/mycova.html" data-tooltip="Beauveria bassiana">Mycova</a>
+                      <a href="../biocontrol/rexora.html" data-tooltip="Metarhizium anisopliae">Rexora</a>
+                      <a href="../biocontrol/biota.html" data-tooltip="Trichoderma viride / harzianum">Biota (V/H)</a>
+                      <a href="../biocontrol/seira.html" data-tooltip="Verticillium lecanii">Seira</a>
+                      <a href="../biocontrol/encilo.html" data-tooltip="Paecilomyces fumosoroseus">EnCilo</a>
+                      <a href="../biocontrol/neuvita.html" data-tooltip="Ampelomyces quisqualis">Neuvita</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="../biostimulants.html" class="category-link active">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">psychiatry</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Biostimulants</h4>
+                      <p>Plant resilience &amp; nutrition</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biostimulant Products</h5>
+                      <p>Microbial &amp; botanical enhancers</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="igreen.html" data-tooltip="Microbial consortium">IGreen</a>
+                      <a href="zenita.html" data-tooltip="Neem limonoids">Zenita</a>
+                      <a href="cropsia.html" data-tooltip="Botanical extracts" aria-current="page">Cropsia</a>
+                      <a href="blooma.html" data-tooltip="Seaweed biostimulant">Blooma</a>
+                      <a href="enrhize.html" data-tooltip="Mycorrhizal inoculant">Enrhize</a>
+                      <a href="orgocare.html" data-tooltip="Stress management">Orgocare</a>
+                      <a href="envicta.html" data-tooltip="Humic &amp; fulvic">Envicta</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="../substrates.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">grass</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Substrates</h4>
+                      <p>Soil amendment solutions</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Substrate Products</h5>
+                      <p>Soil health &amp; seed treatments</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="../substrates/maxineem.html" data-tooltip="Neem cake">Maxineem</a>
+                      <a href="../substrates/kmix.html" data-tooltip="Karanja cake">K-Mix</a>
+                      <a href="../substrates/mystica.html" data-tooltip="Wetting agent">Mystica</a>
+                      <a href="../substrates/engrow.html" data-tooltip="Seed coating">Engrow</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="../home-garden.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">yard</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Home &amp; Garden</h4>
+                      <p>Consumer-ready packs</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Technology Dropdown -->
+          <li class="nav-item dropdown dropdown-tech">
+            <a href="../../technology/karyo.html" class="nav-link dropbtn">
+              <span>Technology</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content tech-dropdown">
+              <div class="tech-menu-compact">
+                <a href="../../technology/karyo.html" class="tech-item-compact" data-tooltip="Delivery Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">biotech</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Karyo Technology</h5>
+                    <p>Formulation technology</p>
+                  </div>
+                </a>
+
+                <a href="../../technology/wynn.html" class="tech-item-compact" data-tooltip="Microbial Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">science</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Wynn Formulation</h5>
+                    <p>Microbial innovation</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="../../contract-manufacturing.html" class="nav-link">Manufacturing</a></li>
+          <li><a href="../../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero interior-hero product-hero">
+    <div class="container">
+      <div class="product-hero-layout">
+        <div class="page-hero-content product-hero-copy">
+          <span class="page-hero-eyebrow">Biostimulant Portfolio</span>
+          <h1 class="page-hero-title">Cropsia&reg; Botanical Extracts for Vigor &amp; Recovery</h1>
+          <div class="hero-metrics">
+            <div class="hero-metric hero-metric-compact">
+              <div class="hero-metric-text">
+                <strong>Moringa &amp; Adhatoda Extracts</strong>
+              </div>
+            </div>
+            <div class="hero-metric hero-metric-compact">
+              <div class="hero-metric-text">
+                <strong>Bioactive Antioxidant Matrix</strong>
+              </div>
+            </div>
+            <div class="hero-metric hero-metric-compact">
+              <div class="hero-metric-text">
+                <strong>SL / WSP Delivery</strong>
+              </div>
+            </div>
+          </div>
+          <div class="page-hero-actions">
+            <a href="../../contact.html" class="btn-primary">
+              <span>Contact Sales</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+            <a href="../../contract-manufacturing.html" class="btn-outline">
+              <span>Scale With Kriya</span>
+              <span class="material-symbols-outlined">factory</span>
+            </a>
+          </div>
+        </div>
+        <div class="product-hero-visual">
+          <figure class="page-hero-image image-placeholder square">
+            <span>Cropsia product imagery placeholder</span>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT OVERVIEW ===== -->
+  <section class="section product-overview">
+    <div class="container">
+      <div class="product-overview-grid">
+        <div class="overview-copy">
+          <div class="section-header align-left">
+            <span class="section-subtitle">Product Overview</span>
+            <h2 class="section-title">Botanical stimulants designed for resilient growth</h2>
+          </div>
+          <p>Cropsia blends moringa phytohormones with Adhatoda vasica metabolites to energize plant metabolism. The formula delivers antioxidants, amino acids, and secondary metabolites that promote chlorophyll production, root growth, and stress recovery. Liquid and WSP versions dissolve instantly without residue, ensuring clean spray operations. Quality control verifies active marker compounds and low phytotoxicity, while packaging options cover bulk drums to sachets. Cropsia equips distributors with a versatile, plant-derived tool for boosting vigor across diverse crops and climates.</p>
+        </div>
+        <div class="overview-insights">
+          <div class="insight-card">
+            <span class="material-symbols-outlined">local_florist</span>
+            <div>
+              <h3>Phytohormone Rich</h3>
+              <p>Contains natural cytokinins and flavonoids that drive shoot expansion and root branching.</p>
+            </div>
+          </div>
+          <div class="insight-card">
+            <span class="material-symbols-outlined">healing</span>
+            <div>
+              <h3>Stress Buffer</h3>
+              <p>Antioxidant complexes reduce oxidative stress caused by heat, drought, and salinity events.</p>
+            </div>
+          </div>
+          <div class="insight-card">
+            <span class="material-symbols-outlined">inventory</span>
+            <div>
+              <h3>Premium Packaging</h3>
+              <p>Delivered with export-ready labels, certificates, and marketing kits for quick onboarding.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VARIANTS ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Cropsia Line-Up</span>
+        <h2 class="section-title">Liquid and powder options for every channel</h2>
+        <p class="section-description">Choose the formulation that best suits foliar sprays, fertigation, or on-farm repacking initiatives.</p>
+      </div>
+      <div class="variant-grid">
+        <article class="variant-card">
+          <div class="variant-packshot">
+            <div class="image-placeholder wide">
+              <span>Cropsia SL packshot</span>
+            </div>
+          </div>
+          <div class="variant-body">
+            <h3>Cropsia SL</h3>
+            <p class="variant-formula">Botanical extract concentrate &mdash; SL</p>
+            <p class="variant-detail">Ready-to-spray liquid supporting rapid uptake during vegetative growth or recovery windows.</p>
+            <div class="variant-meta">
+              <span class="variant-badge">Liquid concentrate</span>
+              <span class="variant-badge">Fast uptake</span>
+            </div>
+            <button class="variant-link btn-download" type="button" data-file="../../docs/cropsia-tds.pdf">
+              Download technical sheet
+            </button>
+          </div>
+        </article>
+        <article class="variant-card">
+          <div class="variant-packshot">
+            <div class="image-placeholder wide">
+              <span>Cropsia WSP packshot</span>
+            </div>
+          </div>
+          <div class="variant-body">
+            <h3>Cropsia WSP</h3>
+            <p class="variant-formula">Water-soluble powder sachet &mdash; WSP</p>
+            <p class="variant-detail">Convenient powder format for distribution in smaller retail packs or integration with drip systems.</p>
+            <div class="variant-meta">
+              <span class="variant-badge">Shelf stable</span>
+              <span class="variant-badge">Easy logistics</span>
+            </div>
+            <button class="variant-link btn-download" type="button" data-file="../../docs/cropsia-tds.pdf">
+              Download technical sheet
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY DISTRIBUTORS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Why Distributors Choose Cropsia</span>
+        <h2 class="section-title">Plant-powered differentiation with proven results</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">auto_graph</span>
+          </div>
+          <div>
+            <h3>Visible Response</h3>
+            <p>Trials show improved leaf area index, flowering, and fruit retention within two weeks of application.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">eco</span>
+          </div>
+          <div>
+            <h3>Plant-Based Story</h3>
+            <p>Appeals to organic and residue-conscious markets with clean label ingredients.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">handshake</span>
+          </div>
+          <div>
+            <h3>Full Partner Support</h3>
+            <p>Includes agronomic guides, training decks, and marketing assets for dealer networks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MODE OF ACTION ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Mode of Action</span>
+        <h2 class="section-title">Bioactive extracts activate plant metabolism</h2>
+      </div>
+      <div class="image-placeholder wide">
+        <span>Mode of action illustration placeholder</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COVERAGE ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="coverage-grid">
+        <div class="coverage-card">
+          <div class="section-header align-left">
+            <span class="section-subtitle">Primary Benefits</span>
+            <h2 class="section-title">Keeps crops vigorous under variable conditions</h2>
+          </div>
+          <ul class="coverage-list">
+            <li>Enhances leaf chlorophyll and stomatal function for better photosynthetic efficiency.</li>
+            <li>Stimulates root growth and nutrient uptake for improved plant balance.</li>
+            <li>Reduces stress-induced flower drop and fruit shedding.</li>
+            <li>Improves recovery from hail, drought, and temperature extremes.</li>
+          </ul>
+        </div>
+        <div class="coverage-card">
+          <div class="section-header align-left">
+            <span class="section-subtitle">Target Use &amp; Diseases</span>
+            <h2 class="section-title">Supports crop health and suppresses disorders</h2>
+          </div>
+          <ul class="coverage-list">
+            <li>Helps mitigate physiological disorders linked to nutrient imbalance.</li>
+            <li>Improves plant tolerance to foliar blights when used alongside fungicides.</li>
+            <li>Reduces abiotic stress-induced pest flare-ups by keeping plants vigorous.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-header align-left crops-header">
+        <span class="section-subtitle">Crops &amp; Systems</span>
+        <h2 class="section-title">Adopted across horticulture and row crops</h2>
+      </div>
+      <div class="crop-grid">
+        <span>Vegetables: solanaceae, cucurbits, leafy greens</span>
+        <span>Fruits: grapes, citrus, berries, banana</span>
+        <span>Plantations: tea, coffee, spices</span>
+        <span>Row crops: pulses, cereals, oilseeds</span>
+        <span>Protected cultivation: greenhouse vegetables and ornamentals</span>
+        <span>Turf and landscape management programs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOSAGE & DILUTION ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Dosage &amp; Dilution</span>
+        <h2 class="section-title">Cropsia dosage for SL and WSP</h2>
+      </div>
+
+      <div class="dosage-table-wrapper">
+        <div class="dosage-table-scroll">
+          <table class="dosage-table">
+            <thead>
+              <tr>
+                <th>Application Timing</th>
+                <th>Formulation</th>
+                <th>Dosage per Acre</th>
+                <th>Product per Liter of Water*</th>
+                <th>Application Interval</th>
+                <th>Guidance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Early vegetative</td>
+                <td>SL</td>
+                <td>300&ndash;400 mL</td>
+                <td>1.5&ndash;2.0 mL</td>
+                <td>Every 14 days</td>
+                <td>Foliar spray to wet canopy uniformly.</td>
+              </tr>
+              <tr>
+                <td>Pre-flowering</td>
+                <td>SL</td>
+                <td>400&ndash;500 mL</td>
+                <td>2.0&ndash;2.5 mL</td>
+                <td>Repeat in 10&ndash;14 days</td>
+                <td>Add non-ionic wetter for waxy leaves.</td>
+              </tr>
+              <tr>
+                <td>Vegetative boost</td>
+                <td>WSP</td>
+                <td>300&ndash;400 g</td>
+                <td>1.5&ndash;2.0 g</td>
+                <td>Every 14 days</td>
+                <td>Premix as slurry before adding to tank.</td>
+              </tr>
+              <tr>
+                <td>Stress recovery</td>
+                <td>WSP</td>
+                <td>400&ndash;500 g</td>
+                <td>2.0&ndash;2.5 g</td>
+                <td>Repeat after 7&ndash;10 days</td>
+                <td>Combine with amino acids for compounded response.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="dosage-footnote">*Dilution assumes 200&ndash;250 L spray volume per acre. Adjust to canopy density and sprayer calibration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAM FIT ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Program Fit</span>
+        <h2 class="section-title">Use sites, compatibility, and storage</h2>
+      </div>
+      <div class="use-grid">
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">map</span> Use Sites</h3>
+          <ul>
+            <li>Foliar sprays for open-field and protected horticulture.</li>
+            <li>Drip or sprinkler fertigation programs for field crops.</li>
+            <li>Nurseries, greenhouse starts, and transplant dips.</li>
+            <li>High-value plantations requiring yield stability.</li>
+          </ul>
+        </div>
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">science</span> Compatibility</h3>
+          <ul>
+            <li>Compatible with most fertilizers and biostimulants.</li>
+            <li>Perform jar test before mixing with strong alkaline inputs.</li>
+            <li>Combine with micronutrients or amino acids for enhanced effect.</li>
+            <li>Avoid mixing with copper or sulfur on sensitive foliage.</li>
+          </ul>
+        </div>
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">inventory</span> Shelf Life &amp; Storage</h3>
+          <ul>
+            <li>Unopened shelf life: 24 months (SL) / 30 months (WSP).</li>
+            <li>Store in cool, dry warehouse away from sunlight.</li>
+            <li>Keep containers sealed to prevent oxidation.</li>
+            <li>Shake SL drums before decanting; reseal WSP bags after partial use.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Equip your growers with Cropsia</h2>
+        <p>Deliver plant-based performance with Kriya’s proven botanical biostimulant and comprehensive distributor support.</p>
+        <div class="cta-actions">
+          <a href="../../contact.html" class="btn-primary">
+            <span>Contact Sales</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+          <a href="../../contract-manufacturing.html" class="btn-outline">
+            <span>Contract Manufacturing</span>
+            <span class="material-symbols-outlined">factory</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-strip">
+        <div class="footer-brand">
+          <a href="../../index.html" class="footer-logo">
+            <img src="../../assets/img/logo-white.png" alt="Kriya Ltd" />
+          </a>
+          <p class="footer-brandline">Leading provider of certified organic crop care solutions for sustainable agriculture worldwide.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="../../about.html">About</a>
+          <a href="../biostimulants.html">Products</a>
+          <a href="../../technology/karyo.html">Technology</a>
+          <a href="../../contact.html">Contact</a>
+        </nav>
+
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/108402158/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://www.youtube.com/@kriyabiosys" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">
+            <i class="bx bxl-youtube"></i>
+          </a>
+          <a href="https://x.com/kriyabiosys" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/kriyabiosys/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="mailto:info@kriya.ltd" class="social-icon" aria-label="Email">
+            <i class="bx bx-envelope"></i>
+          </a>
+          <a href="https://wa.me/916385848466" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <p class="footer-disclaimer">For usage/dosage information, refer to the product documentation supplied with each formulation.</p>
+        <div class="footer-legal">
+          <span>© Kriya Ltd 2025</span>
+          <a href="../../trademark.html">Trademark</a>
+          <a href="../../privacy-policy.html">Privacy</a>
+          <a href="../../responsible-use.html">Responsible Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop">
+    <span class="material-symbols-outlined">arrow_upward</span>
+    <span class="back-to-top-text">Back to top</span>
+  </button>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
