@@ -1,0 +1,11 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cfe4b5" />
+      <stop offset="100%" stop-color="#f4d3b9" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#sq)" rx="32" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Inter, sans-serif" font-size="48" fill="#2e4022">1:1 Placeholder</text>
+</svg>
