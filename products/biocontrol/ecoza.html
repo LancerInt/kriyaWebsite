@@ -9,6 +9,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <style>
+      .btn-primary,
+      .btn-download,
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.35rem;
+        padding: 0.6rem 1.5rem;
+        border-radius: 999px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: transform var(--transition), box-shadow var(--transition);
+      }
+
+      .btn-primary {
+        background: linear-gradient(120deg, var(--brand-green), var(--brand-orange));
+        color: var(--white);
+      }
+
+      .btn-outline {
+        border: 1px solid rgba(15, 27, 7, 0.2);
+        background: transparent;
+        color: var(--neutral-900);
+      }
+
+      .btn-download {
+        background: var(--neutral-900);
+        color: var(--white);
+      }
+
+      .btn-primary:hover,
+      .btn-outline:hover,
+      .btn-download:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(15, 27, 7, 0.15);
+      }
+
       .page {
         max-width: var(--max-width);
         margin: 0 auto;
@@ -97,9 +135,7 @@
           </ul>
         </div>
         <div class="product-hero-visual">
-          <figure class="page-hero-image image-placeholder square">
-            <span>Ecoza product imagery placeholder</span>
-          </figure>
+          <figure class="page-hero-image media-frame square"></figure>
         </div>
       </nav>
     </header>
@@ -128,7 +164,7 @@
             </article>
           </div>
         </div>
-        <img src="../../assets/img/placeholders/placeholder-wide.svg" alt="Ecoza hero" />
+        <img src="../../assets/img/Hero/EcozaPro.jpg" alt="Ecoza hero" />
       </section>
 
       <section data-reveal>
@@ -150,9 +186,9 @@
       <div class="variant-grid">
         <article class="variant-card">
           <div class="variant-packshot">
-            <div class="image-placeholder wide">
-              <span>Ecoza Max packshot</span>
-            </div>
+            <figure class="media-frame wide">
+  <img src="../../assets/img/biocontrol/EcozaMax.png" alt="Ecoza Max packshot" loading="lazy" />
+</figure>
           </div>
           <div class="variant-body">
             <h3>Ecoza Max</h3>
@@ -169,9 +205,9 @@
         </article>
         <article class="variant-card">
           <div class="variant-packshot">
-            <div class="image-placeholder wide">
-              <span>Ecoza Ace packshot</span>
-            </div>
+            <figure class="media-frame wide">
+  <img src="../../assets/img/biocontrol/EcozaAce.png" alt="Ecoza Ace packshot" loading="lazy" />
+</figure>
           </div>
           <div class="variant-body">
             <h3>Ecoza Ace</h3>
@@ -188,9 +224,9 @@
         </article>
         <article class="variant-card">
           <div class="variant-packshot">
-            <div class="image-placeholder wide">
-              <span>Ecoza Rix packshot</span>
-            </div>
+            <figure class="media-frame wide">
+  <img src="../../assets/img/biocontrol/EcozaRix.png" alt="Ecoza Rix packshot" loading="lazy" />
+</figure>
           </div>
           <div class="variant-body">
             <h3>Ecoza Rix</h3>
@@ -207,9 +243,9 @@
         </article>
         <article class="variant-card">
           <div class="variant-packshot">
-            <div class="image-placeholder wide">
-              <span>Ecoza Pro packshot</span>
-            </div>
+            <figure class="media-frame wide">
+  <img src="../../assets/img/biocontrol/EcozaPro.png" alt="Ecoza Pro packshot" loading="lazy" />
+</figure>
           </div>
           <div class="variant-body">
             <h3>Ecoza Pro</h3>

@@ -16,6 +16,15 @@ if (backToTop) {
   backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  const toggleBackToTop = () => {
+    const isVisible = window.scrollY > 400;
+    backToTop.style.opacity = isVisible ? '1' : '0';
+    backToTop.style.visibility = isVisible ? 'visible' : 'hidden';
+  };
+
+  toggleBackToTop();
+  window.addEventListener('scroll', toggleBackToTop);
 }
 
 const revealItems = document.querySelectorAll('[data-reveal]');

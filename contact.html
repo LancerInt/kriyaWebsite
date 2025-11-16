@@ -9,6 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <style>
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.35rem;
+        padding: 0.6rem 1.5rem;
+        border-radius: 999px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(120deg, var(--brand-green), var(--brand-orange));
+        color: var(--white);
+        transition: transform var(--transition), box-shadow var(--transition);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(15, 27, 7, 0.15);
+      }
+
       .page {
         max-width: var(--max-width);
         margin: 0 auto;
