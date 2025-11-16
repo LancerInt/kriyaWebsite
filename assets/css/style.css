@@ -954,11 +954,20 @@ ul {
 .hg-card {
   text-align: center;
   padding: 2rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  height: 100%;
 }
 
-.hg-card h3 { margin: 0.75rem 0 0.35rem; }
+.hg-card h3 { margin: 0.35rem 0 0.15rem; }
 
-.hg-card p { margin-bottom: 1rem; color: rgba(15, 27, 7, 0.75); }
+.hg-card p {
+  margin: 0.25rem 0 0.5rem;
+  color: rgba(15, 27, 7, 0.75);
+  min-height: 48px;
+}
 
 .hg-packshot {
   width: 100%;
@@ -995,6 +1004,12 @@ ul {
 
 .hg-badge.tablet { background: #f1f0ff; color: #3f3c69; }
 .hg-badge.spray { background: #eaf4ff; color: #1b4a73; }
+
+.hg-card .btn-download {
+  margin-top: auto;
+  min-width: 70%;
+  justify-content: center;
+}
 
 [data-reveal] {
   opacity: 0;
