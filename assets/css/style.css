@@ -3478,7 +3478,7 @@ a {
   color: var(--green-dark);
   font-weight: 600;
   letter-spacing: 0.5px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .image-placeholder::after {
