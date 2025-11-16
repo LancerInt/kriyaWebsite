@@ -1,683 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kriya Ltd | Organic Crop Care Solutions</title>
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  
-  <!-- Boxicons -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-  <!-- ===== PRELOADER ===== -->
-  <div id="preloader">
-    <div class="preloader-content">
-      <div class="logo-loader">
-        <img src="assets/img/logo.png" alt="Kriya Ltd" />
-      </div>
-      <div class="loader-bar">
-        <div class="loader-progress"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kriya Ltd | Organic Crop Care Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="preloader-content">
+        <img src="assets/img/logo.svg" alt="Kriya Ltd" width="120" />
+        <div class="loader-bar"><div class="loader-progress"></div></div>
       </div>
     </div>
-  </div>
 
-  <!-- ===== PREMIUM NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/img/logo.png" alt="Kriya Ltd" />
-      </a>
-      
-      <div class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          
-          <!-- Products Dropdown -->
-          <li class="nav-item dropdown">
-            <a href="products/biocontrol.html" class="nav-link dropbtn">
-              <span>Products</span>
-              <span class="material-symbols-outlined">expand_more</span>
-            </a>
-            <div class="dropdown-content products-dropdown">
-              <div class="categories-menu">
-                <!-- Biocontrol Category -->
-                <div class="category-item">
-                  <a href="products/biocontrol.html" class="category-link">
-                    <div class="category-icon">
-                      <span class="material-symbols-outlined">pest_control</span>
-                    </div>
-                    <div class="category-info">
-                      <h4>Biocontrol</h4>
-                      <p>Organic pest management</p>
-                    </div>
-                    <span class="material-symbols-outlined">chevron_right</span>
-                  </a>
-                  <div class="submenu">
-                    <div class="submenu-header">
-                      <h5>Biocontrol Products</h5>
-                    </div>
-                    <div class="submenu-grid">
-                      <a href="products/biocontrol/ecoza.html" data-tooltip="Azadirachtin formulation">Ecoza</a>
-                      <a href="products/biocontrol/k-guard.html" data-tooltip="Karanjin formulation">K-Guard</a>
-                      <a href="products/biocontrol/margoshine.html" data-tooltip="Neem oil formulation">Margoshine</a>
-                      <a href="products/biocontrol/spindura.html" data-tooltip="Spinosad formulation">Spindura</a>
-                      <a href="products/biocontrol/margospin.html" data-tooltip="Neem + Spinosad formulation">MargoSpin</a>
-                      <a href="products/biocontrol/admira.html" data-tooltip="Essential oils formulation">Admira</a>
-                      <a href="products/biocontrol/weedx.html" data-tooltip="MCT herbicide">WeedX</a>
-                      <a href="products/biocontrol/mycova.html" data-tooltip="Beauveria bassiana">Mycova</a>
-                      <a href="products/biocontrol/rexora.html" data-tooltip="Metarhizium anisopliae">Rexora</a>
-                      <a href="products/biocontrol/biota.html" data-tooltip="Trichoderma species">Biota</a>
-                      <a href="products/biocontrol/seira.html" data-tooltip="Verticillium lecanii">Seira</a>
-                      <a href="products/biocontrol/encilo.html" data-tooltip="Paecilomyces lilacinus">EnCilo</a>
-                      <a href="products/biocontrol/neuvita.html" data-tooltip="Ampelomyces quisqualis">Neuvita</a>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/img/logo.svg" alt="Kriya Ltd" />
+        </a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item dropdown dropdown-products">
+              <a href="products/biocontrol.html" class="nav-link dropbtn">
+                <span>Products</span>
+                <span class="material-symbols-outlined">expand_more</span>
+              </a>
+              <div class="dropdown-content products-dropdown">
+                <div class="categories-menu">
+                  <div class="category-item">
+                    <a href="products/biocontrol.html" class="category-link">
+                      <div class="category-icon"><span class="material-symbols-outlined">pest_control</span></div>
+                      <div class="category-info">
+                        <h4>Biocontrol</h4>
+                        <p>Natural pest management</p>
+                      </div>
+                      <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                    <div class="submenu">
+                      <div class="submenu-header">
+                        <h5>Biocontrol Products</h5>
+                        <p>Botanical and microbial actives</p>
+                      </div>
+                      <div class="submenu-grid">
+                        <a href="products/biocontrol/ecoza.html" data-tooltip="Azadirachtin">Ecoza</a>
+                        <a href="products/biocontrol/k-guard.html" data-tooltip="Karanjin">K-Guard</a>
+                        <a href="products/biocontrol/margoshine.html" data-tooltip="Neem oil">Margoshine</a>
+                        <a href="products/biocontrol/spindura.html" data-tooltip="Spinosad">Spindura</a>
+                        <a href="products/biocontrol/margospin.html" data-tooltip="Neem + Spinosad">MargoSpin</a>
+                        <a href="products/biocontrol/admira.html" data-tooltip="Essential oils">Admira</a>
+                        <a href="products/biocontrol/weedx.html" data-tooltip="Botanical herbicide">WeedX</a>
+                        <a href="products/biocontrol/mycova.html" data-tooltip="Beauveria bassiana">Mycova</a>
+                        <a href="products/biocontrol/rexora.html" data-tooltip="Metarhizium anisopliae">Rexora</a>
+                        <a href="products/biocontrol/biota.html" data-tooltip="Trichoderma spp.">Biota (V/H)</a>
+                        <a href="products/biocontrol/seira.html" data-tooltip="Verticillium lecanii">Seira</a>
+                        <a href="products/biocontrol/encilo.html" data-tooltip="Paecilomyces lilacinus">EnCilo</a>
+                        <a href="products/biocontrol/neuvita.html" data-tooltip="Ampelomyces quisqualis">Neuvita</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                
-                <!-- Biostimulants Category -->
-                <div class="category-item">
-                  <a href="products/biostimulants.html" class="category-link">
-                    <div class="category-icon">
-                      <span class="material-symbols-outlined">psychiatry</span>
-                    </div>
-                    <div class="category-info">
-                      <h4>Biostimulants</h4>
-                      <p>Growth & health enhancers</p>
-                    </div>
-                    <span class="material-symbols-outlined">chevron_right</span>
-                  </a>
-                  <div class="submenu">
-                    <div class="submenu-header">
-                      <h5>Biostimulant Products</h5>
-                    </div>
-                    <div class="submenu-grid">
-                      <a href="products/biostimulants/igreen.html" data-tooltip="Microbial consortium">IGreen</a>
-                      <a href="products/biostimulants/zenita.html" data-tooltip="Peptide formulation">Zenita</a>
-                      <a href="products/biostimulants/cropsia.html" data-tooltip="Plant extracts formulation">Cropsia</a>
-                      <a href="products/biostimulants/enrhize.html" data-tooltip="Arbuscular Mycorrhiza">Enrhize</a>
-                      <a href="products/biostimulants/orgocare.html" data-tooltip="Plant extract blend">Orgocare</a>
-                      <a href="products/biostimulants/blooma.html" data-tooltip="Seaweed extract formulation">Blooma</a>
-                      <a href="products/biostimulants/envicta.html" data-tooltip="Humic & amino acids">Envicta</a>
+
+                  <div class="category-item">
+                    <a href="products/biostimulants.html" class="category-link">
+                      <div class="category-icon"><span class="material-symbols-outlined">psychiatry</span></div>
+                      <div class="category-info">
+                        <h4>Biostimulants</h4>
+                        <p>Plant resilience &amp; nutrition</p>
+                      </div>
+                      <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                    <div class="submenu">
+                      <div class="submenu-header">
+                        <h5>Biostimulant Products</h5>
+                        <p>Microbial &amp; botanical enhancers</p>
+                      </div>
+                      <div class="submenu-grid">
+                        <a href="products/biostimulants/igreen.html" data-tooltip="Microbial consortium">IGreen</a>
+                        <a href="products/biostimulants/zenita.html" data-tooltip="Neem limonoids">Zenita</a>
+                        <a href="products/biostimulants/cropsia.html" data-tooltip="Botanical blend">Cropsia</a>
+                        <a href="products/biostimulants/enrhize.html" data-tooltip="AMF inoculant">Enrhize</a>
+                        <a href="products/biostimulants/orgocare.html" data-tooltip="Stress management">Orgocare</a>
+                        <a href="products/biostimulants/blooma.html" data-tooltip="Seaweed actives">Blooma</a>
+                        <a href="products/biostimulants/envicta.html" data-tooltip="Humic technology">Envicta</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                
-                <!-- Substrates Category -->
-                <div class="category-item">
-                  <a href="products/substrates.html" class="category-link">
-                    <div class="category-icon">
-                      <span class="material-symbols-outlined">grass</span>
-                    </div>
-                    <div class="category-info">
-                      <h4>Substrates</h4>
-                      <p>Soil amendment solutions</p>
-                    </div>
-                    <span class="material-symbols-outlined">chevron_right</span>
-                  </a>
-                  <div class="submenu">
-                    <div class="submenu-header">
-                      <h5>Substrate Products</h5>
-                    </div>
-                    <div class="submenu-grid">
-                      <a href="products/substrates/maxineem.html" data-tooltip="Neem cake">Maxineem</a>
-                      <a href="products/substrates/kmix.html" data-tooltip="Karanja cake">K-Mix</a>
-                      <a href="products/substrates/mystica.html" data-tooltip="Wetting agent">Mystica</a>
-                      <a href="products/substrates/engrow.html" data-tooltip="Seed coating">Engrow</a>
+
+                  <div class="category-item">
+                    <a href="products/substrates.html" class="category-link">
+                      <div class="category-icon"><span class="material-symbols-outlined">grass</span></div>
+                      <div class="category-info">
+                        <h4>Substrates</h4>
+                        <p>Soil amendment solutions</p>
+                      </div>
+                      <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                    <div class="submenu">
+                      <div class="submenu-header">
+                        <h5>Substrate Products</h5>
+                        <p>Soil health &amp; seed treatments</p>
+                      </div>
+                      <div class="submenu-grid">
+                        <a href="products/substrates/maxineem.html" data-tooltip="Neem cake">Maxineem</a>
+                        <a href="products/substrates/kmix.html" data-tooltip="Karanja cake">K-Mix</a>
+                        <a href="products/substrates/mystica.html" data-tooltip="Wetting agent">Mystica</a>
+                        <a href="products/substrates/engrow.html" data-tooltip="Seed coating">Engrow</a>
+                      </div>
                     </div>
                   </div>
+
+                  <div class="category-item">
+                    <a href="products/home-garden.html" class="category-link">
+                      <div class="category-icon"><span class="material-symbols-outlined">yard</span></div>
+                      <div class="category-info">
+                        <h4>Home &amp; Garden</h4>
+                        <p>Consumer-ready packs</p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                
-                <!-- Home & Garden Category -->
-                <div class="category-item">
-                  <a href="products/home-garden.html" class="category-link">
-                    <div class="category-icon">
-                      <span class="material-symbols-outlined">yard</span>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown dropdown-tech">
+              <a href="technology/karyo.html" class="nav-link dropbtn">
+                <span>Technology</span>
+                <span class="material-symbols-outlined">expand_more</span>
+              </a>
+              <div class="dropdown-content tech-dropdown">
+                <div class="tech-menu-compact">
+                  <a href="technology/karyo.html" class="tech-item-compact" data-tooltip="Delivery platform">
+                    <div class="tech-icon-compact"><span class="material-symbols-outlined">biotech</span></div>
+                    <div class="tech-content-compact">
+                      <h5>Karyo Platform</h5>
+                      <p>Advanced delivery science</p>
                     </div>
-                    <div class="category-info">
-                      <h4>Home & Garden</h4>
-                      <p>For home gardeners</p>
+                  </a>
+                  <a href="technology/wynn.html" class="tech-item-compact" data-tooltip="Microbial platform">
+                    <div class="tech-icon-compact"><span class="material-symbols-outlined">science</span></div>
+                    <div class="tech-content-compact">
+                      <h5>Wynn Platform</h5>
+                      <p>Microbial innovation</p>
                     </div>
                   </a>
                 </div>
               </div>
+            </li>
+
+            <li><a href="contract-manufacturing.html" class="nav-link">Manufacturing</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-content" data-reveal>
+            <div class="hero-badge">
+              <span class="material-symbols-outlined">verified</span>
+              Certified Organic Inputs
             </div>
-          </li>
-          
-          <!-- Technology Dropdown -->
-          <li class="nav-item dropdown">
-            <a href="technology/karyo.html" class="nav-link dropbtn">
-              <span>Technology</span>
-              <span class="material-symbols-outlined">expand_more</span>
-            </a>
-            <div class="dropdown-content tech-dropdown">
-              <div class="tech-menu-compact">
-                <a href="technology/karyo.html" class="tech-item-compact">
-                  <div class="tech-icon-compact">
-                    <span class="material-symbols-outlined">biotech</span>
-                  </div>
-                  <div class="tech-content-compact">
-                    <h5>Karyo Technology</h5>
-                    <p data-tooltip="Advanced delivery platform">Formulation technology</p>
-                  </div>
-                </a>
-                
-                <a href="technology/wynn.html" class="tech-item-compact">
-                  <div class="tech-icon-compact">
-                    <span class="material-symbols-outlined">science</span>
-                  </div>
-                  <div class="tech-content-compact">
-                    <h5>Wynn Formulation</h5>
-                    <p data-tooltip="Microbial technology platform">Microbial innovation</p>
-                  </div>
+            <h1 class="hero-title">Organic Crop Care Solutions – Trusted Inputs for a Growing World</h1>
+            <div class="hero-tags">
+              <div class="tag">Residue-conscious</div>
+              <div class="tag">Certified &amp; Regulatory-ready</div>
+              <div class="tag">Global B2B supply</div>
+            </div>
+            <p class="hero-description">
+              Kriya delivers residue-conscious biocontrols, biostimulants, and substrates designed for modern agriculture. Our portfolio
+              helps international distributors launch faster with compliance-ready dossiers, premium QC, and reliable manufacturing.
+            </p>
+            <div class="hero-actions">
+              <a href="products/biocontrol.html" class="btn btn-primary">
+                <span>Browse products</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+              <a href="docs/product-catalog.pdf" class="btn btn-outline" target="_blank" rel="noopener">
+                <span>Download catalog</span>
+                <span class="material-symbols-outlined">download</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual" data-reveal>
+            <div class="hero-image">
+              <img src="assets/img/placeholders/placeholder-wide.svg" alt="Distributor meeting" />
+            </div>
+            <div class="floating-card card-1">
+              <div class="card-icon"><span class="material-symbols-outlined">eco</span></div>
+              <h4>Biocontrol</h4>
+              <p>Residue-conscious pest management</p>
+            </div>
+            <div class="floating-card card-2">
+              <div class="card-icon"><span class="material-symbols-outlined">psychiatry</span></div>
+              <h4>Biostimulants</h4>
+              <p>Soil and plant vitality programs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section why-kriya">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="section-subtitle"><span class="material-symbols-outlined">compost</span>Our Advantages</span>
+            <h2 class="section-title">Why Distributors Choose Kriya</h2>
+            <p class="section-description">Premium eco-friendly inputs backed by strong documentation, responsive support, and scalable manufacturing.</p>
+          </div>
+          <div class="why-grid">
+            <article class="why-card reveal">
+              <div class="card-icon"><span class="material-symbols-outlined">science</span></div>
+              <h3>R&amp;D Expertise</h3>
+              <p>Microbial discovery, plant science, and formulation teams deliver globally adaptable solutions.</p>
+            </article>
+            <article class="why-card reveal">
+              <div class="card-icon"><span class="material-symbols-outlined">verified</span></div>
+              <h3>Certified &amp; Trusted</h3>
+              <p>EU 2019/1009 aligned dossiers and organic certifications simplify registrations.</p>
+            </article>
+            <article class="why-card reveal">
+              <div class="card-icon"><span class="material-symbols-outlined">inventory</span></div>
+              <h3>Premium Quality</h3>
+              <p>Robust QA/QC, shelf-life data, and stability studies for distributor confidence.</p>
+            </article>
+            <article class="why-card reveal">
+              <div class="card-icon"><span class="material-symbols-outlined">handshake</span></div>
+              <h3>Strong Partnerships</h3>
+              <p>Dedicated sales and technical leads support onboarding and growth.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section categories" id="products">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="section-subtitle"><span class="material-symbols-outlined">category</span>Portfolio</span>
+            <h2 class="section-title">Product Categories</h2>
+            <p class="section-description">Four categories covering crop protection, biostimulation, substrates, and consumer-ready packs.</p>
+          </div>
+          <div class="categories-grid">
+            <article class="category-card reveal">
+              <div class="category-image">
+                <img src="assets/img/placeholders/placeholder-wide.svg" alt="Biocontrol" />
+                <div class="category-overlay"></div>
+              </div>
+              <div class="category-content">
+                <h3>Biocontrol</h3>
+                <p>Natural solutions that manage insects and pathogens while reducing chemical residues.</p>
+                <a href="products/biocontrol.html" class="category-link-label">
+                  Explore biocontrol
+                  <span class="material-symbols-outlined">arrow_forward</span>
                 </a>
               </div>
-            </div>
-          </li>
-          
-          <li><a href="contract-manufacturing.html" class="nav-link">Manufacturing</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-      </div>
-      
-      <div class="nav-toggle" id="nav-toggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </div>
-  </nav>
+            </article>
+            <article class="category-card reveal">
+              <div class="category-image">
+                <img src="assets/img/placeholders/placeholder-wide.svg" alt="Biostimulants" />
+                <div class="category-overlay"></div>
+              </div>
+              <div class="category-content">
+                <h3>Biostimulants</h3>
+                <p>Products that enhance plant resilience, nutrient uptake, and growth performance.</p>
+                <a href="products/biostimulants.html" class="category-link-label">
+                  Explore biostimulants
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+            <article class="category-card reveal">
+              <div class="category-image">
+                <img src="assets/img/placeholders/placeholder-wide.svg" alt="Substrates" />
+                <div class="category-overlay"></div>
+              </div>
+              <div class="category-content">
+                <h3>Substrates</h3>
+                <p>Organic soil amendments and seed treatments that improve fertility and establishment.</p>
+                <a href="products/substrates.html" class="category-link-label">
+                  Explore substrates
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+            <article class="category-card reveal">
+              <div class="category-image">
+                <img src="assets/img/placeholders/placeholder-wide.svg" alt="Home &amp; Garden" />
+                <div class="category-overlay"></div>
+              </div>
+              <div class="category-content">
+                <h3>Home &amp; Garden</h3>
+                <p>Consumer-friendly packs that bring professional inputs to everyday growers.</p>
+                <a href="products/home-garden.html" class="category-link-label">
+                  Explore home &amp; garden
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section class="hero">
-    <div class="hero-bg">
-      <div class="hero-overlay"></div>
-    </div>
-    
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="material-symbols-outlined">verified</span>
-          Certified Organic Solutions
-        </div>
-        
-        <h1 class="hero-title">Organic Crop Care Solutions – Trusted Inputs for a Growing World</h1>
-        
-        <div class="hero-tags">
-          <div class="tag">Residue-conscious</div>
-          <div class="tag">Certified inputs | B2B Focus</div>
-          <div class="tag">Global Supply</div>
-        </div>
-        
-        <p class="hero-description">Kriya delivers residue-conscious biocontrols, biostimulants, and substrates designed for modern agriculture. Our products are certified, regulatory-ready, and tailored for international distributors seeking reliability and performance.</p>
-        
-        <div class="hero-actions">
-          <a href="#products" class="btn-primary">
-            <span>Browse Products</span>
-            <span class="material-symbols-outlined">arrow_forward</span>
-          </a>
-          <a href="assets/img/Label - MargoShine (1).pdf" 
-             class="btn-outline" 
-             id="download-catalog"
-             download="Kriya Product Catalog.pdf">
-            <span>Download Product Catalog</span>
-            <span class="material-symbols-outlined">download</span>
-          </a>
-        </div>
-      </div>
-      
-      <div class="hero-visual">
-        <div class="hero-image">
-          <img src="assets/img/biocontrol-demo.jpeg" alt="Organic Farming" />
-        </div>
-        <div class="floating-card card-1">
-          <div class="card-icon">
-            <span class="material-symbols-outlined">eco</span>
+      <section class="section featured-products">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="section-subtitle"><span class="material-symbols-outlined">local_florist</span>Top Performers</span>
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-description">Programs distributors rely on for high-pressure pest and nutrition demands.</p>
           </div>
-          <h4>Biocontrol Solutions</h4>
-          <p>Natural pest management</p>
-        </div>
-        <div class="floating-card card-2">
-          <div class="card-icon">
-            <span class="material-symbols-outlined">psychiatry</span>
+          <div class="products-grid">
+            <article class="product-card reveal">
+              <div class="product-image">
+                <img src="assets/img/placeholders/placeholder-square.svg" alt="Ecoza" />
+                <span class="product-badge">Best Seller</span>
+              </div>
+              <h3>Ecoza</h3>
+              <p>Azadirachtin portfolio for broad-spectrum pest control and residue-conscious programs.</p>
+              <a href="products/biocontrol/ecoza.html" class="product-link">View details<span class="material-symbols-outlined">arrow_forward</span></a>
+            </article>
+            <article class="product-card reveal">
+              <div class="product-image">
+                <img src="assets/img/placeholders/placeholder-square.svg" alt="Mycova" />
+              </div>
+              <h3>Mycova</h3>
+              <p>Beauveria bassiana formulations that tackle whiteflies, thrips, and aphids effectively.</p>
+              <a href="products/biocontrol/mycova.html" class="product-link">View details<span class="material-symbols-outlined">arrow_forward</span></a>
+            </article>
+            <article class="product-card reveal">
+              <div class="product-image">
+                <img src="assets/img/placeholders/placeholder-square.svg" alt="IGreen" />
+              </div>
+              <h3>IGreen NPK</h3>
+              <p>Microbial consortia that mobilize soil nutrients and strengthen crop resilience.</p>
+              <a href="products/biostimulants/igreen.html" class="product-link">View details<span class="material-symbols-outlined">arrow_forward</span></a>
+            </article>
+            <article class="product-card reveal">
+              <div class="product-image">
+                <img src="assets/img/placeholders/placeholder-square.svg" alt="Spindura" />
+              </div>
+              <h3>Spindura</h3>
+              <p>Spinosad range for fast knockdown of caterpillars and thrips in export crops.</p>
+              <a href="products/biocontrol/spindura.html" class="product-link">View details<span class="material-symbols-outlined">arrow_forward</span></a>
+            </article>
           </div>
-          <h4>Biostimulants</h4>
-          <p>Enhance plant growth</p>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ===== WHY KRIYA ===== -->
-  <section class="section why-kriya">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Our Advantages</span>
-        <h2 class="section-title">Why Choose Kriya?</h2>
-        <p class="section-description">We combine scientific innovation with sustainable practices to deliver premium organic solutions for modern agriculture.</p>
-      </div>
-      
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="card-icon-wrapper">
-            <span class="material-symbols-outlined">science</span>
+      <section class="section metrics">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="section-subtitle"><span class="material-symbols-outlined">insights</span>By the numbers</span>
+            <h2 class="section-title">Global Supply You Can Trust</h2>
           </div>
-          <h3>R&D Expertise</h3>
-          <p>Microbial discovery, plant science, and advanced formulation deliver proven results through continuous innovation.</p>
-          <a href="technology/karyo.html" class="card-link">
-            Learn More
-            <span class="material-symbols-outlined">arrow_forward</span>
-          </a>
-        </div>
-        
-        <div class="why-card">
-          <div class="card-icon-wrapper">
-            <span class="material-symbols-outlined">verified</span>
+          <div class="metrics-grid">
+            <article class="stat-card reveal">
+              <h3>40+</h3>
+              <p>Countries supported by our distributor network.</p>
+            </article>
+            <article class="stat-card reveal">
+              <h3>25+</h3>
+              <p>Biocontrols, biostimulants, and substrates ready for registration.</p>
+            </article>
+            <article class="stat-card reveal">
+              <h3>15 yrs</h3>
+              <p>Manufacturing natural crop inputs with rigorous QA/QC.</p>
+            </article>
           </div>
-          <h3>Certified & Trusted</h3>
-          <p>Aligned with EU 2019/1009 and leading organic certifications for global compliance and market access.</p>
-          <a href="about.html" class="card-link">
-            Our Certifications
-            <span class="material-symbols-outlined">arrow_forward</span>
-          </a>
         </div>
-        
-        <div class="why-card">
-          <div class="card-icon-wrapper">
-            <span class="material-symbols-outlined">inventory</span>
-          </div>
-          <h3>Premium Quality</h3>
-          <p>Rigorous QA/QC systems ensure stability, efficacy & extended shelf-life for consistent performance.</p>
-          <a href="contract-manufacturing.html" class="card-link">
-            Quality Process
-            <span class="material-symbols-outlined">arrow_forward</span>
-          </a>
-        </div>
-        
-        <div class="why-card">
-          <div class="card-icon-wrapper">
-            <span class="material-symbols-outlined">handshake</span>
-          </div>
-          <h3>Strong Partnerships</h3>
-          <p>Collaborating globally for consistent supply, technical support, and long-term mutual growth.</p>
-          <a href="contact.html" class="card-link">
-            Partner With Us
-            <span class="material-symbols-outlined">arrow_forward</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ===== PRODUCT CATEGORIES ===== -->
-  <section class="section categories" id="products">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Our Solutions</span>
-        <h2 class="section-title">Product Categories</h2>
-        <p class="section-description">Comprehensive range of organic inputs for sustainable agriculture and horticulture.</p>
-      </div>
-      
-      <div class="categories-grid">
-        <a href="products/biocontrol.html" class="category-card">
-          <div class="category-image">
-            <img src="assets/img/biocontrol.webp" alt="Biocontrol" />
-            <div class="category-overlay"></div>
+      <section class="section certifications">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="section-subtitle"><span class="material-symbols-outlined">workspace_premium</span>Quality</span>
+            <h2 class="section-title">Certifications &amp; Alignments</h2>
+            <p class="section-description">Aligned with OMRI, Ecocert, ISO, GMP, Chemexcil, and SHEFEXIL for market readiness.</p>
           </div>
-          <div class="category-content">
-            <div class="category-icon">
-              <span class="material-symbols-outlined">pest_control</span>
-            </div>
-            <h3>Biocontrol</h3>
-            <p>Natural crop protection for insects and pathogens with minimal environmental impact.</p>
-            <span class="category-link">
-              Explore Products
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </span>
+          <div class="certifications-grid">
+            <article class="cert-card reveal">
+              <div class="cert-image"><img src="assets/img/placeholders/placeholder-square.svg" alt="OMRI" /></div>
+              <h4>OMRI Listed</h4>
+              <p>Approved for organic production</p>
+            </article>
+            <article class="cert-card reveal">
+              <div class="cert-image"><img src="assets/img/placeholders/placeholder-square.svg" alt="Ecocert" /></div>
+              <h4>Ecocert</h4>
+              <p>International organic standard</p>
+            </article>
+            <article class="cert-card reveal">
+              <div class="cert-image"><img src="assets/img/placeholders/placeholder-square.svg" alt="ISO" /></div>
+              <h4>ISO / GMP</h4>
+              <p>Quality and safety systems</p>
+            </article>
+            <article class="cert-card reveal">
+              <div class="cert-image"><img src="assets/img/placeholders/placeholder-square.svg" alt="Chemexcil" /></div>
+              <h4>Chemexcil / SHEFEXIL</h4>
+              <p>Export-ready documentation</p>
+            </article>
           </div>
-        </a>
-        
-        <a href="products/biostimulants.html" class="category-card">
-          <div class="category-image">
-            <img src="assets/img/biostimulants.jpeg" alt="Biostimulants" />
-            <div class="category-overlay"></div>
-          </div>
-          <div class="category-content">
-            <div class="category-icon">
-              <span class="material-symbols-outlined">psychiatry</span>
-            </div>
-            <h3>Biostimulants</h3>
-            <p>Enhance plant resilience, nutrient uptake, and growth through natural mechanisms.</p>
-            <span class="category-link">
-              Explore Products
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </span>
-          </div>
-        </a>
-        
-        <a href="products/substrates.html" class="category-card">
-          <div class="category-image">
-            <img src="assets/img/substrate.jpeg" alt="Substrates" />
-            <div class="category-overlay"></div>
-          </div>
-          <div class="category-content">
-            <div class="category-icon">
-              <span class="material-symbols-outlined">grass</span>
-            </div>
-            <h3>Substrates</h3>
-            <p>Improve soil health, structure, and microbial activity for better crop establishment.</p>
-            <span class="category-link">
-              Explore Products
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </span>
-          </div>
-        </a>
-        
-        <a href="products/home-garden.html" class="category-card">
-          <div class="category-image">
-            <img src="assets/img/homeandgarden.webp" alt="Home & Garden" />
-            <div class="category-overlay"></div>
-          </div>
-          <div class="category-content">
-            <div class="category-icon">
-              <span class="material-symbols-outlined">yard</span>
-            </div>
-            <h3>Home & Garden</h3>
-            <p>Eco-friendly solutions for everyday growers, from balcony gardens to lawns.</p>
-            <span class="category-link">
-              Explore Products
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+        </div>
+      </section>
 
-  <!-- ===== FEATURED PRODUCTS ===== -->
-  <section class="section featured-products">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Top Performers</span>
-        <h2 class="section-title">Featured Products</h2>
-        <p class="section-description">Our most popular and effective solutions trusted by farmers worldwide.</p>
-      </div>
-      
-      <div class="products-grid">
-        <div class="product-card">
-          <div class="product-image">
-            <img src="assets/img/Ecoza-bottle.png" alt="Ecoza" />
-            <div class="product-badge">Best Seller</div>
-          </div>
-          <div class="product-content">
-            <h3>Ecoza</h3>
-            <p>Neem-based bioinsecticide for broad-spectrum pest control with anti-feedant properties.</p>
-            <div class="product-features">
-              <span class="feature">Azadirachtin-based</span>
-              <span class="feature">Broad-spectrum</span>
+      <section class="section">
+        <div class="container">
+          <div class="cta" data-reveal>
+            <h2>Partner with Kriya for Premium Organic Inputs</h2>
+            <p>Request dossiers, plan registrations, or explore contract manufacturing with our team.</p>
+            <div class="cta-actions">
+              <a href="contact.html" class="btn btn-primary">Contact our team</a>
+              <a href="contract-manufacturing.html" class="btn btn-outline">Manufacturing services</a>
             </div>
-            <a href="products/biocontrol/ecoza.html" class="product-link">
-              View Details
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
           </div>
         </div>
-        
-        <div class="product-card">
-          <div class="product-image">
-            <img src="assets/img/Mycova-bottle.png" alt="Mycova" />
-            <div class="product-badge">New</div>
-          </div>
-          <div class="product-content">
-            <h3>Mycova</h3>
-            <p>Beauveria bassiana-based biofungicide for effective control of thrips and whiteflies.</p>
-            <div class="product-features">
-              <span class="feature">Fungal biopesticide</span>
-              <span class="feature">Target-specific</span>
-            </div>
-            <a href="products/biocontrol/mycova.html" class="product-link">
-              View Details
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
-          </div>
-        </div>
-        
-        <div class="product-card">
-          <div class="product-image">
-            <img src="assets/img/Igreen-bottle.png" alt="IGreen" />
-          </div>
-          <div class="product-content">
-            <h3>IGreen NPK</h3>
-            <p>Microbial consortium for enhanced soil fertility, nutrient cycling, and plant growth.</p>
-            <div class="product-features">
-              <span class="feature">Microbial consortium</span>
-              <span class="feature">Soil health</span>
-            </div>
-            <a href="products/biostimulants/igreen.html" class="product-link">
-              View Details
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
-          </div>
-        </div>
-        
-        <div class="product-card">
-          <div class="product-image">
-            <img src="assets/img/Spindura-bottle.png" alt="Spindura" />
-          </div>
-          <div class="product-content">
-            <h3>Spindura</h3>
-            <p>Spinosad-based biological insecticide for effective control of caterpillars and thrips.</p>
-            <div class="product-features">
-              <span class="feature">Spinosad-based</span>
-              <span class="feature">Fast-acting</span>
-            </div>
-            <a href="products/biocontrol/spindura.html" class="product-link">
-              View Details
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="section-cta">
-        <a href="products/biocontrol.html" class="btn-outline">
-          View All Products
-          <span class="material-symbols-outlined">arrow_forward</span>
-        </a>
-      </div>
-    </div>
-  </section>
+      </section>
+    </main>
 
-  <!-- ===== CERTIFICATIONS ===== -->
-  <section class="section certifications">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Quality Assurance</span>
-        <h2 class="section-title">Our Certifications</h2>
-        <p class="section-description">Our commitment to quality is validated by internationally recognized certifications.</p>
-      </div>
-      
-      <div class="certifications-grid">
-        <div class="cert-card">
-          <div class="cert-image">
-            <img src="assets/img/OMRI.png" alt="OMRI" />
-          </div>
-          <h4>OMRI Listed</h4>
-          <p>Approved for organic production</p>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><img src="assets/img/logo.svg" alt="Kriya Ltd" /></a>
+          <span>Kriya Ltd • Premium organic pesticides, biostimulants &amp; substrates.</span>
         </div>
-        
-        <div class="cert-card">
-          <div class="cert-image">
-            <img src="assets/img/ECOCERT.png" alt="Ecocert" />
-          </div>
-          <h4>ECOCERT</h4>
-          <p>International organic standard</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="products/biocontrol.html">Products</a>
+          <a href="technology/karyo.html">Technology</a>
+          <a href="contact.html">Contact</a>
         </div>
-        
-        <div class="cert-card">
-          <div class="cert-image">
-            <img src="assets/img/ISO.png" alt="ISO" />
-          </div>
-          <h4>ISO 9001:2015</h4>
-          <p>Quality management system</p>
+        <div class="footer-contact">
+          <a href="mailto:info@kriya.ltd">info@kriya.ltd</a>
+          <a href="https://wa.me/916385848466" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="tel:+916385848466">+91 63858 48466</a>
         </div>
-        
-        <div class="cert-card">
-          <div class="cert-image">
-            <img src="assets/img/GMP.png" alt="GMP" />
-          </div>
-          <h4>GMP Certified</h4>
-          <p>Good manufacturing practices</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/108402158/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://x.com/kriyabiosys" target="_blank" rel="noopener" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.instagram.com/kriyabiosys/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.youtube.com/@kriyabiosys" target="_blank" rel="noopener" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
+          <a href="mailto:info@kriya.ltd" aria-label="Email"><i class="bx bx-envelope"></i></a>
         </div>
-        
-        <div class="cert-card">
-          <div class="cert-image">
-            <img src="assets/img/Chemexcil.png" alt="Chemexcil" />
-          </div>
-          <h4>CHEMEXCIL</h4>
-          <p>Export promotion council</p>
-        </div>
-        
-        <div class="cert-card">
-          <div class="cert-image">
-            <img src="assets/img/shefexil.svg" alt="SHEFEXIL" />
-          </div>
-          <h4>SHEFEXIL</h4>
-          <p>Shellac export promotion</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA SECTION ===== -->
-  <section class="section cta">
-    <div class="container">
-      <div class="cta-content">
-        <h2>Ready to Transform Your Crop Management?</h2>
-        <p>Partner with Kriya for premium organic solutions that deliver results while protecting our planet.</p>
-        <div class="cta-actions">
-          <a href="contact.html" class="btn-primary">
-            <span>Contact Our Team</span>
-            <span class="material-symbols-outlined">arrow_forward</span>
-          </a>
-          <a href="tel:+916385848466" class="btn-outline">
-            <span>Call Us Now</span>
-            <span class="material-symbols-outlined">call</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-main">
-          <div class="footer-brand">
-            <a href="index.html" class="footer-logo">
-              <img src="assets/img/logo-white.png" alt="Kriya Ltd" />
-            </a>
-            <p>Leading provider of certified organic crop care solutions for sustainable agriculture worldwide.</p>
-            <div class="footer-social">
-              <a href="https://www.linkedin.com/company/108402158/" aria-label="LinkedIn">
-                <i class='bx bxl-linkedin'></i>
-              </a>
-              <a href="https://x.com/kriyabiosys" aria-label="Twitter">
-                <i class='bx bxl-twitter'></i>
-              </a>
-              <a href="https://www.instagram.com/kriyabiosys/" aria-label="Instagram">
-                <i class='bx bxl-instagram'></i>
-              </a>
-              <a href="https://www.youtube.com/@kriyabiosys" aria-label="YouTube">
-                <i class='bx bxl-youtube'></i>
-              </a>
-              <a href="https://www.facebook.com/kriyabiosys" aria-label="Facebook">
-                <i class='bx bxl-facebook'></i>
-              </a>
-            </div>
-          </div>
-          
-          <div class="footer-links">
-            <div class="footer-column">
-              <h4>Company</h4>
-              <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="technology/karyo.html">Our Technology</a></li>
-                <li><a href="contract-manufacturing.html">Contract Manufacturing</a></li>
-                <li><a href="careers.html">Careers</a></li>
-              </ul>
-            </div>
-            
-            <div class="footer-column">
-              <h4>Products</h4>
-              <ul>
-                <li><a href="products/biocontrol.html">Biocontrol</a></li>
-                <li><a href="products/biostimulants.html">Biostimulants</a></li>
-                <li><a href="products/substrates.html">Substrates</a></li>
-                <li><a href="products/home-garden.html">Home & Garden</a></li>
-              </ul>
-            </div>
-            
-            <div class="footer-column">
-              <h4>Support</h4>
-              <ul>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="technical-support.html">Technical Support</a></li>
-                <li><a href="downloads.html">Downloads</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-              </ul>
-            </div>
-            
-            <div class="footer-column">
-              <h4>Contact Info</h4>
-              <ul class="footer-contact">
-                <li>
-                  <span class="material-symbols-outlined">mail</span>
-                  <a href="mailto:info@kriya.ltd">info@kriya.ltd</a>
-                </li>
-                <li>
-                  <span class="material-symbols-outlined">call</span>
-                  <a href="tel:+916385848466">+91 63858 48466</a>
-                </li>
-                <li>
-                  <span class="material-symbols-outlined">location_on</span>
-                  <span>Salem, Tamil Nadu, India</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div class="footer-bottom">
-          <div class="footer-copyright">
-            <p>&copy; 2025 Kriya Ltd. All rights reserved.</p>
-          </div>
+        <div class="footer-meta">
+          <div class="footer-disclaimer">For usage/dosage information refer to product labels and technical data sheets.</div>
           <div class="footer-legal">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-of-service.html">Terms of Service</a>
-            <a href="sitemap.html">Sitemap</a>
+            <span>© Kriya Ltd 2025</span>
+            <a href="privacy.html">Privacy</a>
+            <a href="responsible-use.html">Responsible Use</a>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Back to Top Button -->
-  <button class="back-to-top" id="backToTop">
-    <span class="material-symbols-outlined">arrow_upward</span>
-    <!-- <span class="back-to-top-text">Top</span> -->
-  </button>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
 
-  <!-- JavaScript Files -->
-  <script src="assets/js/main.js"></script>
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
