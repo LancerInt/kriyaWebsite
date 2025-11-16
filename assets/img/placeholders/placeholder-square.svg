@@ -1,0 +1,12 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Square placeholder">
+  <defs>
+    <linearGradient id="sq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dfe9d7" />
+      <stop offset="100%" stop-color="#b7d2a4" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#sq)" rx="32" />
+  <path d="M200 520 L400 280 L600 520" stroke="#5a7a3c" stroke-width="28" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="280" cy="520" r="34" fill="#5a7a3c" opacity="0.9" />
+  <circle cx="520" cy="520" r="34" fill="#5a7a3c" opacity="0.9" />
+</svg>
