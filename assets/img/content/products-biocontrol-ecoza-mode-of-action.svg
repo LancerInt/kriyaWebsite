@@ -1,0 +1,11 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900' viewBox='0 0 1600 900'>
+  <defs>
+    <linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#6B9941'/>
+      <stop offset='100%' stop-color='#EA6E26'/>
+    </linearGradient>
+  </defs>
+  <rect width='1600' height='900' rx='36.0' fill='url(#grad)'/>
+  <text x='50%' y='48%' fill='white' font-family='Inter, Arial, sans-serif' font-size='72' text-anchor='middle'>Products Biocontrol Ecoza Mode Of Action</text>
+  <text x='50%' y='62%' fill='rgba(255,255,255,0.8)' font-family='Inter, Arial, sans-serif' font-size='45' text-anchor='middle'>1600×900</text>
+</svg>
