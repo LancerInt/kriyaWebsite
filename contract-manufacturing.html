@@ -1,466 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contract Manufacturing | Kriya Ltd</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contract Manufacturing – Kriya Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .page {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 4rem 1rem 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+      }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+      .hero,
+      .grid,
+      .steps,
+      .badges {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+      }
 
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-  <!-- ===== PRELOADER ===== -->
-  <div id="preloader">
-    <div class="preloader-content">
-      <div class="logo-loader">
-        <img src="assets/img/logo.png" alt="Kriya Ltd" />
-      </div>
-      <div class="loader-bar">
-        <div class="loader-progress"></div>
-      </div>
-    </div>
-  </div>
+      .hero {
+        align-items: center;
+      }
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/img/logo.png" alt="Kriya Ltd" />
-      </a>
+      .hero img {
+        border-radius: 1.5rem;
+      }
 
-      <div class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
+      .card {
+        border: 1px solid rgba(15, 27, 7, 0.12);
+        border-radius: 1.25rem;
+        padding: 1.5rem;
+      }
 
-          <!-- Products Dropdown -->
-          <li class="nav-item dropdown dropdown-products">
-            <a href="products/biocontrol.html" class="nav-link dropbtn">
-              <span>Products</span>
-              <span class="material-symbols-outlined">expand_more</span>
-            </a>
-            <div class="dropdown-content products-dropdown">
-              <div class="categories-menu">
-                <div class="category-item">
-                  <a href="products/biocontrol.html" class="category-link">
-                    <div class="category-icon">
-                      <span class="material-symbols-outlined">pest_control</span>
-                    </div>
-                    <div class="category-info">
-                      <h4>Biocontrol</h4>
-                      <p>Natural pest management range</p>
-                    </div>
-                    <span class="material-symbols-outlined">chevron_right</span>
-                  </a>
-                  <div class="submenu">
-                    <div class="submenu-header">
-                      <h5>Biocontrol Products</h5>
-                      <p>Botanical and microbial actives</p>
-                    </div>
-                    <div class="submenu-grid">
-                      <a href="products/biocontrol/ecoza.html" data-tooltip="Azadirachtin">Ecoza</a>
-                      <a href="products/biocontrol/margoshine.html" data-tooltip="Neem Oil">Margoshine</a>
-                      <a href="products/biocontrol/k-guard.html" data-tooltip="Karanjin">K-Guard</a>
-                      <a href="products/biocontrol/weedx.html" data-tooltip="MCT Weed Killer">WeedX</a>
-                      <a href="products/biocontrol/spindura.html" data-tooltip="Spinosad">Spindura</a>
-                      <a href="products/biocontrol/margospin.html" data-tooltip="Neem Oil + Spinosad">MargoSpin</a>
-                      <a href="products/biocontrol/admira.html" data-tooltip="Essential Oil Formulation">Admira</a>
-                      <a href="products/biocontrol/mycova.html" data-tooltip="Beauveria bassiana">Mycova</a>
-                      <a href="products/biocontrol/rexora.html" data-tooltip="Metarhizium anisopliae">Rexora</a>
-                      <a href="products/biocontrol/biota.html" data-tooltip="Trichoderma viride / harzianum">Biota (V/H)</a>
-                      <a href="products/biocontrol/seira.html" data-tooltip="Verticillium lecanii">Seira</a>
-                      <a href="products/biocontrol/encilo.html" data-tooltip="Paecilomyces fumosoroseus">EnCilo</a>
-                      <a href="products/biocontrol/neuvita.html" data-tooltip="Ampelomyces quisqualis">Neuvita</a>
-                    </div>
-                  </div>
-                </div>
+      .steps {
+        counter-reset: flow;
+      }
 
-                <div class="category-item">
-                  <a href="products/biostimulants.html" class="category-link">
-                    <div class="category-icon">
-                      <span class="material-symbols-outlined">psychiatry</span>
-                    </div>
-                    <div class="category-info">
-                      <h4>Biostimulants</h4>
-                      <p>Plant resilience &amp; nutrition</p>
-                    </div>
-                    <span class="material-symbols-outlined">chevron_right</span>
-                  </a>
-                  <div class="submenu">
-                    <div class="submenu-header">
-                      <h5>Biostimulant Products</h5>
-                      <p>Microbial &amp; botanical enhancers</p>
-                    </div>
-                    <div class="submenu-grid">
-                      <a href="products/biostimulants/igreen.html" data-tooltip="Microbial consortium">IGreen</a>
-                      <a href="products/biostimulants/zenita.html" data-tooltip="Peptide formulation">Zenita</a>
-                      <a href="products/biostimulants/cropsia.html" data-tooltip="Plant extracts formultion">Cropsia</a>
-                      <a href="products/biostimulants/enrhize.html" data-tooltip="Arbuscular Mycorrhizal">Enrhize</a>
-                      <a href="products/biostimulants/orgocare.html" data-tooltip="Plant based Antitranspirants">Orgocare</a>
-                      <a href="products/biostimulants/blooma.html" data-tooltip="Seaweed formulation">Blooma</a>
-                      <a href="products/biostimulants/envicta.html" data-tooltip="Humic &amp; fulvic formulation">Envicta</a>
-                    </div>
-                  </div>
-                </div>
+      .steps .card::before {
+        counter-increment: flow;
+        content: counter(flow, decimal-leading-zero);
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--neutral-100);
+        color: var(--brand-orange);
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+      }
 
-                <div class="category-item">
-                  <a href="products/substrates.html" class="category-link">
-                    <div class="category-icon">
-                      <span class="material-symbols-outlined">grass</span>
-                    </div>
-                    <div class="category-info">
-                      <h4>Substrates</h4>
-                      <p>Soil amendment solutions</p>
-                    </div>
-                    <span class="material-symbols-outlined">chevron_right</span>
-                  </a>
-                  <div class="submenu">
-                    <div class="submenu-header">
-                      <h5>Substrate Products</h5>
-                      <p>Soil health &amp; seed treatments</p>
-                    </div>
-                    <div class="submenu-grid">
-                      <a href="products/substrates/maxineem.html" data-tooltip="Neem cake">Maxineem</a>
-                      <a href="products/substrates/kmix.html" data-tooltip="Karanja cake">K-Mix</a>
-                      <a href="products/substrates/mystica.html" data-tooltip="Wetting &amp; spreading agents">Mystica</a>
-                      <a href="products/substrates/engrow.html" data-tooltip="Seed coating">Engrow</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="category-item">
-                  <a href="products/home-garden.html" class="category-link">
-                    <div class="category-icon">
-                      <span class="material-symbols-outlined">yard</span>
-                    </div>
-                    <div class="category-info">
-                      <h4>Home &amp; Garden</h4>
-                      <p>Consumer-ready packs</p>
-                    </div>
-                  </a>
-                </div>
+      .badges span {
+        display: inline-block;
+        padding: 0.5rem 0.75rem;
+        border-radius: 999px;
+        background: var(--neutral-100);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="nav-logo" href="index.html">
+          <img src="assets/img/logo.svg" alt="Kriya Ltd" />
+        </a>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li class="dropdown">
+              <a class="nav-link" href="products/biocontrol/ecoza.html">Products</a>
+              <div class="dropdown-content">
+                <a href="products/biocontrol/ecoza.html">Biocontrol</a>
+                <a href="products/home-garden.html">Home &amp; Garden</a>
               </div>
-            </div>
-          </li>
-          <!-- Technology Dropdown -->
-          <li class="nav-item dropdown dropdown-tech">
-            <a href="technology/karyo.html" class="nav-link dropbtn">
-              <span>Technology</span>
-              <span class="material-symbols-outlined">expand_more</span>
-            </a>
-            <div class="dropdown-content tech-dropdown">
-              <div class="tech-menu-compact">
-                <a href="technology/karyo.html" class="tech-item-compact" data-tooltip="Delivery Platform">
-                  <div class="tech-icon-compact">
-                    <span class="material-symbols-outlined">biotech</span>
-                  </div>
-                  <div class="tech-content-compact">
-                    <h5>Karyo Technology</h5>
-                    <p>Formulation technology</p>
-                  </div>
-                </a>
-
-                <a href="technology/wynn.html" class="tech-item-compact" data-tooltip="Microbial Platform">
-                  <div class="tech-icon-compact">
-                    <span class="material-symbols-outlined">science</span>
-                  </div>
-                  <div class="tech-content-compact">
-                    <h5>Wynn Formulation</h5>
-                    <p>Microbial innovation</p>
-                  </div>
-                </a>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link" href="technology/karyo.html">Technology</a>
+              <div class="dropdown-content">
+                <a href="technology/karyo.html">Karyo</a>
+                <a href="technology/wynn.html">Wynn</a>
               </div>
-            </div>
-          </li>
+            </li>
+            <li><a class="nav-link active" href="contract-manufacturing.html">Manufacturing</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
 
-          <li><a href="contract-manufacturing.html" class="nav-link active">Manufacturing</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-      </div>
+    <main class="page">
+      <section class="hero" data-reveal>
+        <div>
+          <p class="eyebrow">Contract Manufacturing</p>
+          <h1>End-to-end manufacturing for sustainable agri-inputs</h1>
+          <p>
+            Kriya offers a full suite of services—from extraction and fermentation to formulation and packaging—so partners
+            can bring eco-friendly crop care solutions to market faster.
+          </p>
+        </div>
+        <img src="assets/img/placeholders/placeholder-wide.svg" alt="Manufacturing facility" />
+      </section>
 
-      <div class="nav-toggle" id="nav-toggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </div>
-  </nav>
+      <section data-reveal>
+        <h2>Core capabilities</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>CO₂ extraction</h3>
+            <p>High-purity botanical actives with no solvent residues.</p>
+          </article>
+          <article class="card">
+            <h3>Fermentation</h3>
+            <p>Microbial biomass, spores, and metabolites via solid-state and submerged processes.</p>
+          </article>
+          <article class="card">
+            <h3>Formulation &amp; packing</h3>
+            <p>EC, SC, WP, WSP, tablets, and RTU sprays with QA/QC oversight.</p>
+          </article>
+          <article class="card">
+            <h3>R&amp;D &amp; analytics</h3>
+            <p>Stability studies, assay development, and regulatory documentation support.</p>
+          </article>
+        </div>
+      </section>
 
-  <!-- ===== PAGE HERO ===== -->
-  <section class="page-hero interior-hero">
-    <div class="container">
-      <div class="page-hero-content">
-        <span class="page-hero-eyebrow">Contract Manufacturing</span>
-        <h1 class="page-hero-title">End-to-end manufacturing for sustainable agri-inputs</h1>
-        <p class="page-hero-subtext">Scale botanical and microbial formulations with our integrated extraction, fermentation, and packaging capabilities backed by rigorous QA/QC.</p>
-        <div class="hero-metrics">
-          <div class="hero-metric">
-            <div class="material-symbols-outlined hero-metric-icon">local_florist</div>
-            <div class="hero-metric-text">
-              <strong>Extraction Expertise</strong>
-              <p class="hero-metric-detail">Supercritical CO₂, solvent, and aqueous processes for high-purity actives.</p>
-            </div>
-          </div>
-          <div class="hero-metric">
-            <div class="material-symbols-outlined hero-metric-icon">science</div>
-            <div class="hero-metric-text">
-              <strong>Microbial Production</strong>
-              <p class="hero-metric-detail">Solid-state fermentation suites for spores, metabolites, and consortia.</p>
-            </div>
-          </div>
-          <div class="hero-metric">
-            <div class="material-symbols-outlined hero-metric-icon">verified</div>
-            <div class="hero-metric-text">
-              <strong>Regulatory Ready</strong>
-              <p class="hero-metric-detail">Documentation aligned with EU 2019/1009, OMRI, Ecocert, ISO, and GMP.</p>
-            </div>
-          </div>
+      <section data-reveal>
+        <h2>Engagement model</h2>
+        <div class="steps">
+          <article class="card"><h3>Scope</h3><p>Define objectives, formulations, and market requirements.</p></article>
+          <article class="card"><h3>Feasibility</h3><p>Small-scale trials validate technical and commercial fit.</p></article>
+          <article class="card"><h3>Pilot</h3><p>Optimize process parameters with intermediate batches.</p></article>
+          <article class="card"><h3>Scale-up</h3><p>Full manufacturing under QA/QC protocols.</p></article>
+          <article class="card"><h3>Supply</h3><p>Ongoing production, packaging, and delivery worldwide.</p></article>
         </div>
-        <div class="page-hero-actions">
-          <a href="contact.html" class="btn-primary">
-            <span>Discuss Your Project</span>
-            <span class="material-symbols-outlined">arrow_forward</span>
-          </a>
-          <a href="#engagement" class="btn-outline">
-            <span>View Engagement Model</span>
-            <span class="material-symbols-outlined">timeline</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ===== OVERVIEW ===== -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Manufacturing overview</span>
-        <h2 class="section-title">From lab-scale to commercial supply</h2>
-        <p class="section-description">Kriya offers a full suite of contract services for companies developing natural crop care solutions. Our facilities combine extraction, fermentation, formulation, and packaging with traceable QA/QC workflows.</p>
-      </div>
-      <div class="content-grid">
-        <div class="content-block">
-          <p>Our teams work across botanical and microbial actives, converting R&D prototypes into market-ready formulations. With in-house analytical labs, regulatory specialists, and dedicated production managers, we shorten commercialization timelines while ensuring compliance across global markets.</p>
-          <div class="pill-row">
-            <span class="pill">Supercritical CO₂ extraction</span>
-            <span class="pill">Solid-state fermentation</span>
-            <span class="pill">Formulation science &amp; stabilization</span>
-            <span class="pill">Packaging &amp; private labeling</span>
-          </div>
+      <section data-reveal>
+        <h2>QA/QC focus</h2>
+        <div class="badges">
+          <span>Identity &amp; assay verification</span>
+          <span>Microbial load testing</span>
+          <span>Residual solvent analysis</span>
+          <span>Shelf-life validation</span>
+          <span>Packaging integrity</span>
+          <span>Traceability</span>
         </div>
-        <div class="image-placeholder">
-          <span>Manufacturing facility imagery placeholder</span>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
+    </main>
 
-  <!-- ===== CORE CAPABILITIES ===== -->
-  <section class="section section-muted">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Core capabilities</span>
-        <h2 class="section-title">Technical services tailored to natural inputs</h2>
-      </div>
-      <div class="value-grid">
-        <div class="value-card">
-          <div class="value-heading">
-            <div class="value-icon">
-              <span class="material-symbols-outlined">precision_manufacturing</span>
-            </div>
-            <h3>Extraction Platforms</h3>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <img src="assets/img/logo.svg" alt="Kriya Ltd" width="140" />
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="products/biocontrol/ecoza.html">Products</a>
+            <a href="technology/karyo.html">Technology</a>
+            <a href="contact.html">Contact</a>
           </div>
-          <p>Supercritical CO₂, solvent, and aqueous processes deliver high-purity botanicals without compromising residue thresholds.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-heading">
-            <div class="value-icon">
-              <span class="material-symbols-outlined">biotech</span>
-            </div>
-            <h3>Microbial Fermentation</h3>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/108402158/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://x.com/kriyabiosys" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://www.instagram.com/kriyabiosys/" target="_blank" rel="noopener">Instagram</a>
           </div>
-          <p>Solid-state fermentation, metabolite extraction, and downstream processing for beneficial microbes and consortia.</p>
         </div>
-        <div class="value-card">
-          <div class="value-heading">
-            <div class="value-icon">
-              <span class="material-symbols-outlined">science</span>
-            </div>
-            <h3>Formulation Science</h3>
-          </div>
-          <p>Encapsulation, emulsifiable concentrates, wettable powders, WSP tablets, and RTU sprays engineered for stability.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-heading">
-            <div class="value-icon">
-              <span class="material-symbols-outlined">warehouse</span>
-            </div>
-            <h3>Packing &amp; Logistics</h3>
-          </div>
-          <p>Bulk drums and IBCs for B2B supply plus retail-ready formats with eco-friendly packaging and fulfillment support.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ENGAGEMENT MODEL ===== -->
-  <section class="section" id="engagement">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">How we collaborate</span>
-        <h2 class="section-title">Engagement model</h2>
-        <p class="section-description">A proven five-step process keeps projects on schedule—from discovery to global distribution.</p>
-      </div>
-      <div class="steps-grid steps-grid-five">
-        <div class="step-card">
-          <div class="step-header">
-            <span class="material-symbols-outlined">description</span>
-            <h3>Scope</h3>
-          </div>
-          <p>Define objectives, target crops, certifications, and launch timelines with our formulation leads.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-header">
-            <span class="material-symbols-outlined">science</span>
-            <h3>Feasibility</h3>
-          </div>
-          <p>Execute lab trials to validate actives, carrier systems, and regulatory pathways.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-header">
-            <span class="material-symbols-outlined">precision_manufacturing</span>
-            <h3>Pilot</h3>
-          </div>
-          <p>Run intermediate batches to optimize process parameters, QC checkpoints, and packaging formats.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-header">
-            <span class="material-symbols-outlined">factory</span>
-            <h3>Scale-Up</h3>
-          </div>
-          <p>Transition to full-scale production under GMP-aligned SOPs with traceability at every stage.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-header">
-            <span class="material-symbols-outlined">local_shipping</span>
-            <h3>Supply</h3>
-          </div>
-          <p>Manage recurring manufacturing, packaging, logistics, and responsive QA/QC documentation.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== QA/QC ===== -->
-  <section class="section section-muted">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Quality assurance</span>
-        <h2 class="section-title">QA/QC focus</h2>
-        <p class="section-description">Robust analytical protocols ensure every batch meets identity, purity, and performance targets.</p>
-      </div>
-      <div class="highlight-banner">
-        <p>Our labs conduct identity and assay verification, microbial load testing, residual solvent analysis, and accelerated stability to guarantee shelf-life and regulatory compliance.</p>
-        <div class="highlight-pills">
-          <span class="highlight-pill">
-            <span class="material-symbols-outlined">assignment_turned_in</span>
-            Traceable batch records
-          </span>
-          <span class="highlight-pill">
-            <span class="material-symbols-outlined">inventory_2</span>
-            Packaging integrity checks
-          </span>
-          <span class="highlight-pill">
-            <span class="material-symbols-outlined">health_and_safety</span>
-            Safety &amp; compliance audits
-          </span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA SECTION ===== -->
-  <section class="section cta">
-    <div class="container">
-      <div class="cta-content">
-        <h2>Partner with Kriya for premium manufacturing</h2>
-        <p>Combine our extraction, fermentation, and formulation expertise with your pipeline to deliver certified organic solutions worldwide.</p>
-        <div class="cta-actions">
-          <a href="contact.html" class="btn-primary">
-            <span>Start a Project</span>
-            <span class="material-symbols-outlined">arrow_forward</span>
-          </a>
-          <a href="products/biocontrol.html" class="btn-outline">
-            <span>View Product Portfolio</span>
-            <span class="material-symbols-outlined">inventory</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-strip">
-        <div class="footer-brand">
-          <a href="index.html" class="footer-logo">
-            <img src="assets/img/logo-white.png" alt="Kriya Ltd" />
-          </a>
-          <p class="footer-brandline">Leading provider of certified organic crop care solutions for sustainable agriculture worldwide.</p>
-        </div>
-
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="about.html">About</a>
-          <a href="products/biocontrol.html">Products</a>
-          <a href="technology/karyo.html">Technology</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/company/108402158/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
-            <i class="bx bxl-linkedin"></i>
-          </a>
-          <a href="https://www.youtube.com/@kriyabiosys" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">
-            <i class="bx bxl-youtube"></i>
-          </a>
-          <a href="https://x.com/kriyabiosys" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener">
-            <i class="bx bxl-twitter"></i>
-          </a>
-          <a href="https://www.instagram.com/kriyabiosys/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
-            <i class="bx bxl-instagram"></i>
-          </a>
-          <a href="mailto:info@kriya.ltd" class="social-icon" aria-label="Email">
-            <i class="bx bx-envelope"></i>
-          </a>
-          <a href="https://wa.me/916385848466" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
-            <i class="bx bxl-whatsapp"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="footer-meta">
-        <p class="footer-disclaimer">For usage/dosage information, refer to the product documentation supplied with each formulation.</p>
-        <div class="footer-legal">
+        <div class="footer-meta">
           <span>© Kriya Ltd 2025</span>
-          <a href="trademark.html">Trademark</a>
-          <a href="privacy-policy.html">Privacy</a>
-          <a href="responsible-use.html">Responsible Use</a>
+          <span>For usage/dosage information refer to official documentation.</span>
+          <span><a href="contact.html">Responsible Use &amp; Privacy</a></span>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <button class="back-to-top" id="backToTop">
-    <span class="material-symbols-outlined">arrow_upward</span>
-    <span class="back-to-top-text">Back to top</span>
-  </button>
-
-  <script src="assets/js/main.js"></script>
-</body>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
