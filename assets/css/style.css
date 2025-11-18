@@ -4313,6 +4313,16 @@ a {
     margin-bottom: 12px;
   }
 
+  .variant-grid {
+    gap: 26px;
+  }
+
+  .variant-packshot {
+    max-width: 200px;
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+
   .product-hero-visual {
     max-width: 620px;
   }
