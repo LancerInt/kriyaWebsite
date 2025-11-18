@@ -801,12 +801,14 @@
     // Home & Garden specific mobile submenu helper
     document.addEventListener('DOMContentLoaded', function () {
       const productsDropdown = document.querySelector('.home-garden-page .dropdown-products');
+      if (!productsDropdown) return;
+
+      const categoryItems = Array.from(productsDropdown.querySelectorAll('.category-item'));
+      const categoryLinks = Array.from(productsDropdown.querySelectorAll('.category-link'));
+      const productsTrigger = productsDropdown.querySelector('.dropbtn');
 
       function syncMobileProductsMenu() {
-        if (!productsDropdown) return;
-
         const isMobile = window.innerWidth <= 991.98;
-        const categoryItems = productsDropdown.querySelectorAll('.category-item');
 
         if (isMobile) {
           productsDropdown.classList.add('active');
@@ -815,6 +817,26 @@
           productsDropdown.classList.remove('active');
           categoryItems.forEach(item => item.classList.remove('submenu-active'));
         }
+      }
+
+      function handleCategoryToggle(event, item) {
+        if (window.innerWidth > 991.98) return;
+        event.preventDefault();
+        item.classList.toggle('submenu-active');
+      }
+
+      categoryLinks.forEach(link => {
+        const parentItem = link.closest('.category-item');
+        if (!parentItem) return;
+        link.addEventListener('click', e => handleCategoryToggle(e, parentItem));
+      });
+
+      if (productsTrigger) {
+        productsTrigger.addEventListener('click', e => {
+          if (window.innerWidth > 991.98) return;
+          e.preventDefault();
+          productsDropdown.classList.toggle('active');
+        });
       }
 
       syncMobileProductsMenu();

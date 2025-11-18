@@ -1700,6 +1700,16 @@ a {
     font-size: 0.78rem;
   }
 
+  .home-garden-page .category-link h4,
+  .home-garden-page .category-info p {
+    white-space: normal;
+  }
+
+  .home-garden-page .category-link {
+    width: 100%;
+    align-items: center;
+  }
+
   .home-garden-page .dropdown-content {
     position: static;
     opacity: 1;
@@ -5061,6 +5071,11 @@ a {
   padding: 16px;
   display: grid;
   gap: 14px;
+}
+
+.home-garden-hero .hero-visual-img {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .hero-visual-meta {
