@@ -3637,16 +3637,17 @@ a {
     position: fixed;
     top: 80px;
     left: -100%;
-    width: 100%;
+    width: 100vw;
     height: calc(100vh - 80px);
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(40px);
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    padding: 30px 25px;
+    align-items: stretch;
+    padding: 24px 18px 30px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow-y: auto;
+    overflow-x: hidden;
     gap: 0;
     margin-left: 0;
   }
@@ -3661,7 +3662,7 @@ a {
     background: transparent;
     box-shadow: none;
     border: none;
-    padding: 12px 0 4px;
+    padding: 8px 0 6px;
     pointer-events: none;
     display: none;
     transition: opacity 0.25s ease, visibility 0.25s ease;
@@ -3706,6 +3707,7 @@ a {
   .nav-menu .category-link h4,
   .nav-menu .category-info p {
     white-space: normal;
+    line-height: 1.4;
   }
 
   .nav-menu .submenu {
@@ -3717,7 +3719,7 @@ a {
     background: rgba(245, 250, 246, 0.9);
     box-shadow: none;
     border: none;
-    padding: 10px 18px 14px 50px;
+    padding: 12px 16px 16px 18px;
     max-height: none;
     display: none;
     border-top: 1px dashed rgba(42, 78, 53, 0.2);
@@ -3742,7 +3744,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 0 10px 6px;
+    padding: 0 6px 6px;
   }
 
   .nav-menu .tech-item-compact {
@@ -3751,17 +3753,27 @@ a {
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.95);
   }
-  
+
   .nav-menu.active {
     left: 0;
   }
-  
+
   .nav-list {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: flex-start;
     gap: 0;
     width: 100%;
+  }
+
+  .nav-list > li {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    justify-content: space-between;
+    padding: 14px 4px;
   }
 
   .hero-metric-icon {
@@ -4301,6 +4313,16 @@ a {
     margin-bottom: 12px;
   }
 
+  .variant-grid {
+    gap: 26px;
+  }
+
+  .variant-packshot {
+    max-width: 200px;
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+
   .product-hero-visual {
     max-width: 620px;
   }
@@ -4375,6 +4397,26 @@ a {
   .product-hero-highlight {
     text-align: left;
     gap: 12px;
+  }
+
+  .variant-card {
+    align-items: center;
+  }
+
+  .variant-packshot {
+    max-width: 180px;
+    margin: 0 auto 12px;
+  }
+
+  .variant-body {
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .variant-meta {
+    justify-content: flex-start;
   }
   
   .hero-title {
