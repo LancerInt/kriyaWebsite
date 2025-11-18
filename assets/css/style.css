@@ -1712,15 +1712,16 @@ a {
 
   .home-garden-page .dropdown-content {
     position: static;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     transform: none;
-    pointer-events: auto;
+    pointer-events: none;
     width: 100%;
     box-shadow: none;
     background: transparent;
     border: none;
-    padding: 0;
+    padding: 8px 0;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
   }
 
   .home-garden-page .products-dropdown {
@@ -1730,27 +1731,41 @@ a {
 
   .home-garden-page .submenu {
     position: static;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     transform: none;
-    pointer-events: auto;
+    pointer-events: none;
     width: 100%;
     box-shadow: none;
     background: transparent;
     border: none;
-    padding: 10px 12px 12px 44px;
+    padding: 8px 18px 14px 28px;
     max-height: none;
     display: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+  }
+
+  .home-garden-page .dropdown.active .dropdown-content,
+  .home-garden-page .dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .home-garden-page .dropdown.active .submenu,
+  .home-garden-page .dropdown:hover .submenu,
+  .home-garden-page .category-item.submenu-active .submenu,
+  .home-garden-page .category-item:hover .submenu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .home-garden-page .submenu-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
-
-  .home-garden-page .category-item.submenu-active .submenu {
-    display: block;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
 
@@ -3638,19 +3653,23 @@ a {
   /* Mobile dropdown reset for full-width menus */
   .nav-menu .dropdown-content {
     position: static;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     transform: none;
     width: 100%;
     background: transparent;
     box-shadow: none;
     border: none;
-    padding: 0;
-    pointer-events: auto;
+    padding: 8px 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
   }
 
-  .nav-menu .dropdown:not(.active) .dropdown-content {
-    display: none;
+  .nav-menu .dropdown.active .dropdown-content,
+  .nav-menu .dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-menu .products-dropdown,
@@ -3660,7 +3679,7 @@ a {
   }
 
   .nav-menu .categories-menu {
-    gap: 4px;
+    gap: 10px;
   }
 
   .nav-menu .category-link h4,
@@ -3670,26 +3689,31 @@ a {
 
   .nav-menu .submenu {
     position: static;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     transform: none;
     width: 100%;
     background: transparent;
     box-shadow: none;
     border: none;
-    padding: 10px 12px 12px 44px;
+    padding: 8px 18px 14px 28px;
     max-height: none;
     display: none;
   }
 
-  .nav-menu .category-item.submenu-active .submenu {
+  .nav-menu .dropdown.active .submenu,
+  .nav-menu .dropdown:hover .submenu,
+  .nav-menu .category-item.submenu-active .submenu,
+  .nav-menu .category-item:hover .submenu {
     display: block;
+    opacity: 1;
+    visibility: visible;
   }
 
   .nav-menu .submenu-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
   
   .nav-menu.active {
