@@ -1,0 +1,13 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='1200' viewBox='0 0 1200 1200' role='img' aria-label='K-Mix Hero placeholder'>
+  <defs>
+    <linearGradient id='grad88' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#6B9941' stop-opacity='0.75'/>
+      <stop offset='100%' stop-color='#6B9941' stop-opacity='0.45'/>
+    </linearGradient>
+  </defs>
+  <rect width='1200' height='1200' rx='48' fill='url(#grad88)'/>
+  <g fill='white' font-family="'Inter','Helvetica Neue',Arial,sans-serif" text-anchor='middle'>
+    <text x='600.0' y='590.0' font-size='96' font-weight='700'>K-Mix Hero</text>
+    <text x='600.0' y='640.0' font-size='60' opacity='0.9'>1200 × 1200</text>
+  </g>
+</svg>

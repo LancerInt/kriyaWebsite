@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home &amp; Garden | Consumer Range | Kriya Ltd</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body class="product-page home-garden-page">
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="logo-loader">
+        <img src="../assets/img/logo.png" alt="Kriya Ltd" />
+      </div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <img src="../assets/img/logo.png" alt="Kriya Ltd" />
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+
+          <!-- Products Dropdown -->
+          <li class="nav-item dropdown dropdown-products">
+            <a href="./biocontrol.html" class="nav-link dropbtn active">
+              <span>Products</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content products-dropdown">
+              <div class="categories-menu">
+                <div class="category-item">
+                  <a href="./biocontrol.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">pest_control</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Biocontrol</h4>
+                      <p>Natural pest management range</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biocontrol Products</h5>
+                      <p>Botanical and microbial actives</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="./biocontrol/ecoza.html" data-tooltip="Azadirachtin">Ecoza</a>
+                      <a href="./biocontrol/margoshine.html" data-tooltip="Neem Oil">Margoshine</a>
+                      <a href="./biocontrol/k-guard.html" data-tooltip="Karanjin">K-Guard</a>
+                      <a href="./biocontrol/weedx.html" data-tooltip="MCT Weed Killer">WeedX</a>
+                      <a href="./biocontrol/spindura.html" data-tooltip="Spinosad">Spindura</a>
+                      <a href="./biocontrol/margospin.html" data-tooltip="Neem Oil + Spinosad">MargoSpin</a>
+                      <a href="./biocontrol/admira.html" data-tooltip="Essential Oil Formulation">Admira</a>
+                      <a href="./biocontrol/mycova.html" data-tooltip="Beauveria bassiana">Mycova</a>
+                      <a href="./biocontrol/rexora.html" data-tooltip="Metarhizium anisopliae">Rexora</a>
+                      <a href="./biocontrol/biota.html" data-tooltip="Trichoderma viride / harzianum">Biota (V/H)</a>
+                      <a href="./biocontrol/seira.html" data-tooltip="Verticillium lecanii">Seira</a>
+                      <a href="./biocontrol/encilo.html" data-tooltip="Paecilomyces fumosoroseus">EnCilo</a>
+                      <a href="./biocontrol/neuvita.html" data-tooltip="Ampelomyces quisqualis">Neuvita</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="./biostimulants.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">psychiatry</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Biostimulants</h4>
+                      <p>Plant resilience &amp; nutrition</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biostimulant Products</h5>
+                      <p>Microbial &amp; botanical enhancers</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="./biostimulants/igreen.html" data-tooltip="Microbial consortium">IGreen</a>
+                      <a href="./biostimulants/zenita.html" data-tooltip="Peptide formulation">Zenita</a>
+                      <a href="./biostimulants/cropsia.html" data-tooltip="Plant extracts formultion">Cropsia</a>
+                      <a href="./biostimulants/enrhize.html" data-tooltip="Arbuscular Mycorrhizal">Enrhize</a>
+                      <a href="./biostimulants/orgocare.html" data-tooltip="Plant based Antitranspirants">Orgocare</a>
+                      <a href="./biostimulants/blooma.html" data-tooltip="Seaweed formulation">Blooma</a>
+                      <a href="./biostimulants/envicta.html" data-tooltip="Humic &amp; fulvic formulation">Envicta</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="./substrates.html" class="category-link">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">grass</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Substrates</h4>
+                      <p>Soil amendment solutions</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Substrate Products</h5>
+                      <p>Soil health &amp; seed treatments</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="./substrates/maxineem.html" data-tooltip="Neem cake">Maxineem</a>
+                      <a href="./substrates/kmix.html" data-tooltip="Karanja cake">K-Mix</a>
+                      <a href="./substrates/mystica.html" data-tooltip="Wetting &amp; spreading agents">Mystica</a>
+                      <a href="./substrates/engrow.html" data-tooltip="Seed coating">Engrow</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="./home-garden.html" class="category-link" aria-current="page">
+                    <div class="category-icon">
+                      <span class="material-symbols-outlined">yard</span>
+                    </div>
+                    <div class="category-info">
+                      <h4>Home &amp; Garden</h4>
+                      <p>Consumer-ready packs</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Technology Dropdown -->
+          <li class="nav-item dropdown dropdown-tech">
+            <a href="../technology/karyo.html" class="nav-link dropbtn">
+              <span>Technology</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content tech-dropdown">
+              <div class="tech-menu-compact">
+                <a href="../technology/karyo.html" class="tech-item-compact" data-tooltip="Delivery Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">biotech</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Karyo Technology</h5>
+                    <p>Formulation technology</p>
+                  </div>
+                </a>
+
+                <a href="../technology/wynn.html" class="tech-item-compact" data-tooltip="Microbial Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">science</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Wynn Formulation</h5>
+                    <p>Microbial innovation</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="../contract-manufacturing.html" class="nav-link">Manufacturing</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="page-hero home-garden-hero">
+    <div class="container home-garden-hero-grid">
+      <div class="page-hero-content">
+        <span class="page-hero-eyebrow">Home &amp; Garden</span>
+          <h1 class="page-hero-title">Consumer-ready bio-solutions for balconies, lawns, and kitchen gardens</h1>
+          <p class="page-hero-text">Household-ready RTU sprays and drop-in tablets deliver our proven biocontrol and biostimulant actives with no mixing, keeping herbs, lawns, and indoor greens protected.</p>
+        <div class="hero-badges">
+          <span class="badge">Residue-conscious</span>
+          <span class="badge">RTU sprays &amp; WSP tablets</span>
+          <span class="badge">Pet &amp; pollinator mindful</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#hg-range" class="btn-primary">Browse Home &amp; Garden Range</a>
+          <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="btn-outline" download>Download product sheet (placeholder)</a>
+        </div>
+      </div>
+      <div class="page-hero-visual">
+        <div class="hero-visual-card">
+          <div class="hero-visual-img image-placeholder tall">
+            <img src="../assets/img/placeholders/home-garden-hero.svg" alt="Home &amp; Garden hero placeholder" loading="lazy" />
+          </div>
+          <div class="hero-visual-meta">
+            <div>
+              <p class="meta-label">Ready for retail</p>
+              <p class="meta-text">Shelf-ready packshots, compliant labeling, and clear consumer callouts.</p>
+            </div>
+            <div class="meta-icon">
+              <span class="material-symbols-outlined">storefront</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONSUMER HIGHLIGHT ===== -->
+  <section class="section consumer-highlight">
+    <div class="container consumer-highlight-content">
+      <div class="consumer-copy">
+        <span class="section-subtitle">Designed for modern households</span>
+        <h2 class="section-title">Clean formulations, zero guesswork</h2>
+        <p>Each SKU mirrors our commercial actives but arrives in consumer-friendly dosing so plants stay healthy and pest pressure is controlled without complicated mixing. Retailers get unified branding, and homeowners get effortless care.</p>
+        <ul class="pill-list">
+          <li>Low-odor natural actives</li>
+          <li>Guided usage on-pack</li>
+          <li>Safe for balconies &amp; indoor greens*</li>
+          <li>Backed by Kriya quality controls</li>
+        </ul>
+        <p class="note">*Always follow individual product labels for ventilation and safety guidance.</p>
+      </div>
+      <div class="consumer-panel">
+        <div class="consumer-panel-header">
+          <h3>Quick-glance specs</h3>
+          <span class="material-symbols-outlined">sparkles</span>
+        </div>
+        <div class="consumer-metrics">
+          <div class="metric-card">
+            <span class="metric-value">20</span>
+            <span class="metric-label">consumer SKUs</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">2</span>
+            <span class="metric-label">formats per SKU</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">100%</span>
+            <span class="metric-label">relative paths ready</span>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <span class="material-symbols-outlined">eco</span>
+          <p>Swap these placeholders with final retail artwork; aspect ratios are already locked in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOME & GARDEN RANGE ===== -->
+  <section class="section" id="hg-range">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Complete line-up</span>
+        <h2 class="section-title">Home &amp; Garden tiles</h2>
+        <p>See every consumer SKU with both spray and drop-in tablet formats, plus a download link for quick on-shelf guidance.</p>
+      </div>
+
+      <div class="hg-grid">
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-ecoza-rix.svg" alt="Ecoza Rix packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Ecoza Rix</h3>
+              <span class="pill">Azadirachtin</span>
+            </div>
+            <p class="hg-card-text">Neem-powered defense for balconies and kitchen gardens; gentle on herbs while knocking down soft-bodied pests.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-k-rix.svg" alt="K-Rix packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>K-Rix</h3>
+              <span class="pill">Karanjin</span>
+            </div>
+            <p class="hg-card-text">Botanical shield that manages chewing insects on ornamentals without compromising foliage shine.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-margorix.svg" alt="MargoRix packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>MargoRix</h3>
+              <span class="pill">Neem Oil</span>
+            </div>
+            <p class="hg-card-text">Gives houseplants a glossy finish while keeping mites and aphids in check using food-grade neem oil.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-spindura-rix.svg" alt="Spindura Rix packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Spindura Rix</h3>
+              <span class="pill">Spinosad</span>
+            </div>
+            <p class="hg-card-text">Fast-acting contact and ingestion control for thrips and caterpillars in balcony crops.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-mycova.svg" alt="Mycova packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Mycova</h3>
+              <span class="pill">Beauveria bassiana</span>
+            </div>
+            <p class="hg-card-text">Microbial insect pathogen for whiteflies, mites, and aphids—ideal for greenhouse shelves.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-rexora.svg" alt="Rexora packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Rexora</h3>
+              <span class="pill">Metarhizium</span>
+            </div>
+            <p class="hg-card-text">Targets soil-dwelling pests and mites, supporting resilient lawns and terrace beds.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-biota.svg" alt="Biota packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Biota</h3>
+              <span class="pill">Trichoderma</span>
+            </div>
+            <p class="hg-card-text">Soil health probiotic that improves rooting and suppresses soil pathogens in pots and planters.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-seira.svg" alt="Seira packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Seira</h3>
+              <span class="pill">Verticillium</span>
+            </div>
+            <p class="hg-card-text">Soft-bodied pest control for ornamental shrubs and indoor foliage with residue-friendly biology.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-encilo.svg" alt="EnCilo packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>EnCilo</h3>
+              <span class="pill">Paecilomyces</span>
+            </div>
+            <p class="hg-card-text">Natural control for mealybugs and whiteflies while keeping leaves residue-light and vibrant.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-neuvita.svg" alt="Neuvita packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Neuvita</h3>
+              <span class="pill">Ampelomyces</span>
+            </div>
+            <p class="hg-card-text">Targets powdery mildew pressure on ornamentals and cucurbits without harsh residues.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-zenita.svg" alt="Zenita packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Zenita</h3>
+              <span class="pill">Neem Limonoids</span>
+            </div>
+            <p class="hg-card-text">Plant strength tonic that improves leaf color and resilience after stress or pruning.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-cropsia.svg" alt="Cropsia packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Cropsia</h3>
+              <span class="pill">Botanical Extracts</span>
+            </div>
+            <p class="hg-card-text">Plant vitality spray leveraging moringa and adhatoda for steady growth and lush foliage.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-envicta.svg" alt="Envicta packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Envicta</h3>
+              <span class="pill">Humic Blend</span>
+            </div>
+            <p class="hg-card-text">Humic, fulvic, and amino acids to condition container soils and improve nutrient uptake.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-igreen-npk.svg" alt="IGreen NPK packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>IGreen NPK</h3>
+              <span class="pill">Consortium</span>
+            </div>
+            <p class="hg-card-text">Microbial blend that unlocks N-P-K for foliage plants and balcony vegetables.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-igreen-soil-plus.svg" alt="IGreen Soil+ packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>IGreen Soil+</h3>
+              <span class="pill">Disease Suppression</span>
+            </div>
+            <p class="hg-card-text">Protective microbes that reduce soil-borne stress for container gardens and raised beds.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-igreen-tres.svg" alt="IGreen Tres packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>IGreen Tres</h3>
+              <span class="pill">Growth Promotion</span>
+            </div>
+            <p class="hg-card-text">Encourages faster rooting and greener growth across herbs, ornamentals, and leafy greens.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-igreen-shield.svg" alt="IGreen Shield packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>IGreen Shield</h3>
+              <span class="pill">Disease Resistance</span>
+            </div>
+            <p class="hg-card-text">Microbial shield that reinforces plant immunity during seasonal pest pressure.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-admira-adrlc.svg" alt="Admira Adrlc packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Admira Adrlc</h3>
+              <span class="pill">Garlic Oil</span>
+            </div>
+            <p class="hg-card-text">Garlic oil EC/WSP that deters sucking pests with a crisp, clean spray pattern.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-admira-admon.svg" alt="Admira Admon packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Admira Admon</h3>
+              <span class="pill">Cinnamon Oil</span>
+            </div>
+            <p class="hg-card-text">Cinnamon oil solution for fungal hotspots on foliage, paired with a warm natural aroma.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="hg-card">
+          <div class="packshot-placeholder">
+            <img src="../assets/img/placeholders/hg-admira-adyme.svg" alt="Admira Adyme packshot placeholder" loading="lazy" />
+          </div>
+          <div class="hg-card-body">
+            <div class="hg-card-header">
+              <h3>Admira Adyme</h3>
+              <span class="pill">Thyme Oil</span>
+            </div>
+            <p class="hg-card-text">Thyme oil EC/WSP with herbal scent for balcony herbs and indoor planters needing quick recovery.</p>
+            <div class="hg-formats">
+              <span class="format-pill">WSP Tablets</span>
+              <span class="format-pill">RTU Spray</span>
+            </div>
+            <a href="../docs/home-garden/product-sheet-placeholder.pdf" class="download-link" download>
+              <span class="material-symbols-outlined">download</span>
+              <span>Download Product Sheet</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section cta-band">
+    <div class="container cta-band-content">
+      <div>
+        <span class="section-subtitle">Retail &amp; distribution</span>
+        <h2 class="section-title">Bring Kriya Home &amp; Garden to your shelves</h2>
+        <p>White-label ready, compliant artwork, and starter packs for pilot stores. Tell us where you sell and we’ll supply finished goods or private-label runs.</p>
+        <div class="cta-actions">
+          <a href="../contact.html" class="btn-primary">
+            <span>Talk to sales</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+          <a href="mailto:info@kriya.ltd" class="btn-outline">
+            <span>Email us</span>
+            <span class="material-symbols-outlined">mail</span>
+          </a>
+        </div>
+      </div>
+      <div class="cta-side">
+        <div class="cta-chip">
+          <span class="material-symbols-outlined">verified</span>
+          <span>Compliance packs ready</span>
+        </div>
+        <div class="cta-chip">
+          <span class="material-symbols-outlined">local_shipping</span>
+          <span>International fulfilment</span>
+        </div>
+        <div class="cta-chip">
+          <span class="material-symbols-outlined">design_services</span>
+          <span>Retail artwork placeholders</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-strip">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">
+            <img src="../assets/img/logo-white.png" alt="Kriya Ltd" />
+          </a>
+          <p class="footer-brandline">Leading provider of certified organic crop care solutions for sustainable agriculture worldwide.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="../about.html">About</a>
+          <a href="./biocontrol.html">Products</a>
+          <a href="../technology/karyo.html">Technology</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/108402158/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://www.youtube.com/@kriyabiosys" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">
+            <i class="bx bxl-youtube"></i>
+          </a>
+          <a href="https://x.com/kriyabiosys" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/kriyabiosys/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="mailto:info@kriya.ltd" class="social-icon" aria-label="Email">
+            <i class="bx bx-envelope"></i>
+          </a>
+          <a href="https://wa.me/916385848466" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <p class="footer-disclaimer">For usage/dosage information, refer to the product documentation supplied with each formulation.</p>
+        <div class="footer-legal">
+          <span>© Kriya Ltd 2025</span>
+          <a href="../trademark.html">Trademark</a>
+          <a href="../privacy-policy.html">Privacy</a>
+          <a href="../responsible-use.html">Responsible Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <span class="material-symbols-outlined">arrow_upward</span>
+    <span class="back-to-top-text">Back to top</span>
+  </button>
+
+  <!-- JavaScript Files -->
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // Home & Garden specific mobile submenu helper
+    document.addEventListener('DOMContentLoaded', function () {
+      const productsDropdown = document.querySelector('.home-garden-page .dropdown-products');
+
+      function syncMobileProductsMenu() {
+        if (!productsDropdown) return;
+
+        const isMobile = window.innerWidth <= 991.98;
+        const categoryItems = productsDropdown.querySelectorAll('.category-item');
+
+        if (isMobile) {
+          productsDropdown.classList.add('active');
+          categoryItems.forEach(item => item.classList.add('submenu-active'));
+        } else {
+          productsDropdown.classList.remove('active');
+          categoryItems.forEach(item => item.classList.remove('submenu-active'));
+        }
+      }
+
+      syncMobileProductsMenu();
+      window.addEventListener('resize', syncMobileProductsMenu);
+    });
+  </script>
+</body>
+</html>
