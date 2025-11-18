@@ -1699,32 +1699,6 @@ a {
     padding: 7px 8px;
     font-size: 0.78rem;
   }
-
-  .home-garden-page .dropdown-content {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    pointer-events: auto;
-    width: 100%;
-    box-shadow: none;
-    background: transparent;
-    border: none;
-    padding: 0;
-  }
-
-  .home-garden-page .products-dropdown {
-    margin-top: 12px;
-    width: 100%;
-  }
-
-  .home-garden-page .submenu {
-    display: none;
-  }
-
-  .home-garden-page .category-item.submenu-active .submenu {
-    display: block;
-  }
 }
 
 /* ===== HERO SECTION ===== */
@@ -5030,13 +5004,6 @@ a {
   padding-top: 120px;
 }
 
-.home-garden-hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  gap: 56px;
-  align-items: center;
-}
-
 .home-garden-page .page-hero-content .hero-badges {
   display: flex;
   gap: 10px;
@@ -5315,11 +5282,6 @@ a {
   .cta-band-content,
   .page-hero-layout {
     grid-template-columns: 1fr;
-  }
-
-  .home-garden-hero-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
   }
 
   .hero-visual-card {
