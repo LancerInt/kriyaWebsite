@@ -3634,6 +3634,63 @@ a {
     gap: 0;
     margin-left: 0;
   }
+
+  /* Mobile dropdown reset for full-width menus */
+  .nav-menu .dropdown-content {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    pointer-events: auto;
+  }
+
+  .nav-menu .dropdown:not(.active) .dropdown-content {
+    display: none;
+  }
+
+  .nav-menu .products-dropdown,
+  .nav-menu .tech-dropdown {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .nav-menu .categories-menu {
+    gap: 4px;
+  }
+
+  .nav-menu .category-link h4,
+  .nav-menu .category-info p {
+    white-space: normal;
+  }
+
+  .nav-menu .submenu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 10px 12px 12px 44px;
+    max-height: none;
+    display: none;
+  }
+
+  .nav-menu .category-item.submenu-active .submenu {
+    display: block;
+  }
+
+  .nav-menu .submenu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
   
   .nav-menu.active {
     left: 0;
@@ -3661,6 +3718,11 @@ a {
 
   .steps-grid {
     gap: 16px;
+  }
+
+  .steps-grid,
+  .steps-grid.steps-grid-five {
+    grid-template-columns: 1fr;
   }
 
   .step-card {
