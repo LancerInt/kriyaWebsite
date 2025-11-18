@@ -3617,8 +3617,9 @@ a {
   }
 
   .variant-packshot {
-    height: 140px;
+    height: 150px;
     font-size: 0.95rem;
+    padding: 18px 16px 22px;
   }
 
   .variant-body {
@@ -3660,8 +3661,9 @@ a {
     background: transparent;
     box-shadow: none;
     border: none;
-    padding: 8px 0;
+    padding: 12px 0 4px;
     pointer-events: none;
+    display: none;
     transition: opacity 0.25s ease, visibility 0.25s ease;
   }
 
@@ -3670,16 +3672,35 @@ a {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    display: block;
   }
 
   .nav-menu .products-dropdown,
   .nav-menu .tech-dropdown {
     width: 100%;
-    margin-top: 12px;
+    margin-top: 14px;
   }
 
   .nav-menu .categories-menu {
-    gap: 10px;
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-menu .category-item {
+    border: 1px solid rgba(42, 78, 53, 0.14);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.95);
+    overflow: hidden;
+  }
+
+  .nav-menu .category-link {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    width: 100%;
   }
 
   .nav-menu .category-link h4,
@@ -3693,12 +3714,13 @@ a {
     visibility: hidden;
     transform: none;
     width: 100%;
-    background: transparent;
+    background: rgba(245, 250, 246, 0.9);
     box-shadow: none;
     border: none;
-    padding: 8px 18px 14px 28px;
+    padding: 10px 18px 14px 50px;
     max-height: none;
     display: none;
+    border-top: 1px dashed rgba(42, 78, 53, 0.2);
   }
 
   .nav-menu .dropdown.active .submenu,
@@ -3713,7 +3735,21 @@ a {
   .nav-menu .submenu-grid {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .nav-menu .tech-menu-compact {
+    display: flex;
+    flex-direction: column;
     gap: 12px;
+    padding: 0 10px 6px;
+  }
+
+  .nav-menu .tech-item-compact {
+    padding: 12px 14px;
+    border: 1px solid rgba(42, 78, 53, 0.14);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.95);
   }
   
   .nav-menu.active {
@@ -4253,6 +4289,16 @@ a {
   .product-hero-layout {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+
+  .variant-grid {
+    gap: 26px;
+  }
+
+  .variant-packshot {
+    max-width: 200px;
+    padding: 18px;
+    margin-bottom: 12px;
   }
 
   .product-hero-visual {
