@@ -3802,6 +3802,16 @@ a {
     padding: 14px 16px;
   }
 
+  .nav-list > li {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    justify-content: space-between;
+    padding: 14px 4px;
+  }
+
   .hero-metric-icon {
     font-size: 1.4rem;
   }
@@ -4327,6 +4337,26 @@ a {
   .product-hero-layout {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+
+  .variant-grid {
+    gap: 26px;
+  }
+
+  .variant-packshot {
+    max-width: 200px;
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+
+  .variant-grid {
+    gap: 26px;
+  }
+
+  .variant-packshot {
+    max-width: 200px;
+    padding: 18px;
+    margin-bottom: 12px;
   }
 
   .variant-grid {
