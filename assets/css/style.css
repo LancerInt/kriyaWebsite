@@ -3652,6 +3652,30 @@ a {
     margin-left: 0;
   }
 
+  .nav-menu .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .nav-menu .nav-list > li {
+    width: 100%;
+  }
+
+  .nav-menu .nav-link {
+    width: 100%;
+    border: 1px solid rgba(42, 78, 53, 0.14);
+    border-radius: 14px;
+    padding: 14px 16px;
+    background: #fff;
+    justify-content: space-between;
+  }
+
+  .nav-menu .nav-item.dropdown .nav-link {
+    align-items: center;
+  }
+
   /* Mobile dropdown reset for full-width menus */
   .nav-menu .dropdown-content {
     position: static;
@@ -3662,7 +3686,7 @@ a {
     background: transparent;
     box-shadow: none;
     border: none;
-    padding: 8px 0 6px;
+    padding: 10px 2px 6px;
     pointer-events: none;
     display: none;
     transition: opacity 0.25s ease, visibility 0.25s ease;
@@ -3686,6 +3710,7 @@ a {
     gap: 14px;
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .nav-menu .category-item {
@@ -3702,6 +3727,7 @@ a {
     gap: 12px;
     padding: 14px 16px;
     width: 100%;
+    text-align: left;
   }
 
   .nav-menu .category-link h4,
@@ -3719,7 +3745,7 @@ a {
     background: rgba(245, 250, 246, 0.9);
     box-shadow: none;
     border: none;
-    padding: 12px 16px 16px 18px;
+    padding: 14px 16px 16px 18px;
     max-height: none;
     display: none;
     border-top: 1px dashed rgba(42, 78, 53, 0.2);
@@ -3762,8 +3788,18 @@ a {
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
-    gap: 0;
+    gap: 12px;
     width: 100%;
+  }
+
+  .nav-list > li {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    justify-content: space-between;
+    padding: 14px 16px;
   }
 
   .nav-list > li {
@@ -3951,7 +3987,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 240px;
+  max-width: 200px;
   margin: 0 auto;
 }
 
@@ -4301,6 +4337,16 @@ a {
   .product-hero-layout {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+
+  .variant-grid {
+    gap: 26px;
+  }
+
+  .variant-packshot {
+    max-width: 200px;
+    padding: 18px;
+    margin-bottom: 12px;
   }
 
   .variant-grid {
@@ -5554,5 +5600,30 @@ a {
   .hg-card-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .variant-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .variant-card {
+    align-items: stretch;
+  }
+
+  .variant-packshot {
+    max-width: 160px;
+    padding: 16px;
+    margin-top: 8px;
+  }
+
+  .variant-body {
+    align-items: flex-start;
+    text-align: left;
+    gap: 12px;
+  }
+
+  .variant-meta {
+    justify-content: flex-start;
   }
 }
