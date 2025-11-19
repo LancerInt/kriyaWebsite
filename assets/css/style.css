@@ -957,6 +957,14 @@ a {
   }
 }
 
+@media (max-width: 991.98px) {
+  .nav-item.dropdown.dropdown-products .dropdown-content,
+  .nav-item.dropdown.dropdown-tech .dropdown-content {
+    left: 0;
+    transform: translateY(10px);
+  }
+}
+
 /* Products dropdown specific width - REDUCED */
 .products-dropdown {
   width: 300px;
@@ -2145,6 +2153,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 50px;
 }
 
 .product-card:hover {
@@ -3805,22 +3814,6 @@ a {
     padding: 14px 16px;
   }
 
-  .nav-link {
-    width: 100%;
-    justify-content: space-between;
-    padding: 14px 16px;
-  }
-
-  .nav-list > li {
-    width: 100%;
-  }
-
-  .nav-link {
-    width: 100%;
-    justify-content: space-between;
-    padding: 14px 4px;
-  }
-
   .hero-metric-icon {
     font-size: 1.4rem;
   }
@@ -3991,12 +3984,13 @@ a {
 
 .variant-packshot {
   background: linear-gradient(135deg, rgba(107, 153, 65, 0.1), rgba(234, 110, 38, 0.08));
-  padding: 20px;
+  padding: 50px 24px 28px;
   border-radius: 22px 22px 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 200px;
+  max-width: 220px;
+  min-height: 240px;
   margin: 0 auto;
 }
 
@@ -4346,6 +4340,17 @@ a {
   .product-hero-layout {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+
+  .variant-grid {
+    gap: 26px;
+  }
+
+  .variant-packshot {
+    max-width: 200px;
+    padding: 50px 20px 24px;
+    min-height: 220px;
+    margin-bottom: 12px;
   }
 
   .variant-grid {
@@ -4841,12 +4846,13 @@ a {
 
   .variant-packshot {
     background: linear-gradient(135deg, rgba(107, 153, 65, 0.1), rgba(234, 110, 38, 0.08));
-    padding: 20px;
+    padding: 50px 24px 26px;
     border-radius: 22px 22px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 240px;
+    min-height: 240px;
     margin: 0 auto;
   }
 
@@ -5226,7 +5232,8 @@ a {
   }
 
   .variant-packshot {
-    height: 160px;
+    min-height: 210px;
+    padding-top: 50px;
   }
 }
 
@@ -5272,7 +5279,8 @@ a {
   }
 
   .variant-packshot {
-    height: 140px;
+    min-height: 190px;
+    padding-top: 50px;
     font-size: 0.95rem;
   }
 
