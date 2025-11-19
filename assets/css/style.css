@@ -957,6 +957,14 @@ a {
   }
 }
 
+@media (max-width: 991.98px) {
+  .nav-item.dropdown.dropdown-products .dropdown-content,
+  .nav-item.dropdown.dropdown-tech .dropdown-content {
+    left: 0;
+    transform: translateY(10px);
+  }
+}
+
 /* Products dropdown specific width - REDUCED */
 .products-dropdown {
   width: 300px;
@@ -4342,6 +4350,46 @@ a {
     max-width: 200px;
     padding: 50px 20px 24px;
     min-height: 220px;
+    margin-bottom: 12px;
+  }
+
+  .variant-grid {
+    gap: 26px;
+  }
+
+  .variant-packshot {
+    max-width: 200px;
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+
+  .variant-grid {
+    gap: 26px;
+  }
+
+  .variant-packshot {
+    max-width: 200px;
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+
+  .variant-grid {
+    gap: 26px;
+  }
+
+  .variant-packshot {
+    max-width: 200px;
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+
+  .variant-grid {
+    gap: 26px;
+  }
+
+  .variant-packshot {
+    max-width: 200px;
+    padding: 18px;
     margin-bottom: 12px;
   }
 
