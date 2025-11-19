@@ -1,0 +1,11 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="32" fill="#FFF4EC"/>
+  <rect x="64" y="70" width="672" height="380" rx="28" fill="#FFE1CC" stroke="#EA6E26" stroke-width="4" stroke-dasharray="12 12"/>
+  <path d="M150 330C200 270 270 250 330 270C390 290 450 360 530 350C610 340 660 280 680 230" stroke="#EA6E26" stroke-width="10" stroke-linecap="round"/>
+  <path d="M190 200C250 160 340 150 410 190C470 225 540 215 600 180" stroke="#6B9941" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="180" cy="320" r="32" fill="#EA6E26" opacity="0.8"/>
+  <circle cx="360" cy="230" r="30" fill="#6B9941" opacity="0.8"/>
+  <circle cx="540" cy="280" r="34" fill="#EA6E26" opacity="0.75"/>
+  <circle cx="640" cy="200" r="28" fill="#6B9941" opacity="0.85"/>
+  <text x="400" y="460" text-anchor="middle" fill="#7A4D35" font-family="'Inter', sans-serif" font-size="26" font-weight="700">Biostimulants Category Visual</text>
+</svg>
