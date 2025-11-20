@@ -2324,6 +2324,37 @@ a {
   flex-wrap: wrap;
 }
 
+/* Category CTA banner */
+.cta-banner {
+  padding: 70px 0 0;
+}
+
+.cta-banner-content {
+  background: linear-gradient(120deg, rgba(107, 153, 65, 0.12), rgba(234, 110, 38, 0.1));
+  border: 1px solid rgba(107, 153, 65, 0.2);
+  border-radius: 22px;
+  box-shadow: 0 26px 60px rgba(18, 32, 24, 0.18);
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 22px;
+}
+
+.cta-banner-content h3 {
+  margin: 6px 0;
+  color: var(--green-deep);
+}
+
+.cta-banner-content p {
+  margin: 0;
+  color: var(--gray-dark);
+}
+
+.cta-banner.cta-spacing {
+  margin-bottom: 90px;
+}
+
 /* ===== INTERIOR PAGE HEROES ===== */
 .page-hero {
   position: relative;
@@ -2546,6 +2577,37 @@ a {
 .interior-hero .page-hero-eyebrow {
   background: rgba(107, 153, 65, 0.15);
   color: var(--green-deep);
+}
+
+.category-hero .container {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  align-items: center;
+  gap: 48px;
+}
+
+.category-hero .page-hero-content {
+  display: grid;
+  gap: 18px;
+}
+
+.category-hero .hero-list {
+  margin: 4px 0 0;
+  gap: 12px;
+}
+
+.category-hero .page-hero-image {
+  justify-self: end;
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.82));
+  padding: 20px;
+  border-radius: 26px;
+  border: 1px solid rgba(107, 153, 65, 0.16);
+  box-shadow: 0 34px 76px rgba(15, 30, 22, 0.22);
+}
+
+.category-hero .page-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero-metrics {
@@ -3549,6 +3611,20 @@ a {
     gap: 32px;
   }
 
+  .category-hero .page-hero-image {
+    justify-self: center;
+    max-width: 520px;
+  }
+
+  .cta-banner-content {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .cta-banner-content .btn-primary {
+    justify-self: start;
+  }
+
   .hero-metrics {
     grid-template-columns: 1fr;
   }
@@ -3632,6 +3708,11 @@ a {
     height: 150px;
     font-size: 0.95rem;
     padding: 18px 16px 22px;
+  }
+
+  .cta-banner-content {
+    padding: 22px 18px;
+    gap: 14px;
   }
 
   .variant-body {
