@@ -355,7 +355,32 @@ document.addEventListener('DOMContentLoaded', function() {
       const submenu = category.querySelector('.submenu');
       const submenuGrid = category.querySelector('.submenu-grid');
       
-      if (!categoryLink || !submenu) return;
+      if (!categoryLink) return;
+
+      if (!submenu) {
+        category.addEventListener('mouseenter', function() {
+          if (window.innerWidth > 991.98) {
+            categoryItems.forEach(otherCategory => {
+              otherCategory.classList.remove('submenu-active');
+            });
+          }
+        });
+
+        categoryLink.addEventListener('focus', function() {
+          categoryItems.forEach(otherCategory => {
+            otherCategory.classList.remove('submenu-active');
+          });
+        });
+
+        categoryLink.addEventListener('click', function() {
+          categoryItems.forEach(otherCategory => {
+            otherCategory.classList.remove('active');
+            otherCategory.classList.remove('submenu-active');
+          });
+        });
+
+        return;
+      }
 
       categoryLink.addEventListener('click', function(e) {
         const isMobile = window.innerWidth <= 991.98;
