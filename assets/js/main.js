@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // ===== MANUAL TOOLTIP SYSTEM =====
   function initManualTooltips() {
+    if (window.innerWidth <= 991.98) {
+      return;
+    }
+
     // Create tooltip element
     const tooltip = document.createElement('div');
     tooltip.className = 'tooltip';
@@ -165,8 +169,62 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.getElementById('nav-menu');
     const dropdowns = document.querySelectorAll('.dropdown');
     const categoryItems = document.querySelectorAll('.category-item');
-    
+
+    function decorateSubmenuHeaders() {
+      const iconMap = {
+        'Biocontrol Products': 'pest_control',
+        'Biostimulant Products': 'spa',
+        'Substrate Products': 'compost',
+        'Home & Garden': 'home'
+      };
+
+      document.querySelectorAll('.dropdown-products .submenu-header').forEach(header => {
+        if (header.querySelector('.submenu-icon')) return;
+
+        const title = header.querySelector('h5')?.textContent.trim() || '';
+        const iconName = iconMap[title] || 'category';
+
+        const icon = document.createElement('span');
+        icon.className = 'submenu-icon material-symbols-outlined';
+        icon.textContent = iconName;
+
+        const textWrap = document.createElement('div');
+        textWrap.className = 'submenu-text';
+        while (header.firstChild) {
+          textWrap.appendChild(header.firstChild);
+        }
+
+        header.appendChild(icon);
+        header.appendChild(textWrap);
+      });
+
+      const techIconMap = {
+        'Karyo Technology': 'precision_manufacturing',
+        'Wynn Formulation': 'biotech'
+      };
+
+      document.querySelectorAll('.dropdown-tech .tech-item-compact').forEach(item => {
+        if (item.querySelector('.tech-submenu-icon')) return;
+
+        const title = item.querySelector('h5')?.textContent.trim() || '';
+        const iconName = techIconMap[title] || 'science';
+
+        const icon = document.createElement('span');
+        icon.className = 'tech-submenu-icon material-symbols-outlined';
+        icon.textContent = iconName;
+
+        const content = item.querySelector('.tech-content-compact');
+        if (content) {
+          item.insertBefore(icon, content);
+        } else {
+          item.insertBefore(icon, item.firstChild);
+        }
+      });
+    }
+
     if (!navbar) return;
+
+    decorateSubmenuHeaders();
 
     // Scroll effect with performance optimization
     let scrollTimeout;
@@ -355,7 +413,32 @@ document.addEventListener('DOMContentLoaded', function() {
       const submenu = category.querySelector('.submenu');
       const submenuGrid = category.querySelector('.submenu-grid');
       
-      if (!categoryLink || !submenu) return;
+      if (!categoryLink) return;
+
+      if (!submenu) {
+        category.addEventListener('mouseenter', function() {
+          if (window.innerWidth > 991.98) {
+            categoryItems.forEach(otherCategory => {
+              otherCategory.classList.remove('submenu-active');
+            });
+          }
+        });
+
+        categoryLink.addEventListener('focus', function() {
+          categoryItems.forEach(otherCategory => {
+            otherCategory.classList.remove('submenu-active');
+          });
+        });
+
+        categoryLink.addEventListener('click', function() {
+          categoryItems.forEach(otherCategory => {
+            otherCategory.classList.remove('active');
+            otherCategory.classList.remove('submenu-active');
+          });
+        });
+
+        return;
+      }
 
       categoryLink.addEventListener('click', function(e) {
         const isMobile = window.innerWidth <= 991.98;
