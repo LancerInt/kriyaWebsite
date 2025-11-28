@@ -838,7 +838,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!scrollTimeout) {
         scrollTimeout = setTimeout(function() {
           scrollTimeout = null;
-          if (window.pageYOffset > 300) {
+          if (window.pageYOffset > 80) {
             backToTopButton.classList.add('visible');
           } else {
             backToTopButton.classList.remove('visible');
