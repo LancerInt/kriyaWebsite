@@ -36,6 +36,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -3751,6 +3756,10 @@ a {
 }
 
 @media (max-width: 575.98px) {
+  .container {
+    padding: 0 16px;
+  }
+
   .product-hero-highlight {
     padding: 18px;
   }
@@ -3782,6 +3791,7 @@ a {
   }
   
   .nav-menu {
+    display: none;
     position: fixed;
     top: 80px;
     left: -100%;
@@ -3929,6 +3939,7 @@ a {
   }
 
   .nav-menu.active {
+    display: flex;
     left: 0;
   }
 
@@ -4089,9 +4100,9 @@ a {
 
 .variant-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 28px;
-  justify-items: stretch;
+  justify-items: center;
 }
 
 .variant-card {
@@ -4103,6 +4114,8 @@ a {
   border: 1px solid rgba(47, 79, 47, 0.12);
   box-shadow: 0 18px 40px rgba(33, 56, 33, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
 }
 
 .variant-card:hover {
@@ -4131,6 +4144,14 @@ a {
 }
 
 @media (min-width: 992px) {
+  .variant-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .variant-card {
+    max-width: 320px;
+  }
+
   .variant-packshot {
     margin-top: 8px;
   }
@@ -4148,20 +4169,6 @@ a {
 .variant-formula {
   font-weight: 600;
   color: #2d4a2d;
-}
-
-.variant-detail {
-  color: #425142;
-  line-height: 1.6;
-}
-
-.variant-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  min-height: 60px;
-  align-items: center;
-  justify-content: center;
 }
 
 .variant-badge {
@@ -4610,10 +4617,6 @@ a {
     gap: 14px;
     padding: 0 4px 20px;
   }
-
-  .variant-meta {
-    justify-content: flex-start;
-  }
   
   .hero-title {
     font-size: 2.5rem;
@@ -4918,9 +4921,9 @@ a {
 
 .variant-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 28px;
-  justify-items: stretch;
+  justify-items: center;
 }
 
 .variant-card {
@@ -4932,6 +4935,8 @@ a {
   border: 1px solid rgba(47, 79, 47, 0.12);
   box-shadow: 0 18px 40px rgba(33, 56, 33, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
 }
 
 .variant-card:hover {
@@ -4971,20 +4976,6 @@ a {
 .variant-formula {
   font-weight: 600;
   color: #2d4a2d;
-}
-
-.variant-detail {
-  color: #425142;
-  line-height: 1.6;
-}
-
-.variant-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  min-height: 60px;
-  align-items: center;
-  justify-content: center;
 }
 
 .variant-badge {
@@ -5744,10 +5735,6 @@ a {
     align-items: flex-start;
     text-align: left;
     gap: 12px;
-  }
-
-  .variant-meta {
-    justify-content: flex-start;
   }
 }
 
