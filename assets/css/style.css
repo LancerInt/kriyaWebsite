@@ -3219,6 +3219,23 @@ a {
   }
 }
 
+@media (min-width: 700px) {
+  .footer-strip {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+  }
+
+  .footer-meta {
+    display: flex;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
 /* ===== BACK TO TOP BUTTON ===== */
 
 .back-to-top {
