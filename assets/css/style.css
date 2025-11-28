@@ -3241,14 +3241,19 @@ a {
 
 .footer-meta {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 16px;
   white-space: normal;
-  flex-wrap: nowrap;
   row-gap: 10px;
   color: rgba(255, 255, 255, 0.92);
   font-size: 0.9rem;
+}
+
+@media (min-width: 901px) {
+  .footer-meta {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
 
 .footer-disclaimer {
