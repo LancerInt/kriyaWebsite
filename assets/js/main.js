@@ -736,11 +736,15 @@ document.addEventListener('DOMContentLoaded', function() {
           return;
         }
 
-        const newWindow = window.open(file, '_blank', 'noopener');
-
-        if (newWindow) {
-          newWindow.opener = null;
-        }
+        // Redirect directly to the PDF to ensure navigation always occurs
+        const tempLink = document.createElement('a');
+        tempLink.href = file;
+        tempLink.rel = 'noopener';
+        tempLink.target = '_blank';
+        tempLink.style.display = 'none';
+        document.body.appendChild(tempLink);
+        tempLink.click();
+        tempLink.remove();
       });
     });
   }
