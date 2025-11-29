@@ -4129,8 +4129,10 @@ a {
 }
 
 .variant-link.btn-download {
+  display: flex;
+  align-items: center;justify-content: center;
   padding: 10px 22px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 0.16px;
 }
 /* ===== ENHANCED FEATURE GRID ===== */
