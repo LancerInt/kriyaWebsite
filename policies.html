@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Policies | Kriya Ltd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="logo-loader">
+        <img src="./assets/img/logo.png" alt="Kriya Ltd" />
+      </div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="./index.html" class="nav-logo">
+        <img src="./assets/img/logo.png" alt="Kriya Ltd" />
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+
+          <!-- Products Dropdown -->
+          <li class="nav-item dropdown dropdown-products">
+            <a href="./index.html#products" class="nav-link dropbtn">
+              <span>Products</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content products-dropdown">
+              <div class="categories-menu">
+                <div class="category-item">
+                  <a href="./products/biocontrol.html" class="category-link">
+                    <span class="submenu-icon material-symbols-outlined">pest_control</span>
+                    <div class="category-info">
+                      <h4>Biocontrol</h4>
+                      <p>Natural pest management</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biocontrol Products</h5>
+                      <p>Botanical and microbial actives</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="./products/biocontrol/ecoza.html" data-tooltip="Azadirachtin">Ecoza</a>
+                      <a href="./products/biocontrol/margoshine.html" data-tooltip="Neem Oil">Margoshine</a>
+                      <a href="./products/biocontrol/k-guard.html" data-tooltip="Karanjin">K-Guard</a>
+                      <a href="./products/biocontrol/weedx.html" data-tooltip="MCT Weed Killer">WeedX</a>
+                      <a href="./products/biocontrol/spindura.html" data-tooltip="Spinosad">Spindura</a>
+                      <a href="./products/biocontrol/margospin.html" data-tooltip="Neem Oil + Spinosad">MargoSpin</a>
+                      <a href="./products/biocontrol/admira.html" data-tooltip="Essential Oil Formulation">Admira</a>
+                      <a href="./products/biocontrol/mycova.html" data-tooltip="Beauveria bassiana">Mycova</a>
+                      <a href="./products/biocontrol/rexora.html" data-tooltip="Metarhizium anisopliae">Rexora</a>
+                      <a href="./products/biocontrol/biota.html" data-tooltip="Trichoderma viride / harzianum">Biota (V/H)</a>
+                      <a href="./products/biocontrol/seira.html" data-tooltip="Verticillium lecanii">Seira</a>
+                      <a href="./products/biocontrol/encilo.html" data-tooltip="Paecilomyces fumosoroseus">EnCilo</a>
+                      <a href="./products/biocontrol/neuvita.html" data-tooltip="Ampelomyces quisqualis">Neuvita</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="./products/biostimulants.html" class="category-link">
+                    <span class="submenu-icon material-symbols-outlined">eco</span>
+                    <div class="category-info">
+                      <h4>Biostimulants</h4>
+                      <p>Plant resilience &amp; nutrition</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biostimulant Products</h5>
+                      <p>Microbial &amp; botanical enhancers</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="./products/biostimulants/igreen.html" data-tooltip="Microbial consortium">IGreen</a>
+                      <a href="./products/biostimulants/zenita.html" data-tooltip="Peptide formulation">Zenita</a>
+                      <a href="./products/biostimulants/cropsia.html" data-tooltip="Plant extracts formultion">Cropsia</a>
+                      <a href="./products/biostimulants/enrhize.html" data-tooltip="Arbuscular Mycorrhizal">Enrhize</a>
+                      <a href="./products/biostimulants/orgocare.html" data-tooltip="Plant based Antitranspirants">Orgocare</a>
+                      <a href="./products/biostimulants/blooma.html" data-tooltip="Seaweed formulation">Blooma</a>
+                      <a href="./products/biostimulants/envicta.html" data-tooltip="Humic &amp; fulvic formulation">Envicta</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="./products/substrates.html" class="category-link">
+                    <span class="submenu-icon material-symbols-outlined">compost</span>
+                    <div class="category-info">
+                      <h4>Substrates</h4>
+                      <p>Soil amendment solutions</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Substrate Products</h5>
+                      <p>Soil health &amp; seed treatments</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="./products/substrates/maxineem.html" data-tooltip="Neem cake">Maxineem</a>
+                      <a href="./products/substrates/kmix.html" data-tooltip="Karanja cake">K-Mix</a>
+                      <a href="./products/substrates/mystica.html" data-tooltip="Wetting &amp; spreading agents">Mystica</a>
+                      <a href="./products/substrates/engrow.html" data-tooltip="Seed coating">Engrow</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="category-item">
+                  <a href="./products/home-garden.html" class="category-link">
+                    <span class="submenu-icon material-symbols-outlined">yard</span>
+                    <div class="category-info">
+                      <h4>Home &amp; Garden</h4>
+                      <p>Consumer-ready packs</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Technology Dropdown -->
+          <li class="nav-item dropdown dropdown-tech">
+            <a href="./technology/karyo.html" class="nav-link dropbtn">
+              <span>Technology</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content tech-dropdown">
+              <div class="tech-menu-compact">
+                <a href="./technology/karyo.html" class="tech-item-compact" data-tooltip="Delivery Platform">
+                  <div class="tech-content-compact">
+                    <h5>Karyo Technology</h5>
+                    <p>Formulation technology</p>
+                  </div>
+                </a>
+                <a href="./technology/wynn.html" class="tech-item-compact" data-tooltip="Microbial Platform">
+                  <div class="tech-content-compact">
+                    <h5>Wynn Formulation</h5>
+                    <p>Microbial innovation</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="./contract-manufacturing.html" class="nav-link">Manufacturing</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero interior-hero">
+    <div class="container hero-container">
+      <div class="page-hero-content">
+        <span class="page-hero-eyebrow">Policies</span>
+        <h1 class="page-hero-title">Trademark, Privacy, and Responsible Use</h1>
+        <p class="page-hero-subtext">Review the policies that govern our brands, data stewardship, and ethical standards for product use.</p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="trademark">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Trademark Policy</span>
+          <h2 class="section-title">Trademark usage guidelines</h2>
+          <p class="section-description">This policy explains how Kriya Ltd trademarks, logos, and brand assets may be referenced or displayed.</p>
+        </div>
+        <div class="content-card">
+          <p>Kriya Ltd trademarks, trade names, and logos are proprietary assets. Any use must comply with applicable trademark laws and these guidelines. Unauthorized alteration, reproduction, or misrepresentation of our marks is prohibited. Third parties may reference Kriya Ltd products in factual statements, provided such references do not imply endorsement or sponsorship without prior written consent.</p>
+          <p>Marketing materials, packaging, and digital content that feature Kriya Ltd trademarks must maintain clear attribution and avoid confusion with third-party brands. Requests for permission to use brand assets should be directed to <a href="mailto:info@kriya.ltd">info@kriya.ltd</a>. We reserve the right to withdraw permission for any use that could dilute, tarnish, or otherwise negatively impact our brand equity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Privacy Policy</span>
+          <h2 class="section-title">Commitment to data protection</h2>
+          <p class="section-description">Learn how we collect, process, and safeguard personal information shared with Kriya Ltd.</p>
+        </div>
+        <div class="content-card">
+          <p>We collect only the information necessary to provide requested services, respond to inquiries, or meet regulatory obligations. Personal data may include contact details, company information, and communication preferences. We do not sell personal information and limit sharing to trusted service providers who support our operations under appropriate confidentiality obligations.</p>
+          <p>Reasonable administrative, technical, and physical safeguards are implemented to protect data against unauthorized access, disclosure, alteration, or destruction. Users may request access to, correction of, or deletion of their personal information by contacting <a href="mailto:privacy@kriya.ltd">privacy@kriya.ltd</a>. Continued use of our sites signifies consent to the practices described in this policy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="responsible-use">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Responsible Use Policy</span>
+          <h2 class="section-title">Ethical product stewardship</h2>
+          <p class="section-description">Guidelines for safe handling, application, and communication of Kriya Ltd products.</p>
+        </div>
+        <div class="content-card">
+          <p>Our products must be stored, handled, and applied in accordance with local regulations, product labels, and safety data sheets. Users are responsible for training personnel, following recommended dosages, and preventing misuse that could harm people, crops, or the environment. Redistribution or relabeling without authorization is prohibited.</p>
+          <p>All product claims should be supported by approved documentation. Any adverse events, quality concerns, or misuse should be reported promptly to <a href="mailto:compliance@kriya.ltd">compliance@kriya.ltd</a>. By using Kriya Ltd products, distributors and end users agree to uphold these standards of responsible stewardship.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-strip">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="./assets/img/footer-logo.png" alt="Kriya Ltd" />
+          </a>
+          <p class="footer-brandline">Leading provider of certified organic crop care solutions for sustainable agriculture.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="about.html">About</a>
+          <a href="index.html#products">Products</a>
+          <a href="technology/karyo.html">Technology</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/108402158/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://www.youtube.com/@kriyabiosys" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">
+            <i class="bx bxl-youtube"></i>
+          </a>
+          <a href="https://x.com/kriyabiosys" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/kriyabiosys/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="mailto:info@kriya.ltd" class="social-icon" aria-label="Email">
+            <i class="bx bx-envelope"></i>
+          </a>
+          <a href="https://wa.me/916385848466" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-meta">
+        <p class="footer-disclaimer">For usage/dosage information, refer to the product documentation supplied with each formulation.</p>
+        <div class="footer-legal">
+          <span>© Kriya Ltd 2025</span>
+          <a href="policies.html#trademark">Trademark</a>
+          <a href="policies.html#privacy">Privacy</a>
+          <a href="policies.html#responsible-use">Responsible Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop">
+    <span class="material-symbols-outlined">arrow_upward</span>
+    <span class="back-to-top-text">Back to top</span>
+  </button>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
