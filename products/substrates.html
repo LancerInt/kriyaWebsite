@@ -9,6 +9,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .substrates-hero .hero-container {
+      grid-template-columns: 45% 55%;
+      align-items: stretch;
+    }
+
+    .substrates-hero .page-hero-content {
+      align-self: center;
+    }
+
+    .substrates-hero .page-hero-image {
+      justify-self: end;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .substrates-hero .page-hero-image img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+    }
+
+    @media (max-width: 991.98px) {
+      .substrates-hero .hero-container {
+        grid-template-columns: 1fr;
+      }
+
+      .substrates-hero .page-hero-image {
+        justify-self: center;
+        max-width: 420px;
+      }
+    }
+  </style>
 </head>
 <body>
 <div class="loader-bar">
@@ -158,7 +192,7 @@
     </div>
   </nav>
 
-  <section class="page-hero interior-hero category-hero">
+  <section class="page-hero interior-hero category-hero substrates-hero">
     <div class="container hero-container">
       <div class="page-hero-content">
         <span class="page-hero-eyebrow">Product Category</span>
@@ -181,7 +215,7 @@
         </div>
       </div>
       <div class="page-hero-image">
-        <img src="../assets/img/placeholders/substrates-category-hero.svg" alt="Substrates product family" loading="lazy" style="width: 2000%;" />
+        <img src="../assets/img/placeholders/substrates-category-hero.svg" alt="Substrates product family" loading="lazy" />
       </div>
     </div>
   </section>
@@ -200,7 +234,7 @@
           </div>
           <div class="product-content">
             <h3>Maxineem</h3>
-            <p>Neem cake-based soil amendment to improve soil organic matter.</p>
+            <p>Neem cake soil conditioner.</p>
           </div>
         </a>
         <a class="product-card" href="./substrates/kmix.html">
@@ -209,7 +243,7 @@
           </div>
           <div class="product-content">
             <h3>K-Mix</h3>
-            <p>Karanja cake formulation for balanced soil conditioning.</p>
+            <p>Karanja cake soil conditioner.</p>
           </div>
         </a>
         <a class="product-card" href="./substrates/mystica.html">
@@ -218,7 +252,7 @@
           </div>
           <div class="product-content">
             <h3>Mystica</h3>
-            <p>Wetting and spreading agent to boost spray coverage.</p>
+            <p>Wetting and spreading agent.</p>
           </div>
         </a>
         <a class="product-card" href="./substrates/engrow.html">
@@ -227,7 +261,7 @@
           </div>
           <div class="product-content">
             <h3>Engrow</h3>
-            <p>Seed coating technology for uniform germination and early vigor.</p>
+            <p>Seed coating for uniform germination.</p>
           </div>
         </a>
       </div>

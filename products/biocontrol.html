@@ -9,6 +9,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .biocontrol-hero .hero-container {
+      grid-template-columns: 45% 55%;
+      align-items: stretch;
+    }
+
+    .biocontrol-hero .page-hero-content {
+      align-self: center;
+    }
+
+    .biocontrol-hero .page-hero-image {
+      justify-self: end;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .biocontrol-hero .page-hero-image img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+    }
+
+    @media (max-width: 991.98px) {
+      .biocontrol-hero .hero-container {
+        grid-template-columns: 1fr;
+      }
+
+      .biocontrol-hero .page-hero-image {
+        justify-self: center;
+        max-width: 420px;
+      }
+    }
+  </style>
 </head>
 <body>
 <div class="loader-bar">
@@ -158,7 +192,7 @@
     </div>
   </nav>
 
-  <section class="page-hero interior-hero category-hero">
+  <section class="page-hero interior-hero category-hero biocontrol-hero">
     <div class="container hero-container">
       <div class="page-hero-content">
         <span class="page-hero-eyebrow">Product Category</span>
@@ -200,7 +234,7 @@
           </div>
           <div class="product-content">
             <h3>Ecoza</h3>
-            <p>Azadirachtin-based insect growth regulator in multiple EC strengths.</p>
+            <p>Azadirachtin EC insect growth regulator.</p>
           </div>
         </a>
         <a class="product-card" href="./biocontrol/margoshine.html">
@@ -209,7 +243,7 @@
           </div>
           <div class="product-content">
             <h3>Margoshine</h3>
-            <p>Cold-pressed neem oil emulsions for soft-bodied pest management.</p>
+            <p>Cold-pressed neem oil emulsions.</p>
           </div>
         </a>
         <a class="product-card" href="./biocontrol/k-guard.html">
@@ -218,7 +252,7 @@
           </div>
           <div class="product-content">
             <h3>K-Guard</h3>
-            <p>Karanjin-based botanical insecticide in EC formats.</p>
+            <p>Karanjin EC botanical insecticide.</p>
           </div>
         </a>
         <a class="product-card" href="./biocontrol/weedx.html">
@@ -227,7 +261,7 @@
           </div>
           <div class="product-content">
             <h3>WeedX</h3>
-            <p>MCT-driven contact herbicide for weed knockdown.</p>
+            <p>MCT-driven contact weed knockdown.</p>
           </div>
         </a>
         <a class="product-card" href="./biocontrol/spindura.html">
@@ -236,7 +270,7 @@
           </div>
           <div class="product-content">
             <h3>Spindura</h3>
-            <p>Spinosad insect control with multiple strength options.</p>
+            <p>Spinosad insect control options.</p>
           </div>
         </a>
         <a class="product-card" href="./biocontrol/margospin.html">
@@ -245,7 +279,7 @@
           </div>
           <div class="product-content">
             <h3>MargoSpin</h3>
-            <p>Hybrid neem oil and spinosad formulation for dual-action control.</p>
+            <p>Neem oil plus spinosad hybrid.</p>
           </div>
         </a>
         <a class="product-card" href="./biocontrol/admira.html">
@@ -254,7 +288,7 @@
           </div>
           <div class="product-content">
             <h3>Admira</h3>
-            <p>Essential oil blends (thyme, garlic, clove, cinnamon) for broad pest suppression.</p>
+            <p>Essential oil blend insecticide.</p>
           </div>
         </a>
         <a class="product-card" href="./biocontrol/mycova.html">
@@ -263,7 +297,7 @@
           </div>
           <div class="product-content">
             <h3>Mycova</h3>
-            <p>Beauveria bassiana-based bioinsecticide in EC and WP formats.</p>
+            <p>Beauveria bassiana bioinsecticide.</p>
           </div>
         </a>
         <a class="product-card" href="./biocontrol/rexora.html">
@@ -272,7 +306,7 @@
           </div>
           <div class="product-content">
             <h3>Rexora</h3>
-            <p>Metarhizium anisopliae bioinsecticide for soil and foliar pests.</p>
+            <p>Metarhizium anisopliae bioinsecticide.</p>
           </div>
         </a>
         <a class="product-card" href="./biocontrol/biota.html">
@@ -281,7 +315,7 @@
           </div>
           <div class="product-content">
             <h3>Biota (V/H)</h3>
-            <p>Trichoderma viride and harzianum strains for disease suppression.</p>
+            <p>Trichoderma viride and harzianum strains.</p>
           </div>
         </a>
         <a class="product-card" href="./biocontrol/seira.html">
@@ -290,7 +324,7 @@
           </div>
           <div class="product-content">
             <h3>Seira</h3>
-            <p>Verticillium lecanii formulations targeting sucking pests.</p>
+            <p>Verticillium lecanii bioinsecticide.</p>
           </div>
         </a>
         <a class="product-card" href="./biocontrol/encilo.html">
@@ -299,7 +333,7 @@
           </div>
           <div class="product-content">
             <h3>EnCilo</h3>
-            <p>Paecilomyces fumosoroseus-based bioinsecticide for whiteflies and aphids.</p>
+            <p>Paecilomyces fumosoroseus bioinsecticide.</p>
           </div>
         </a>
         <a class="product-card" href="./biocontrol/neuvita.html">
@@ -308,7 +342,7 @@
           </div>
           <div class="product-content">
             <h3>Neuvita</h3>
-            <p>Ampelomyces quisqualis biofungicide focused on powdery mildew control.</p>
+            <p>Ampelomyces quisqualis biofungicide.</p>
           </div>
         </a>
       </div>

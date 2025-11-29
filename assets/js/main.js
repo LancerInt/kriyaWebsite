@@ -444,8 +444,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const isMobile = window.innerWidth <= 991.98;
         const wasActiveMobile = category.classList.contains('active');
         const wasActiveDesktop = category.classList.contains('submenu-active');
+        const allowDirectNav =
+          categoryLink.dataset.allowNav === 'true' ||
+          categoryLink.classList.contains('allow-desktop-nav') ||
+          (categoryLink.getAttribute('href') || '').includes('biocontrol.html');
 
         if (!isMobile && (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey)) {
+          return;
+        }
+
+        if (allowDirectNav) {
           return;
         }
 
