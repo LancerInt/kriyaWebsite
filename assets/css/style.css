@@ -1781,7 +1781,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
   backdrop-filter: blur(10px);
   padding: 8px 16px;
   border-radius: 50px;
@@ -1841,6 +1841,7 @@ a {
   width: 100%;
   height: 500px;
   object-fit: cover;
+  display: block;
 }
 
 .floating-card {
@@ -2150,18 +2151,24 @@ a {
   flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .product-content h3 {
   margin-bottom: 10px;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
+
 
 .product-content p {
   color: var(--gray);
   margin-bottom: 15px;
-  font-size: 0.95rem;
+  font-size: 0.80rem;
   flex: 1;
+  padding: 5px 10px;
+  border-radius: 50px;
+  background: var(--gray-light);
+  color: var(--black);
 }
 
 .product-features {
@@ -2668,7 +2675,7 @@ a {
   gap: 8px;
   padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(234, 110, 38, 0.12);
+  /* background: rgba(87, 234, 38, 0.12); */
   color: var(--orange-dark);
   font-weight: 600;
   font-size: 0.85rem;
@@ -3324,8 +3331,8 @@ a {
   gap: 8px;
   padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(234, 110, 38, 0.12);
-  color: var(--orange-dark);
+  background: rgba(48, 198, 11, 0.12);
+  color: rgb(255, 162, 0);
   font-weight: 600;
   font-size: 0.85rem;
   letter-spacing: 0.4px;
