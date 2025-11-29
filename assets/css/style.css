@@ -3169,6 +3169,7 @@ a {
   row-gap: 10px;
   color: rgba(255, 255, 255, 0.92);
   font-size: 0.9rem;
+  margin-bottom: 5px;
 }
 
 @media (min-width: 901px) {
