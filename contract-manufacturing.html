@@ -229,9 +229,19 @@
             <span class="pill">Packaging &amp; private labeling</span>
           </div>
         </div>
-        <div class="image-placeholder">
-          <img src="./assets/img/placeholders/contract-facility.svg" alt="Contract manufacturing facility placeholder" loading="lazy" />
+        <div class="loop-carousel">
+        <div class="loop-track" id="loopTrack">
+          <img src="/assets/img/placeholders/about-facility.svg" />
+          <img src="/assets/img/placeholders/about-facility-1.svg" />
+          <img src="/assets/img/placeholders/about-facility-4.svg" />
+          <img src="/assets/img/placeholders/about-facility-5.svg" />
+          <img src="/assets/img/placeholders/about-facility-2.svg" />
+          <img src="/assets/img/placeholders/about-facility-3.svg" />
+          <img src="/assets/img/placeholders/about-facility-6.svg" />
+          <img src="/assets/img/placeholders/about-facility-7.svg" />
+
         </div>
+      </div>
       </div>
     </div>
   </section>
@@ -438,5 +448,43 @@
   </button>
 
   <script src="./assets/js/main.js"></script>
+  <script>
+const track = document.getElementById("loopTrack");
+const slides = Array.from(track.children);
+
+// Clone slides once → needed for looping
+slides.forEach(slide => {
+  track.appendChild(slide.cloneNode(true));
+});
+
+let index = 0;
+const total = slides.length; // 8
+
+function autoSlide() {
+  index++;
+  track.style.transform = `translateX(-${index * 100}%)`;
+
+  // When finished first full set of 8 slides
+  if (index === total) {
+
+    // Allow the final animated movement to finish (0.6s)
+    setTimeout(() => {
+      track.style.transition = "none";    // turn off animation
+      index = 0;                           // snap back to real first slide
+      track.style.transform = `translateX(0)`;  // reset position
+      
+      // Turn animation back on for next slides
+      setTimeout(() => {
+        track.style.transition = "transform 0.6s ease-in-out";
+      });
+    }, 600);
+  }
+}
+
+setInterval(autoSlide, 3000); // Change slide every 4s
+</script>
+
+
+
 </body>
 </html>

@@ -5773,3 +5773,23 @@ a {
 .value-grid.tech-value-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+
+.loop-carousel {
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 14px;
+  margin: auto;
+}
+
+.loop-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.loop-track img {
+  width: 100%;
+  flex-shrink: 0;
+  pointer-events: none;
+  border-radius: 14px;
+}
