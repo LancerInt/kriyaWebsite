@@ -4033,6 +4033,14 @@ a {
   justify-content: center;
 }
 
+.variant-grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+  justify-items: center;
+  justify-content: center;
+}
+
 .variant-card {
   display: flex;
   flex-direction: column;
@@ -4881,8 +4889,8 @@ a {
     padding: 22px;
   }
 
-  .hero-list li {
-    padding-left: 18px;
+  .hero-list li::before {
+    display: none;
   }
 
   .steps-grid {
@@ -5618,9 +5626,14 @@ a {
   gap: 12px;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  
 }
 
 .hg-card-header h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
 }
 
@@ -5745,7 +5758,8 @@ a {
 
   .hg-card-header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
   }
 
   .variant-grid {
@@ -5768,11 +5782,11 @@ a {
     text-align: left;
     gap: 12px;
   }
+  .value-grid.tech-value-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
-.value-grid.tech-value-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 
 .loop-carousel {
   width: 100%;
