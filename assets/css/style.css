@@ -5807,3 +5807,45 @@ a {
   pointer-events: none;
   border-radius: 14px;
 }
+
+.quick-contact-strip {
+  background: linear-gradient(120deg, rgba(107, 153, 65, 0.12), rgba(234, 110, 38, 0.1));
+  padding: 44px 0;
+}
+
+.quick-contact-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: center;
+}
+
+.quick-contact-title {
+  margin-top: 10px;
+  font-size: clamp(2.2rem, 3vw, 3.2rem);
+  color: var(--text-dark);
+  max-width: 720px;
+}
+
+.quick-contact-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.quick-contact-mail {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 991.98px) {
+  .quick-contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-contact-actions {
+    justify-content: flex-start;
+  }
+}
