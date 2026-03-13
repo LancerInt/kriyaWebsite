@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elixora | Bacillus amyloliquefaciens Biocontrol</title>
+  <link rel="icon" href="/assets/img/Fav.svg">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body class="product-page">
+    <!-- ===== PREMIUM NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../../index.html" class="nav-logo">
+        <img src="../../assets/img/logo.png" alt="Kriya Ltd" />
+      </a>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="../../about.html" class="nav-link">About</a></li>
+          <li class="nav-item dropdown dropdown-products">
+            <a href="../../index.html#products" class="nav-link dropbtn">
+              <span>Products</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content products-dropdown">
+              <div class="categories-menu">
+                <div class="category-item">
+                  <a href="../../products/biocontrol.html" class="category-link">
+                    <span class="submenu-icon material-symbols-outlined">pest_control</span>
+                    <div class="category-info">
+                      <h4>Biocontrol</h4>
+                      <p>Natural pest management</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biocontrol Products</h5>
+                      <p>Botanical and microbial actives</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="../../products/biocontrol/ecoza.html" data-tooltip="Azadirachtin">Ecoza</a>
+                      <a href="../../products/biocontrol/margoshine.html" data-tooltip="Neem Oil">Margo</a>
+                      <a href="../../products/biocontrol/k-guard.html" data-tooltip="Karanjin">K-Guard</a>
+                      <a href="../../products/biocontrol/weedx.html" data-tooltip="MCT Weed Killer">WeedX</a>
+                      <a href="../../products/biocontrol/spindura.html" data-tooltip="Spinosad">Spindura</a>
+                      <a href="../../products/biocontrol/margospin.html" data-tooltip="Neem Oil + Spinosad">MargoSpin</a>
+                      <a href="../../products/biocontrol/admira.html" data-tooltip="Essential Oil Formulation">Admira</a>
+                      <a href="../../products/biocontrol/mycova.html" data-tooltip="Beauveria bassiana">Mycova</a>
+                      <a href="../../products/biocontrol/rexora.html" data-tooltip="Metarhizium anisopliae">Rexora</a>
+                      <a href="../../products/biocontrol/biota.html" data-tooltip="Trichoderma viride / harzianum">Biota</a>
+                      <a href="../../products/biocontrol/seira.html" data-tooltip="Verticillium lecanii">Seira</a>
+                      <a href="../../products/biocontrol/encilo.html" data-tooltip="Verticillium chlamydosporium">EnCilo</a>
+                      <a href="../../products/biocontrol/neuvita.html" data-tooltip="Pseudomonas fluorescens">Neuvita</a>
+                      <a href="../../products/biocontrol/subtilix.html" data-tooltip="Bacillus subtilis">Subtilix</a>
+                      <a href="../../products/biocontrol/elixora.html" data-tooltip="Bacillus amyloliquefaciens">Elixora</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-item">
+                  <a href="../../products/biostimulants.html" class="category-link">
+                    <span class="submenu-icon material-symbols-outlined">eco</span>
+                    <div class="category-info">
+                      <h4>Biostimulants &amp; Biofertilizers</h4>
+                      <p>Plant resilience &amp; nutrition</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Biostimulant &amp; Biofertilizer Products</h5>
+                      <p>Microbial &amp; botanical enhancers</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="../../products/biostimulants/igreen.html" data-tooltip="Microbial consortium">IGreen</a>
+                      <a href="../../products/biostimulants/zenita.html" data-tooltip="Peptide formulation">Zenita</a>
+                      <a href="../../products/biostimulants/cropsia.html" data-tooltip="Plant extracts formulation">Cropsia</a>
+                      <a href="../../products/biostimulants/enrhize.html" data-tooltip="Arbuscular Mycorrhizal">EnRhize</a>
+                      <a href="../../products/biostimulants/orgocare.html" data-tooltip="Plant based Antitranspirants">Orgocare</a>
+                      <a href="../../products/biostimulants/blooma.html" data-tooltip="Seaweed formulation">Blooma</a>
+                      <a href="../../products/biostimulants/envicta.html" data-tooltip="Humic &amp; fulvic formulation">Envicta</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-item">
+                  <a href="../../products/substrates.html" class="category-link">
+                    <span class="submenu-icon material-symbols-outlined">compost</span>
+                    <div class="category-info">
+                      <h4>Substrates</h4>
+                      <p>Soil amendment solutions</p>
+                    </div>
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                  <div class="submenu">
+                    <div class="submenu-header">
+                      <h5>Substrate Products</h5>
+                      <p>Soil health &amp; seed treatments</p>
+                    </div>
+                    <div class="submenu-grid">
+                      <a href="../../products/substrates/maxineem.html" data-tooltip="Neem cake">Maxineem</a>
+                      <a href="../../products/substrates/kmix.html" data-tooltip="Karanja cake">K-Mix</a>
+                      <a href="../../products/substrates/mystica.html" data-tooltip="Wetting &amp; spreading agents">Mystica</a>
+                      <a href="../../products/substrates/engrow.html" data-tooltip="Seed coating">Engrow</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="category-item">
+                  <a href="../../products/home-garden.html" class="category-link">
+                    <span class="submenu-icon material-symbols-outlined">yard</span>
+                    <div class="category-info">
+                      <h4>Home &amp; Garden</h4>
+                      <p>Consumer-ready packs</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Technology Dropdown -->
+          <li class="nav-item dropdown dropdown-tech">
+            <a href="../../technology.html" class="nav-link dropbtn">
+              <span>Technology</span>
+              <span class="material-symbols-outlined">expand_more</span>
+            </a>
+            <div class="dropdown-content tech-dropdown">
+              <div class="tech-menu-compact">
+                <a href="../../technology/wynn.html" class="tech-item-compact" data-tooltip="Microbial Systems Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">biotech</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Wynn&#8482;</h5>
+                    <p>Microbial science &amp; process</p>
+                  </div>
+                </a>
+                <a href="../../technology/microvate.html" class="tech-item-compact" data-tooltip="Precision Activation Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">precision_manufacturing</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Microvate&#8482;</h5>
+                    <p>Precision activation</p>
+                  </div>
+                </a>
+                <a href="../../technology/karyo.html" class="tech-item-compact" data-tooltip="Delivery &amp; Protection Platform">
+                  <div class="tech-icon-compact">
+                    <span class="material-symbols-outlined">layers</span>
+                  </div>
+                  <div class="tech-content-compact">
+                    <h5>Karyo&#8482;</h5>
+                    <p>Active delivery &amp; protection</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li><a href="../../contract-manufacturing.html" class="nav-link">Manufacturing</a></li>
+          <li><a href="../../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero interior-hero product-hero">
+    <div class="container">
+      <div class="product-hero-layout">
+        <div class="page-hero-content product-hero-copy">
+          <span class="page-hero-eyebrow">Biocontrol — Microbial</span>
+          <h1 class="page-hero-title">Elixora&trade; Bacillus amyloliquefaciens for Broad-Spectrum Preventive Disease Management</h1>
+          <div class="hero-metrics">
+            <div class="hero-metric hero-metric-compact">
+              <div class="hero-metric-text">
+                <strong>1 &times; 10<sup>9</sup> CFU/g Consistency</strong>
+              </div>
+            </div>
+            <div class="hero-metric hero-metric-compact">
+              <div class="hero-metric-text">
+                <strong>Lipopeptide Antagonism</strong>
+              </div>
+            </div>
+            <div class="hero-metric hero-metric-compact">
+              <div class="hero-metric-text">
+                <strong>Residue Stewardship</strong>
+              </div>
+            </div>
+          </div>
+          <div class="page-hero-actions">
+            <a href="../../contact.html" class="btn-primary">
+              <span>Request Pricing</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+            <a href="../../contract-manufacturing.html" class="btn-outline">
+              <span>Scale With Kriya</span>
+              <span class="material-symbols-outlined">factory</span>
+            </a>
+          </div>
+        </div>
+        <div class="product-hero-visual">
+          <figure class="page-hero-image image-placeholder square">
+            <img src="../../assets/img/placeholders/elixora-hero.svg" alt="Elixora product imagery placeholder" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT OVERVIEW ===== -->
+  <section class="section product-overview">
+    <div class="container">
+      <div class="product-overview-grid">
+        <div class="overview-copy">
+          <div class="section-header align-left">
+            <span class="section-subtitle">Product Overview</span>
+            <h2 class="section-title">Bacillus amyloliquefaciens for lipopeptide-based biological suppression across foliar and root-zone diseases</h2>
+          </div>
+          <p style="text-align: justify;">Elixora is a Bacillus amyloliquefaciens wettable powder for preventive suppression of foliar and root-zone pathogens. It is suited to integrated biological disease programs that rely on lipopeptide-producing Bacillus strains.</p>
+        </div>
+        <div class="overview-insights">
+          <div class="insight-card">
+            <span class="material-symbols-outlined">grain</span>
+            <div>
+              <h3>Lipopeptide Production</h3>
+              <p>Releases iturin-, fengycin-, and surfactin-like metabolites that suppress fungal and bacterial pathogens.</p>
+            </div>
+          </div>
+          <div class="insight-card">
+            <span class="material-symbols-outlined">sync_alt</span>
+            <div>
+              <h3>Broad Disease Spectrum</h3>
+              <p>Effective across anthracnose, damping-off, root rot, and bacterial disease pressure.</p>
+            </div>
+          </div>
+          <div class="insight-card">
+            <span class="material-symbols-outlined">workspace_premium</span>
+            <div>
+              <h3>Distributor Ready</h3>
+              <p>Technical documentation available for regulatory and distributor use.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VARIANTS ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Elixora Line-Up</span>
+        <h2 class="section-title">Formulations to match crop systems</h2>
+        <p class="section-description">A single WP formulation delivering broad biological disease suppression via lipopeptide-producing Bacillus.</p>
+      </div>
+      <div class="variant-grid">
+        <article class="variant-card">
+          <div class="variant-packshot">
+            <img src="../../assets/img/placeholders/elixora-wp-pack.svg" alt="Elixora WP packshot placeholder" loading="lazy" />
+          </div>
+          <div class="variant-body">
+            <h3>Elixora WP</h3>
+            <p class="variant-formula">Bacillus amyloliquefaciens<br> (1 &times; 10<sup>9</sup> CFU/g) WP</p>
+            <a class="variant-link btn-download" target="_blank" type="button" href="../../docs/elixora-wp-tds.pdf">
+              Download technical sheet
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KEY FEATURES ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Why Distributors Choose Elixora</span>
+        <h2 class="section-title">Key Features</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-heading">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">biotech</span>
+            </div>
+            <h3>Lipopeptide Biocontrol</h3>
+          </div>
+          <p>Produces antagonistic lipopeptides that disrupt fungal membranes and suppress bacterial pathogens.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-heading">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">bolt</span>
+            </div>
+            <h3>Rapid Surface Colonization</h3>
+          </div>
+          <p>Establishes quickly on foliar surfaces and in the root zone to occupy niches before pathogens.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-heading">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">eco</span>
+            </div>
+            <h3>Residue Conscious</h3>
+          </div>
+          <p>No residue concerns — suitable for IPM, organic-aligned, and export programs.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-heading">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">description</span>
+            </div>
+            <h3>Technical Support</h3>
+          </div>
+          <p>Backed by compatibility data, SDS, and biological rotation guidelines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MODE OF ACTION ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Mode of Action</span>
+        <h2 class="section-title">Bacillus amyloliquefaciens suppresses foliar and root-zone pathogens through lipopeptide metabolites and biofilm</h2>
+      </div>
+      <div class="image-placeholder wide">
+        <img src="../../assets/img/placeholders/elixora-mode.svg" alt="Mode of action visual placeholder" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PEST & CROP COVERAGE ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="coverage-grid">
+        <div class="coverage-card">
+          <div class="section-header align-left">
+            <span class="section-subtitle">Diseases Suppressed</span>
+            <h2 class="section-title">Target Spectrum</h2>
+          </div>
+          <ul class="coverage-list">
+            <li>Anthracnose (<em>Colletotrichum</em> spp.)</li>
+            <li>Damping-off complex</li>
+            <li>Root rot (Fusarium, Pythium)</li>
+            <li>Bacterial speck or spot pressure</li>
+            <li>Fusarium-associated stress</li>
+          </ul>
+        </div>
+        <div class="coverage-card">
+          <div class="section-header align-left">
+            <span class="section-subtitle">Secondary Benefits</span>
+            <h2 class="section-title">Program Enhancements</h2>
+          </div>
+          <ul class="coverage-list">
+            <li>Broad-spectrum biological disease management</li>
+            <li>Supports fungicide and bactericide rotation programs</li>
+            <li>Compatible with IPM and organic crop production</li>
+            <li>No residue concerns for export markets</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-header align-left crops-header">
+        <span class="section-subtitle">Crops Covered</span>
+        <h2 class="section-title">Validated across field, plantation, and protected cropping systems</h2>
+      </div>
+      <div class="crop-grid">
+        <span>Vegetables: tomato, pepper, mango, cucumber</span>
+        <span>Banana and plantation crops (anthracnose programs)</span>
+        <span>Cereals and pulses under Fusarium pressure</span>
+        <span>Nursery and transplant beds</span>
+        <span>Protected cultivation and greenhouses</span>
+        <span>Fruit and berry crops</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOSAGE & DILUTION ===== -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Dosage &amp; Dilution</span>
+        <h2 class="section-title">Elixora application programs</h2>
+      </div>
+
+      <div class="dosage-table-wrapper">
+        <h3 class="dosage-heading">Elixora WP &ndash; Bacillus amyloliquefaciens 1 &times; 10<sup>9</sup> CFU/g</h3>
+        <div class="dosage-table-scroll">
+          <table class="dosage-table">
+            <thead>
+              <tr>
+                <th>Crop Stage / Application</th>
+                <th>Dose per Acre</th>
+                <th>Water Volume</th>
+                <th>Application Method</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Preventive foliar disease management</td>
+                <td>500&ndash;750 g/acre</td>
+                <td>150&ndash;200 L</td>
+                <td>Foliar spray with even canopy deposition</td>
+              </tr>
+              <tr>
+                <td>Root-zone support or transplant stage</td>
+                <td>1.0 kg/acre</td>
+                <td>150&ndash;200 L</td>
+                <td>Root-zone drench, furrow, or drip application</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="dosage-footnote">Foliar: repeat every 7&ndash;10 days. Root-zone: repeat after 15&ndash;20 days if required. Use preventively to maximize antagonistic colonization.</p>
+    </div>
+  </section>
+
+  <!-- ===== USE SITES & COMPATIBILITY ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header align-left">
+        <span class="section-subtitle">Program Fit</span>
+        <h2 class="section-title">Use sites, compatibility, and storage</h2>
+      </div>
+      <div class="use-grid">
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">map</span> Use Sites</h3>
+          <ul>
+            <li>Open-field vegetable and fruit production</li>
+            <li>Protected greenhouse and net-house crops</li>
+            <li>Nursery transplant programs</li>
+            <li>Drip-irrigated and furrow-irrigated fields</li>
+            <li>Plantation and orchard disease management</li>
+          </ul>
+        </div>
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">science</span> Compatibility</h3>
+          <ul>
+            <li>Avoid mixing with fungicides, bactericides, strong oxidizers, alkaline materials, or concentrated salts</li>
+          </ul>
+        </div>
+        <div class="use-card">
+          <h3><span class="material-symbols-outlined">inventory</span> Shelf Life &amp; Storage</h3>
+          <ul>
+            <li>12 months in the unopened pack under cool, dry storage below 25&deg;C and away from sunlight</li>
+            <li>Store sealed away from heat, sunlight, and moisture</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Deploy lipopeptide-based biological disease control in your portfolio</h2>
+        <p>Partner with Kriya to supply Bacillus amyloliquefaciens solutions for preventive disease management worldwide.</p>
+        <div class="cta-actions">
+          <a href="../../contact.html" class="btn-primary">
+            <span>Contact Sales</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+          <a href="../../contract-manufacturing.html" class="btn-outline">
+            <span>Contract Manufacturing</span>
+            <span class="material-symbols-outlined">factory</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-strip">
+      <div class="footer-brand">
+        <a href="../../index.html" class="footer-logo">
+          <img src="../../assets/img/footer-logo.png" alt="Kriya Ltd" />
+        </a>
+        <p class="footer-brandline">Leading provider of certified organic crop care solutions for sustainable agriculture.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="../../about.html">About</a>
+        <a href="../../index.html#products">Products</a>
+        <a href="../../technology.html">Technology</a>
+        <a href="../../contact.html">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/108402158/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.youtube.com/@kriyabiosys" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener"><i class="bx bxl-youtube"></i></a>
+        <a href="https://x.com/kriyabiosys" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.instagram.com/kriyabiosys/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener"><i class="bx bxl-instagram"></i></a>
+        <a href="mailto:info@kriya.ltd" class="social-icon" aria-label="Email"><i class="bx bx-envelope"></i></a>
+        <a href="https://wa.me/916385848466" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="bx bxl-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-meta">
+      <p class="footer-disclaimer">For usage/dosage information, refer to the product documentation supplied with each formulation.</p>
+      <div class="footer-legal">
+        <span>© Kriya Ltd 2025</span>
+        <a href="../../policies.html#trademark">Trademark</a>
+        <a href="../../policies.html#privacy">Privacy</a>
+        <a href="../../policies.html#responsible-use">Responsible Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <button class="back-to-top" id="backToTop">
+    <span class="material-symbols-outlined">arrow_upward</span>
+    <span class="back-to-top-text">Back to top</span>
+  </button>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
