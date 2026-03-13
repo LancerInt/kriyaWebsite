@@ -198,28 +198,6 @@ document.addEventListener('DOMContentLoaded', function() {
         header.appendChild(textWrap);
       });
 
-      const techIconMap = {
-        'Karyo Technology': 'precision_manufacturing',
-        'Wynn Formulation': 'biotech'
-      };
-
-      document.querySelectorAll('.dropdown-tech .tech-item-compact').forEach(item => {
-        if (item.querySelector('.tech-submenu-icon')) return;
-
-        const title = item.querySelector('h5')?.textContent.trim() || '';
-        const iconName = techIconMap[title] || 'science';
-
-        const icon = document.createElement('span');
-        icon.className = 'tech-submenu-icon material-symbols-outlined';
-        icon.textContent = iconName;
-
-        const content = item.querySelector('.tech-content-compact');
-        if (content) {
-          item.insertBefore(icon, content);
-        } else {
-          item.insertBefore(icon, item.firstChild);
-        }
-      });
     }
 
     if (!navbar) return;
