@@ -5807,3 +5807,29 @@ a {
   pointer-events: none;
   border-radius: 14px;
 }
+
+/* ===== TECHNOLOGY PAGE GRIDS (Wynn / Karyo / Microvate) ===== */
+/* Force 3-column layout for six-pillar architecture tiles */
+.pillars-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+/* Force 3-column layout for five-principle tiles (3 + 2) */
+.principles-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+/* Responsive: stack to 1 column on mobile */
+@media (max-width: 768px) {
+  .pillars-grid,
+  .principles-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pillars-grid,
+  .principles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
