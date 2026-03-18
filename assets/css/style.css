@@ -4110,6 +4110,7 @@ a {
   padding: 28px 24px 30px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: 14px;
   align-items: center;
   text-align: center;
