@@ -4516,50 +4516,76 @@ a {
 }
 
 .dosage-table-wrapper {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
 .dosage-heading {
-  font-size: 1.35rem;
-  margin-bottom: 18px;
-  color: #2d4a2d;
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+  color: var(--green-dark, #2d4a2d);
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--orange, #EA6E26);
+  display: inline-block;
 }
 
 .dosage-table-scroll {
   overflow-x: auto;
-  border-radius: 18px;
-  border: 1px solid rgba(45, 74, 45, 0.12);
+  border-radius: 10px;
+  border: 1px solid rgba(45, 74, 45, 0.1);
   background: #ffffff;
-  box-shadow: 0 18px 40px rgba(33, 56, 33, 0.12);
+  box-shadow: 0 2px 12px rgba(33, 56, 33, 0.06);
 }
 
 .dosage-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 640px;
+  min-width: 580px;
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 .dosage-table th,
 .dosage-table td {
-  padding: 18px 20px;
+  padding: 13px 16px;
   text-align: left;
-  border-bottom: 1px solid rgba(45, 74, 45, 0.1);
+  border-bottom: 1px solid rgba(45, 74, 45, 0.07);
+  vertical-align: top;
 }
 
 .dosage-table th {
-  background: rgba(45, 74, 45, 0.08);
-  font-weight: 700;
-  color: #2d4a2d;
+  background: linear-gradient(135deg, rgba(45, 74, 45, 0.065) 0%, rgba(45, 74, 45, 0.03) 100%);
+  font-weight: 600;
+  color: var(--green-dark, #2d4a2d);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  border-bottom: 2px solid rgba(45, 74, 45, 0.12);
 }
 
 .dosage-table tbody tr:last-child td {
   border-bottom: none;
 }
 
+.dosage-table tbody tr:hover {
+  background: rgba(107, 153, 65, 0.035);
+  transition: background 0.2s ease;
+}
+
+.dosage-table td:first-child {
+  font-weight: 500;
+  color: var(--green-dark, #2d4a2d);
+}
+
 .dosage-footnote {
-  font-size: 0.9rem;
-  color: #425142;
-  margin-top: 8px;
+  font-size: 0.84rem;
+  color: var(--gray, #6B7280);
+  margin-top: 10px;
+  line-height: 1.5;
+  font-style: italic;
 }
 
 .use-grid {
@@ -5201,50 +5227,76 @@ a {
 }
 
 .dosage-table-wrapper {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
 .dosage-heading {
-  font-size: 1.35rem;
-  margin-bottom: 18px;
-  color: #2d4a2d;
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+  color: var(--green-dark, #2d4a2d);
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--orange, #EA6E26);
+  display: inline-block;
 }
 
 .dosage-table-scroll {
   overflow-x: auto;
-  border-radius: 18px;
-  border: 1px solid rgba(45, 74, 45, 0.12);
+  border-radius: 10px;
+  border: 1px solid rgba(45, 74, 45, 0.1);
   background: #ffffff;
-  box-shadow: 0 18px 40px rgba(33, 56, 33, 0.12);
+  box-shadow: 0 2px 12px rgba(33, 56, 33, 0.06);
 }
 
 .dosage-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 640px;
+  min-width: 580px;
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 .dosage-table th,
 .dosage-table td {
-  padding: 18px 20px;
+  padding: 13px 16px;
   text-align: left;
-  border-bottom: 1px solid rgba(45, 74, 45, 0.1);
+  border-bottom: 1px solid rgba(45, 74, 45, 0.07);
+  vertical-align: top;
 }
 
 .dosage-table th {
-  background: rgba(45, 74, 45, 0.08);
-  font-weight: 700;
-  color: #2d4a2d;
+  background: linear-gradient(135deg, rgba(45, 74, 45, 0.065) 0%, rgba(45, 74, 45, 0.03) 100%);
+  font-weight: 600;
+  color: var(--green-dark, #2d4a2d);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  border-bottom: 2px solid rgba(45, 74, 45, 0.12);
 }
 
 .dosage-table tbody tr:last-child td {
   border-bottom: none;
 }
 
+.dosage-table tbody tr:hover {
+  background: rgba(107, 153, 65, 0.035);
+  transition: background 0.2s ease;
+}
+
+.dosage-table td:first-child {
+  font-weight: 500;
+  color: var(--green-dark, #2d4a2d);
+}
+
 .dosage-footnote {
-  font-size: 0.9rem;
-  color: #425142;
-  margin-top: 8px;
+  font-size: 0.84rem;
+  color: var(--gray, #6B7280);
+  margin-top: 10px;
+  line-height: 1.5;
+  font-style: italic;
 }
 
 .use-grid {
