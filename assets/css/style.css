@@ -5886,3 +5886,26 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
+
+/* ===== JUSTIFIED TEXT INSIDE CARDS/BOXES ONLY ===== */
+.feature-card p,
+.insight-card p,
+.value-card p,
+.why-card p,
+.step-card p,
+.statement-card p,
+.category-content p,
+.coverage-card p,
+.use-card p,
+.use-card li,
+.coverage-list li,
+.mode-step p,
+.info-card p,
+.content-block p,
+.overview-copy p,
+.product-content p,
+.cert-card p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
