@@ -4500,19 +4500,22 @@ a {
 
 .crop-grid span {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: flex-start;
   font-weight: 600;
   color: #2d4a2d;
   position: relative;
-  padding-left: 16px;
+  padding-left: 20px;
+  line-height: 1.5;
 }
 
 .crop-grid span::before {
   content: '\2022';
   position: absolute;
   left: 0;
+  top: 0;
+  line-height: 1.5;
   color: #ea6e26;
+  font-size: 1.2em;
 }
 
 .dosage-table-wrapper {
@@ -5211,19 +5214,22 @@ a {
 
 .crop-grid span {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: flex-start;
   font-weight: 600;
   color: #2d4a2d;
   position: relative;
-  padding-left: 16px;
+  padding-left: 20px;
+  line-height: 1.5;
 }
 
 .crop-grid span::before {
   content: '\2022';
   position: absolute;
   left: 0;
+  top: 0;
+  line-height: 1.5;
   color: #ea6e26;
+  font-size: 1.2em;
 }
 
 .dosage-table-wrapper {
@@ -5887,7 +5893,7 @@ a {
   }
 }
 
-/* ===== JUSTIFIED TEXT INSIDE CARDS/BOXES ONLY ===== */
+/* ===== LEFT-ALIGNED TEXT INSIDE CARDS/BOXES ONLY ===== */
 .feature-card p,
 .insight-card p,
 .value-card p,
@@ -5904,8 +5910,8 @@ a {
 .content-block p,
 .overview-copy p,
 .product-content p,
-.cert-card p {
-  text-align: justify;
-  text-justify: inter-word;
+.cert-card p,
+.hero-metric-detail {
+  text-align: left;
 }
 
